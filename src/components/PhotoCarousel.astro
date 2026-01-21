@@ -1,0 +1,232 @@
+---
+type ImageItem = {
+	src: string;
+	alt?: string;
+};
+
+const {
+	images = [],
+	altPrefix = 'Photo',
+	showControls = true,
+	showDots = true,
+} = Astro.props as {
+	images: ImageItem[];
+	altPrefix?: string;
+	showControls?: boolean;
+	showDots?: boolean;
+};
+
+const items = images.map((img, i) => ({
+	alt: img.alt ?? `${altPrefix} ${i + 1}`,
+	src: img.src,
+}));
+---
+
+<div class="photo-carousel" data-carousel>
+	{showControls && (
+		<div class="photo-carousel__controls">
+			<button class="photo-carousel__btn" type="button" data-prev aria-label="上一张">
+				←
+			</button>
+			<button class="photo-carousel__btn" type="button" data-next aria-label="下一张">
+				→
+			</button>
+		</div>
+	)}
+
+	<div class="photo-carousel__track" data-track>
+		{items.map((img, index) => (
+			<figure class="photo-carousel__slide" data-slide>
+				<img
+					src={img.src}
+					alt={img.alt}
+					loading="lazy"
+					decoding="async"
+					width="1200"
+					height="800"
+				/>
+				{showDots && (
+					<figcaption class="photo-carousel__caption">
+						{index + 1}/{items.length}
+					</figcaption>
+				)}
+			</figure>
+		))}
+	</div>
+
+	{showDots && (
+		<div class="photo-carousel__dots" data-dots>
+			{items.map((_, index) => (
+				<button
+					class="photo-carousel__dot"
+					type="button"
+					data-dot={index}
+					aria-label={`跳转到第 ${index + 1} 张`}
+				/>
+			))}
+		</div>
+	)}
+</div>
+
+<script>
+	const root = document.currentScript?.closest('[data-carousel]');
+	if (root) {
+		const track = root.querySelector('[data-track]');
+		const slides = Array.from(root.querySelectorAll('[data-slide]'));
+		const prev = root.querySelector('[data-prev]');
+		const next = root.querySelector('[data-next]');
+		const dots = Array.from(root.querySelectorAll('[data-dot]'));
+
+		const getIndex = () => {
+			if (!slides.length) return 0;
+			const width = slides[0].getBoundingClientRect().width;
+			return Math.round(track.scrollLeft / width);
+		};
+
+		const scrollToIndex = (index) => {
+			if (!slides.length) return;
+			const width = slides[0].getBoundingClientRect().width;
+			track.scrollTo({ left: width * index, behavior: 'smooth' });
+		};
+
+		const setActiveDot = (index) => {
+			dots.forEach((dot, i) => {
+				if (i === index) {
+					dot.setAttribute('aria-current', 'true');
+				} else {
+					dot.removeAttribute('aria-current');
+				}
+			});
+		};
+
+		prev?.addEventListener('click', () => {
+			const index = Math.max(getIndex() - 1, 0);
+			scrollToIndex(index);
+			setActiveDot(index);
+		});
+
+		next?.addEventListener('click', () => {
+			const index = Math.min(getIndex() + 1, slides.length - 1);
+			scrollToIndex(index);
+			setActiveDot(index);
+		});
+
+		dots.forEach((dot, i) => {
+			dot.addEventListener('click', () => {
+				scrollToIndex(i);
+				setActiveDot(i);
+			});
+		});
+
+		track.addEventListener('scroll', () => {
+			const index = getIndex();
+			setActiveDot(index);
+		});
+
+		setActiveDot(0);
+	}
+</script>
+
+<style>
+	.photo-carousel {
+		--accent: #ff7a59;
+		--border: rgba(0, 0, 0, 0.1);
+		position: relative;
+		margin: 1.5rem 0;
+	}
+
+	.photo-carousel__controls {
+		position: absolute;
+		top: 0.75rem;
+		right: 0.75rem;
+		display: flex;
+		gap: 0.5rem;
+		z-index: 2;
+	}
+
+	.photo-carousel__btn {
+		border: 1px solid var(--border);
+		background: #fff;
+		border-radius: 999px;
+		width: 2.25rem;
+		height: 2.25rem;
+		display: grid;
+		place-items: center;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+		cursor: pointer;
+	}
+
+	.photo-carousel__track {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 100%;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-behavior: smooth;
+		border-radius: 1rem;
+		border: 1px solid var(--border);
+		background: linear-gradient(135deg, #fdf6f0 0%, #f5f7ff 100%);
+	}
+
+	.photo-carousel__track::-webkit-scrollbar {
+		height: 0;
+	}
+
+	.photo-carousel__slide {
+		scroll-snap-align: start;
+		margin: 0;
+		position: relative;
+		padding: 0;
+	}
+
+	.photo-carousel__slide img {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 3 / 2;
+		object-fit: cover;
+		border-radius: 1rem;
+	}
+
+	.photo-carousel__caption {
+		position: absolute;
+		bottom: 0.75rem;
+		right: 1rem;
+		padding: 0.25rem 0.75rem;
+		border-radius: 999px;
+		background: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		font-size: 0.85rem;
+	}
+
+	.photo-carousel__dots {
+		display: flex;
+		gap: 0.5rem;
+		justify-content: center;
+		margin-top: 0.75rem;
+	}
+
+	.photo-carousel__dot {
+		width: 0.75rem;
+		height: 0.75rem;
+		border-radius: 999px;
+		border: 1px solid var(--border);
+		background: #fff;
+		cursor: pointer;
+	}
+
+	.photo-carousel__dot[aria-current='true'] {
+		background: var(--accent);
+		border-color: var(--accent);
+	}
+
+	@media (max-width: 720px) {
+		.photo-carousel__controls {
+			display: none;
+		}
+
+		.photo-carousel__slide img {
+			aspect-ratio: 4 / 3;
+		}
+	}
+</style>

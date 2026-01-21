@@ -1,12 +1,15 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Sidebar from "../components/Sidebar.astro";
+import Aplayer from "../components/Aplayer.astro";
+import { ViewTransitions } from "astro:transitions";
 const { title = "", description = "" } = Astro.props;
 ---
 
 <html lang="zh-CN">
   <head>
     <BaseHead title={title} description={description} />
+    <ViewTransitions />
   </head>
   <body>
     <div class="app">
@@ -22,10 +25,40 @@ const { title = "", description = "" } = Astro.props;
 
       <aside class="rightbar">
         <div class="rightbar-inner">
-          <slot name="right" />
+          <div class="rightbar-top">
+            <slot name="right" />
+          </div>
+          <div class="rightbar-bottom">
+            <div class="rightbar-player" data-astro-transition-persist="aplayer">
+              <Aplayer id="17675095071" type="playlist" />
+            </div>
+          </div>
         </div>
       </aside>
     </div>
+    <script>
+      const dedupeAplayer = () => {
+        const host = document.querySelector('[data-astro-transition-persist="aplayer"]');
+        if (!host) return;
+
+        const players = Array.from(host.querySelectorAll('.aplayer'));
+        if (players.length > 1) {
+          const active =
+            players.find((node) => node.classList.contains('aplayer-playing')) ?? players[0];
+          players.forEach((node) => {
+            if (node !== active) node.remove();
+          });
+        }
+
+        const metings = Array.from(host.querySelectorAll('meting-js'));
+        metings.forEach((node, index) => {
+          if (index > 0) node.remove();
+        });
+      };
+
+      document.addEventListener('astro:page-load', dedupeAplayer);
+      document.addEventListener('astro:after-swap', dedupeAplayer);
+    </script>
   </body>
 </html>
 
@@ -39,11 +72,11 @@ const { title = "", description = "" } = Astro.props;
 
   .app {
     display: grid;
-    grid-template-columns: minmax(200px, 240px) minmax(0, 1fr) 280px;
+    grid-template-columns: minmax(200px, 240px) minmax(0, 1fr) minmax(240px, 320px);
     min-height: 100vh;
-    width: min(100vw, 1580px);
+    width: min(100vw, 1660px);
     margin: 0 auto;
-    padding: 16px 0;
+    padding: 16px 8px;
     box-sizing: border-box;
   }
 
@@ -83,10 +116,61 @@ const { title = "", description = "" } = Astro.props;
     align-self: start;
     height: calc(100vh - 32px);
     overflow: hidden;
+    --rightbar-top-min-height: 240px;
+    min-width: 0;
   }
 
   .rightbar-inner {
-    padding: 24px 24px 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 8px 32px 0;
     box-sizing: border-box;
+    min-height: calc(100vh - 32px);
+    min-width: 0;
+  }
+
+  .rightbar-top {
+  height: 120px; flex: 0 0 auto;
+    min-width: 0;
+  }
+
+  .rightbar-bottom {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    min-width: 0;
+  }
+
+  .rightbar-player {
+    margin-top: 0;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .rightbar-inner > * {
+    width: 100%;
+  }
+
+  @media (max-width: 1100px) {
+    .app {
+      grid-template-columns: minmax(180px, 220px) minmax(0, 1fr) minmax(200px, 240px);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .app {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .rightbar {
+      position: static;
+      height: auto;
+    }
+
+    .rightbar {
+      order: 3;
+    }
   }
 </style>
