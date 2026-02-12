@@ -1,0 +1,65 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+type Props = {
+	src: string;
+	alt?: string;
+	caption?: string;
+	width?: string;
+};
+
+const { src, alt, caption, width = "90%" } = Astro.props as Props;
+
+const modules = import.meta.glob("../assets/**/*.{jpg,jpeg,png,webp}", {
+	eager: true,
+});
+
+const normalize = (value: string) => value.replace(/\\/g, "/");
+const normalizePath = (value: string) => value.replace(/^\/+/, "");
+
+const target = `/assets/${normalizePath(src)}`;
+const match = Object.entries(modules).find(([path]) =>
+	normalize(path).endsWith(target)
+);
+
+const image = match ? (match[1] as { default: ImageMetadata }).default : null;
+const resolvedAlt = alt ?? caption ?? "Photo";
+---
+
+{image ? (
+	<figure class="asset-photo" style={`--asset-photo-width: ${width};`}>
+		<Image
+			class="asset-photo__img"
+			src={image}
+			alt={resolvedAlt}
+			loading="lazy"
+			decoding="async"
+		/>
+		{caption && <figcaption>{caption}</figcaption>}
+	</figure>
+) : (
+	<div class="asset-photo__empty">Missing asset: {src}</div>
+)}
+
+<style>
+	.asset-photo {
+		margin: 1.5rem auto;
+		text-align: center;
+	}
+
+	.asset-photo__img {
+		display: block;
+		width: var(--asset-photo-width, 90%);
+		height: auto;
+		margin: 0 auto;
+		border-radius: 12px;
+	}
+
+	.asset-photo__empty {
+		padding: 0.75rem 1rem;
+		border: 1px dashed rgba(0, 0, 0, 0.2);
+		border-radius: 12px;
+		color: #666;
+	}
+</style>

@@ -1,4 +1,4 @@
-/*
+﻿/*
   The CSS in this style tag is based off of Bear B
   
  
@@ -114,24 +114,6 @@ img {
 	border-radius: 8px;
 }
 
-/* APlayer glass card */
-.aplayer {
-	border-radius: 16px;
-	background: rgba(255, 255, 255, 0.7);
-	backdrop-filter: blur(10px);
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-	border: 1px solid rgba(255, 255, 255, 0.35);
-	overflow: hidden;
-    width: 300px;
-    max-width: 320px;
-	box-sizing: border-box;
-}
-
-.aplayer .aplayer-body,
-.aplayer .aplayer-list {
-	width: 100%;
-	box-sizing: border-box;
-}
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
@@ -186,115 +168,204 @@ figcaption {
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
-/* GitHub-like markdown styling for posts */
+/* Stack-like markdown styling scoped to post content */
 .markdown-body {
-  color: #1f2328;
-  font-size: 1.1rem;
-  line-height: 1.75;
+	--article-font-size: 1.08rem;
+	--article-line-height: 1.78;
+	--article-font-family: "Atkinson", sans-serif;
+	--card-padding: 1.1rem;
+	--card-text-color-main: #1f2328;
+	--card-text-color-secondary: #6b7280;
+	--card-text-color-tertiary: #8b95a5;
+	--card-separator-color: #dde3ea;
+	--accent-color: #444444;
+	--heading-border-size: 6px;
+	--blockquote-border-size: 4px;
+	--blockquote-background-color: #f6f8fc;
+	--code-text-color: #1f2328;
+	--code-background-color: #eef2f7;
+	--pre-background-color: #111827;
+	--pre-text-color: #e5e7eb;
+	--table-border-color: #d7dee8;
+	--tr-even-background-color: #f7f9fc;
+	--kbd-border-color: #cfd7e3;
+	font-family: var(--article-font-family);
+	font-size: var(--article-font-size);
+	line-height: var(--article-line-height);
+	color: var(--card-text-color-main);
+	padding: 0 var(--card-padding);
 }
 
-.markdown-body :where(h1, h2, h3, h4, h5, h6) {
-  font-weight: 700;
-  margin-top: 1.6em;
+.markdown-body > p {
+	margin: 1.5em 0;
 }
 
-.markdown-body :where(h1, h2) {
-  border-bottom: 1px solid #d0d7de;
-  padding-bottom: 0.3em;
+.markdown-body  h2 {
+	margin-inline-start: calc(var(--card-padding) * -1 - 20px);
+	padding-inline-start: calc(var(--card-padding) + 8px);
+	border-inline-start: none;
+	position: relative;
+	margin-top: 1.45em;
+	margin-bottom: 0.55em;
+	line-height: 1.25;
 }
 
-.markdown-body :where(p, ul, ol, pre, blockquote, table, figure) {
-  margin: 1em 0;
+.markdown-body h2::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.12em;
+	bottom: 0.12em;
+	width: var(--heading-border-size);
+	background: var(--accent-color);
+	border-radius: 3px;
+}
+
+
+.markdown-body :where(h1, h2, h3, h4, h5, h6) .header-anchor {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	width: var(--card-padding);
+	text-align: center;
+	color: var(--accent-color);
+	transition: opacity 0.25s ease;
+}
+
+.markdown-body :where(h1, h2, h3, h4, h5, h6):hover .header-anchor {
+	opacity: 1;
+}
+
+.markdown-body :where(h1, h2, h3, h4, h5, h6) .header-anchor::before {
+	content: "#";
+}
+
+.markdown-body img {
+	max-width: 100%;
+	height: auto;
+}
+
+.markdown-body figure {
+	text-align: center;
+	margin: 1.2em 0;
+}
+
+.markdown-body figure figcaption {
+	font-size: 0.92rem;
+	color: var(--card-text-color-secondary);
+	margin-top: 0.45rem;
+}
+
+.markdown-body blockquote {
+	margin: 1.5em 0;
+	border-inline-start: var(--blockquote-border-size) solid var(--card-separator-color);
+	padding: 0.85rem calc(var(--card-padding) - var(--blockquote-border-size));
+	background-color: var(--blockquote-background-color);
+	border-radius: 8px;
+}
+
+.markdown-body hr {
+	width: 100px;
+	margin: 40px auto;
+	height: 2px;
+	border: 0;
+	background: var(--card-text-color-tertiary);
+	opacity: 0.55;
+}
+
+.markdown-body a {
+	color: var(--accent-color);
+	word-break: break-word;
+}
+
+.markdown-body code {
+	color: var(--code-text-color);
+	background-color: var(--code-background-color);
+	padding: 2px 6px;
+	border-radius: 6px;
+	word-break: break-word;
+}
+
+.markdown-body pre {
+	overflow-x: auto;
+	display: block;
+	background-color: var(--pre-background-color);
+	color: var(--pre-text-color);
+	line-height: 1.43;
+	padding: var(--card-padding);
+	border-radius: 10px;
+}
+
+.markdown-body pre code {
+	color: inherit;
+	border: none;
+	background: transparent;
+	padding: 0;
 }
 
 .markdown-body ul,
 .markdown-body ol {
-  padding-left: 1.5em;
+	margin: 1em 0;
+	padding-left: 1.5em;
 }
 
 .markdown-body li {
-  margin: 0.35em 0;
+	margin: 0.4em 0;
 }
 
-.markdown-body a {
-  color: #0969da;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.markdown-body code {
-  padding: 0.2em 0.4em;
-  margin: 0;
-  background-color: #f6f8fa;
-  border-radius: 6px;
-  font-size: 0.95em;
-}
-
-.markdown-body pre {
-  background: #0b1623;
-  color: #c9d1d9;
-  border-radius: 10px;
-  padding: 1em 1.2em;
-  overflow: auto;
-}
-
-.markdown-body pre code {
-  background: none;
-  padding: 0;
-}
-
-.markdown-body blockquote {
-  border-left: 4px solid #d0d7de;
-  padding: 0.4em 1em;
-  color: #57606a;
-  background: #f6f8fa;
-  border-radius: 6px;
+.markdown-body .table-wrapper {
+	padding: 0 var(--card-padding);
+	overflow-x: auto;
+	display: block;
 }
 
 .markdown-body table {
-  border-collapse: collapse;
-  width: 100%;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: 1.5em;
+	font-size: 0.96em;
 }
 
 .markdown-body th,
 .markdown-body td {
-  border: 1px solid #d0d7de;
-  padding: 0.5em 0.8em;
+	text-align: left;
+	padding: 6px 10px;
+	border: 1px solid var(--table-border-color);
 }
 
-.markdown-body thead {
-  background: #f6f8fa;
+.markdown-body td {
+	vertical-align: top;
 }
 
-.markdown-body hr {
-  border: none;
-  border-top: 1px solid #d0d7de;
-  margin: 1.5em 0;
+.markdown-body tr:nth-child(even) {
+	background-color: var(--tr-even-background-color);
 }
 
-.markdown-body h2 {
-  margin: 1.2em 0 0.4em; /* 上 右左 下 */
+.markdown-body kbd {
+	border: 1px solid var(--kbd-border-color);
+	font-weight: 700;
+	font-size: 0.9em;
+	line-height: 1;
+	padding: 2px 4px;
+	border-radius: 4px;
+	display: inline-block;
 }
-/* H2 左竖条（伪元素版本，更好对齐） */
-.markdown-body h2 {
-  position: relative;
-  padding-left: 0.9em;
-  line-height: 1.2;
-  font-weight: 600;
-  border-bottom: none;
-    margin-left: -0.5em;
+/*自定义变淡语法*/
+.markdown-body .muted {
+  color: var(--card-text-color-tertiary);
+}
+/*自定义黑条语法*/
+.markdown-body .spoiler {
+	background: #111;
+	color: transparent;
+	border-radius: 4px;
+	padding: 0 0.25em;
+	transition: color 0.18s ease, background-color 0.18s ease;
 }
 
-.markdown-body h2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.05em;      /* 微调竖条上下位置 */
-  width: 6px;
-  height: 1em;      /* 跟随文字高度 */
-  background: #1f2d3d;
-  border-radius: 9px;
-}
-figcaption {
-  margin-top: -4px; /* 往上微移 */
+.markdown-body .spoiler:hover,
+.markdown-body .spoiler:focus-visible {
+	background: transparent;
+	color: inherit;
 }

@@ -1,7 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Sidebar from "../components/Sidebar.astro";
-import Aplayer from "../components/Aplayer.astro";
 import { ViewTransitions } from "astro:transitions";
 const { title = "", description = "" } = Astro.props;
 ---
@@ -29,36 +28,11 @@ const { title = "", description = "" } = Astro.props;
             <slot name="right" />
           </div>
           <div class="rightbar-bottom">
-            <div class="rightbar-player" data-astro-transition-persist="aplayer">
-              <Aplayer id="17675095071" type="playlist" />
-            </div>
+            <slot name="right-bottom" />
           </div>
         </div>
       </aside>
     </div>
-    <script>
-      const dedupeAplayer = () => {
-        const host = document.querySelector('[data-astro-transition-persist="aplayer"]');
-        if (!host) return;
-
-        const players = Array.from(host.querySelectorAll('.aplayer'));
-        if (players.length > 1) {
-          const active =
-            players.find((node) => node.classList.contains('aplayer-playing')) ?? players[0];
-          players.forEach((node) => {
-            if (node !== active) node.remove();
-          });
-        }
-
-        const metings = Array.from(host.querySelectorAll('meting-js'));
-        metings.forEach((node, index) => {
-          if (index > 0) node.remove();
-        });
-      };
-
-      document.addEventListener('astro:page-load', dedupeAplayer);
-      document.addEventListener('astro:after-swap', dedupeAplayer);
-    </script>
   </body>
 </html>
 
@@ -139,12 +113,6 @@ const { title = "", description = "" } = Astro.props;
     flex: 1;
     display: flex;
     align-items: flex-start;
-    min-width: 0;
-  }
-
-  .rightbar-player {
-    margin-top: 0;
-    width: 100%;
     min-width: 0;
   }
 
