@@ -28,11 +28,12 @@ const posts = (await getCollection("blog"))
     <p class="empty">暂无文章。</p>
   ) : (
     <div class="feed-grid">
-      {posts.map((p) => (
+      {posts.map((p, index) => (
         <PostCard
           post={p}
           categoryLabel={getCategoryLabel(p.id)}
           wordCount={estimateWordCount(p.body)}
+          enterDelay={Math.min(index, 10) * 55}
         />
       ))}
     </div>

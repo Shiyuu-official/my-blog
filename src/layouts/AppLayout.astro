@@ -17,7 +17,7 @@ const { title = "", description = "" } = Astro.props;
       </aside>
 
       <main class="main">
-        <div class="main-inner">
+        <div class="main-inner" transition:name="main-content">
           <slot />
         </div>
       </main>
@@ -82,6 +82,53 @@ const { title = "", description = "" } = Astro.props;
   .main-inner {
     min-height: 100%;
     box-sizing: border-box;
+  }
+
+  ::view-transition-old(main-content),
+  ::view-transition-new(main-content) {
+    animation-duration: 260ms;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  ::view-transition-old(main-content) {
+    animation-name: main-content-out;
+  }
+
+  ::view-transition-new(main-content) {
+    animation-name: main-content-in;
+  }
+
+  @keyframes main-content-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(8px);
+      filter: blur(1.5px);
+    }
+  }
+
+  @keyframes main-content-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+      filter: blur(1.5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(main-content),
+    ::view-transition-new(main-content) {
+      animation-duration: 1ms;
+    }
   }
 
   .rightbar {
