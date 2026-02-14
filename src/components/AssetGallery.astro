@@ -7,6 +7,7 @@ type Props = {
 	dir: string;
 	altPrefix?: string;
 	variant?: "carousel" | "grid";
+	description?: string;
 	widths?: number[];
 	formats?: Array<"webp" | "avif" | "jpeg" | "png">;
 	showCaption?: boolean;
@@ -19,6 +20,7 @@ const {
 	dir,
 	altPrefix = "Photo",
 	variant = "carousel",
+	description = "",
 	widths = [480, 960, 1440],
 	formats = ["webp", "avif", "jpeg"],
 	showCaption = false,
@@ -60,37 +62,40 @@ const images = Object.entries(modules)
 ---
 
 {dirNormalized ? (
-	variant === "carousel" ? (
-		<PhotoCarousel
-			images={images}
-			altPrefix={altPrefix}
-			showControls={showControls}
-			showDots={showDots}
-			showCaption={showCaption}
-			widths={widths}
-			formats={formats}
-		/>
-	) : (
-		<div class="asset-gallery">
-			{images.map((img) => (
-				<figure class="asset-gallery__item">
-					<Image
-						src={img.src}
-						alt={img.alt}
-						widths={widths}
-						formats={formats}
-						loading="lazy"
-						decoding="async"
-					/>
-					{showCaption && (
-						<figcaption class:list={["asset-gallery__caption", { "is-empty": !resolveCaption(img.filename) }]}>
-							{img.caption || "\u00a0"}
-						</figcaption>
-					)}
-				</figure>
-			))}
-		</div>
-	)
+	<div class="asset-gallery__block">
+		{variant === "carousel" ? (
+			<PhotoCarousel
+				images={images}
+				altPrefix={altPrefix}
+				showControls={showControls}
+				showDots={showDots}
+				showCaption={showCaption}
+				widths={widths}
+				formats={formats}
+			/>
+		) : (
+			<div class="asset-gallery">
+				{images.map((img) => (
+					<figure class="asset-gallery__item">
+						<Image
+							src={img.src}
+							alt={img.alt}
+							widths={widths}
+							formats={formats}
+							loading="lazy"
+							decoding="async"
+						/>
+						{showCaption && (
+							<figcaption class:list={["asset-gallery__caption", { "is-empty": !resolveCaption(img.filename) }]}>
+								{img.caption || "\u00a0"}
+							</figcaption>
+						)}
+					</figure>
+				))}
+			</div>
+		)}
+		{description && <p class="asset-gallery__description">{description}</p>}
+	</div>
 ) : (
 	<div class="asset-gallery__empty">Missing `dir` prop.</div>
 )}
@@ -132,5 +137,17 @@ const images = Object.entries(modules)
 		border: 1px dashed rgba(0, 0, 0, 0.2);
 		border-radius: 12px;
 		color: #666;
+	}
+
+	.asset-gallery__description {
+		margin: 0 0 0;
+		text-align: center;
+		font-size: 0.92rem;
+		color: rgba(0, 0, 0, 0.46);
+		line-height: 1.5;
+	}
+
+	.asset-gallery__block :global(.photo-carousel) {
+		margin-bottom: 0.25rem;
 	}
 </style>

@@ -1,14 +1,14 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Sidebar from "../components/Sidebar.astro";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 const { title = "", description = "" } = Astro.props;
 ---
 
 <html lang="zh-CN">
   <head>
     <BaseHead title={title} description={description} />
-    <ViewTransitions />
+    <ClientRouter fallback="swap" />
   </head>
   <body>
     <div class="app">
