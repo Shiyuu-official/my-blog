@@ -2,14 +2,366 @@
 import AppLayout from "../layouts/AppLayout.astro";
 ---
 
-<AppLayout title="主页" description="主页">
-  <section class="home-empty">
+<AppLayout title="首页" description="首页">
+  <section class="home-todo">
+    <div class="todo-backdrop" data-todo-backdrop></div>
+    <article
+      class="todo-card"
+      data-todo-card
+      role="button"
+      tabindex="0"
+      aria-expanded="false"
+      aria-controls="todo-details"
+    >
+      <header class="todo-head">
+        <p class="todo-kicker">Today Plan</p>
+        <h1>Todo</h1>
+      </header>
 
+      <section class="todo-details" id="todo-details" data-todo-details hidden>
+        <details class="todo-group" open>
+          <summary>完成博客首页</summary>
+          <ul>
+            <li>todo页面</li>
+            <li>力扣每日一题？</li>
+            <li>p站每日一图轮换（疑似实现不了）</li>
+            <li>日历（实现ui动效）</li>
+          </ul>
+        </details>
+      </section>
+    </article>
   </section>
 </AppLayout>
 
 <style>
-  .home-empty {
+  .home-todo {
+    position: relative;
+    min-height: 400px;
     padding: 24px 0;
+    perspective: 1000px;
+  }
+
+  .todo-backdrop {
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: transparent;
+    transition: opacity 460ms cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: 12;
+  }
+
+  .todo-backdrop.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    background: transparent;
+  }
+
+  .todo-card {
+    --rotate-x: 0deg;
+    --rotate-y: 0deg;
+    position: relative;
+    z-index: 15;
+    width: min(100%, 380px);
+    min-height: 260px;
+    padding: 28px 22px 22px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.45), rgba(237, 242, 247, 0.28));
+    box-shadow: 0 16px 36px rgba(9, 12, 20, 0.2);
+    cursor: pointer;
+    transform: rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+    transform-style: preserve-3d;
+    transition:
+      transform 520ms cubic-bezier(0.22, 1.12, 0.36, 1),
+      box-shadow 340ms cubic-bezier(0.22, 1, 0.36, 1),
+      width 420ms cubic-bezier(0.22, 1, 0.36, 1),
+      padding 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .todo-card:focus-visible {
+    outline: 2px solid #223a6f;
+    outline-offset: 3px;
+  }
+
+  .todo-card:hover {
+    box-shadow: 0 22px 48px rgba(9, 12, 20, 0.26);
+  }
+
+  .todo-card.is-expanded {
+    width: min(100%, 440px);
+    min-height: 360px;
+    padding-bottom: 26px;
+    transform: none;
+    box-shadow: 0 28px 58px rgba(7, 10, 18, 0.3);
+  }
+
+  .todo-head h1 {
+    margin: 0.25rem 0 0.4rem;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+  }
+
+  .todo-kicker {
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(29, 45, 76, 0.72);
+  }
+
+  .todo-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+      max-height 560ms cubic-bezier(0.2, 0.85, 0.24, 1),
+      opacity 340ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .todo-card.is-expanded .todo-details {
+    margin-top: 18px;
+    opacity: 1;
+  }
+
+  .todo-details ul {
+    margin: 0.45rem 0 0;
+    padding-left: 1.25rem;
+  }
+
+  .todo-details li {
+    margin: 0.45rem 0;
+    line-height: 1.55;
+  }
+
+  .todo-group {
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 12px;
+    padding: 0.45rem 0.7rem 0.55rem;
+    background: rgba(255, 255, 255, 0);
+  }
+
+  .todo-group summary {
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1.35;
+    list-style: none;
+  }
+
+  .todo-group summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .todo-group summary::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 0.45rem;
+    transition: transform 220ms cubic-bezier(0.2, 0.85, 0.24, 1);
+  }
+
+  .todo-group[open] > summary::before {
+    transform: rotate(90deg);
+  }
+
+  .todo-group.nested {
+    margin-top: 0.7rem;
+    margin-left: 0.4rem;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+  }
+
+  @media (max-width: 768px) {
+    .home-todo {
+      min-height: 320px;
+    }
+
+    .todo-card {
+      border-radius: 20px;
+      min-height: 220px;
+      padding: 20px 16px 16px;
+    }
+
+    .todo-card.is-expanded {
+      min-height: 300px;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .todo-backdrop,
+    .todo-card,
+    .todo-details,
+    .todo-group summary::before {
+      transition: none;
+    }
   }
 </style>
+
+<script>
+  const setupTodoCard = () => {
+    const card = document.querySelector("[data-todo-card]");
+    const detail = document.querySelector("[data-todo-details]");
+    const backdrop = document.querySelector("[data-todo-backdrop]");
+    if (!(card instanceof HTMLElement) || !(detail instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
+      return;
+    }
+    if (card.dataset.ready === "true") {
+      return;
+    }
+    card.dataset.ready = "true";
+
+    const maxTilt = 8;
+    const followStrength = 0.14;
+    const restThreshold = 0.02;
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let rafId = 0;
+    let closeTimer = 0;
+
+    const renderTilt = () => {
+      card.style.setProperty("--rotate-x", `${currentX}deg`);
+      card.style.setProperty("--rotate-y", `${currentY}deg`);
+    };
+
+    const animateTilt = () => {
+      currentX += (targetX - currentX) * followStrength;
+      currentY += (targetY - currentY) * followStrength;
+      renderTilt();
+
+      const dx = Math.abs(targetX - currentX);
+      const dy = Math.abs(targetY - currentY);
+      if (dx > restThreshold || dy > restThreshold) {
+        rafId = window.requestAnimationFrame(animateTilt);
+        return;
+      }
+      currentX = targetX;
+      currentY = targetY;
+      renderTilt();
+      rafId = 0;
+    };
+
+    const ensureTiltAnimation = () => {
+      if (rafId !== 0) {
+        return;
+      }
+      rafId = window.requestAnimationFrame(animateTilt);
+    };
+
+    const syncDetailHeight = () => {
+      if (!card.classList.contains("is-expanded")) {
+        return;
+      }
+      detail.style.maxHeight = detail.scrollHeight + "px";
+    };
+
+    const closeCard = () => {
+      if (!card.classList.contains("is-expanded")) {
+        return;
+      }
+      if (closeTimer !== 0) {
+        window.clearTimeout(closeTimer);
+        closeTimer = 0;
+      }
+      detail.style.maxHeight = detail.scrollHeight + "px";
+      requestAnimationFrame(() => {
+        detail.style.maxHeight = "0px";
+        detail.style.opacity = "0";
+      });
+      card.classList.remove("is-expanded");
+      card.setAttribute("aria-expanded", "false");
+      backdrop.classList.remove("is-active");
+      targetX = 0;
+      targetY = 0;
+      ensureTiltAnimation();
+      closeTimer = window.setTimeout(() => {
+        if (!card.classList.contains("is-expanded")) {
+          detail.hidden = true;
+        }
+        closeTimer = 0;
+      }, 560);
+    };
+
+    const openCard = () => {
+      if (closeTimer !== 0) {
+        window.clearTimeout(closeTimer);
+        closeTimer = 0;
+      }
+      detail.hidden = false;
+      detail.style.maxHeight = "0px";
+      requestAnimationFrame(() => {
+        syncDetailHeight();
+        detail.style.opacity = "1";
+      });
+      card.classList.add("is-expanded");
+      card.setAttribute("aria-expanded", "true");
+      backdrop.classList.add("is-active");
+      targetX = 0;
+      targetY = 0;
+      currentX = 0;
+      currentY = 0;
+      renderTilt();
+    };
+
+    const toggleCard = () => {
+      if (card.classList.contains("is-expanded")) {
+        closeCard();
+      } else {
+        openCard();
+      }
+    };
+
+    const onMove = (event) => {
+      if (card.classList.contains("is-expanded")) {
+        return;
+      }
+      const rect = card.getBoundingClientRect();
+      const px = (event.clientX - rect.left) / rect.width - 0.5;
+      const py = (event.clientY - rect.top) / rect.height - 0.5;
+      targetX = -py * maxTilt;
+      targetY = px * maxTilt;
+      ensureTiltAnimation();
+    };
+
+    card.addEventListener("mousemove", onMove);
+    card.addEventListener("mouseleave", () => {
+      targetX = 0;
+      targetY = 0;
+      ensureTiltAnimation();
+    });
+    card.addEventListener("click", (event) => {
+      const target = event.target;
+      if (target instanceof Element && target.closest("[data-todo-details]")) {
+        return;
+      }
+      toggleCard();
+    });
+    card.addEventListener("keydown", (event) => {
+      const target = event.target;
+      if (target instanceof Element && target.closest("[data-todo-details]")) {
+        if (event.key === "Escape") {
+          closeCard();
+        }
+        return;
+      }
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleCard();
+      }
+      if (event.key === "Escape") {
+        closeCard();
+      }
+    });
+    backdrop.addEventListener("click", closeCard);
+    detail.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
+    detail.querySelectorAll("details").forEach((item) => {
+      item.addEventListener("toggle", syncDetailHeight);
+    });
+  };
+
+  setupTodoCard();
+  document.addEventListener("astro:page-load", setupTodoCard);
+</script>
