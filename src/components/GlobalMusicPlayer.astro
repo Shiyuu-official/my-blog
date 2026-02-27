@@ -152,11 +152,25 @@ const buildVersion = Date.now().toString();
     const playlistId = hostWrap.dataset.playlistId;
     const buildVersion = hostWrap.dataset.buildVersion ?? "0";
     if (!playlistId) return;
-    if (window.__GLOBAL_APLAYER__) return;
+
+    const existingPlayer = window.__GLOBAL_APLAYER__;
+    const existingVersion = window.__GLOBAL_APLAYER_BUILD_VERSION__;
+    if (existingPlayer && existingVersion === buildVersion) return;
+    if (existingPlayer && existingVersion !== buildVersion) {
+      try {
+        existingPlayer.destroy();
+      } catch {}
+      delete window.__GLOBAL_APLAYER__;
+      delete window.__GLOBAL_APLAYER_BUILD_VERSION__;
+      host.innerHTML = "";
+    }
+
     await loadScriptOnce("global-aplayer-js", APLAYER_JS_URL);
     if (!window.APlayer) return;
 
-    const response = await fetch(`${METING_API}${playlistId}&v=${buildVersion}`);
+    const response = await fetch(`${METING_API}${playlistId}&v=${buildVersion}`, {
+      cache: "no-store",
+    });
     const audioList = await response.json();
     if (!Array.isArray(audioList) || audioList.length === 0) return;
 
@@ -178,6 +192,7 @@ const buildVersion = Date.now().toString();
     });
 
     window.__GLOBAL_APLAYER__ = player;
+    window.__GLOBAL_APLAYER_BUILD_VERSION__ = buildVersion;
 
     const syncTitleOverflow = () => {
       const musicWrap = host.querySelector(".aplayer-music");
