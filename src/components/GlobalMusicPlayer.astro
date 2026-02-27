@@ -101,18 +101,11 @@ const buildVersion = Date.now().toString();
     const markInteracted = () => {
       window[USER_INTERACTED_KEY] = true;
       window.dispatchEvent(new Event(USER_INTERACTION_EVENT));
-      cleanup();
     };
 
-    const cleanup = () => {
-      document.removeEventListener("pointerdown", markInteracted, true);
-      document.removeEventListener("touchstart", markInteracted, true);
-      document.removeEventListener("keydown", markInteracted, true);
-    };
-
-    document.addEventListener("pointerdown", markInteracted, { once: true, passive: true, capture: true });
-    document.addEventListener("touchstart", markInteracted, { once: true, passive: true, capture: true });
-    document.addEventListener("keydown", markInteracted, { once: true, capture: true });
+    document.addEventListener("pointerdown", markInteracted, { passive: true, capture: true });
+    document.addEventListener("touchstart", markInteracted, { passive: true, capture: true });
+    document.addEventListener("keydown", markInteracted, { capture: true });
   };
 
   ensureUserInteractionCapture();
@@ -213,13 +206,27 @@ const buildVersion = Date.now().toString();
       } catch {}
     };
 
-    player.on("canplay", tryAutoPlay);
-    window.addEventListener(USER_INTERACTION_EVENT, tryAutoPlay, { once: true });
-    if (window[USER_INTERACTED_KEY] === true) {
+    const tryAutoPlayBurst = () => {
       tryAutoPlay();
+      setTimeout(tryAutoPlay, 150);
+      setTimeout(tryAutoPlay, 500);
+      setTimeout(tryAutoPlay, 1200);
+    };
+
+    const onUserInteracted = () => {
+      tryAutoPlayBurst();
+    };
+
+    player.on("canplay", tryAutoPlay);
+    window.addEventListener(USER_INTERACTION_EVENT, onUserInteracted);
+    if (window[USER_INTERACTED_KEY] === true) {
+      tryAutoPlayBurst();
     }
 
-    player.on("play", () => writeState(player));
+    player.on("play", () => {
+      writeState(player);
+      window.removeEventListener(USER_INTERACTION_EVENT, onUserInteracted);
+    });
     player.on("pause", () => writeState(player));
     player.on("switch", () => {
       writeState(player);
@@ -229,7 +236,7 @@ const buildVersion = Date.now().toString();
     player.on("volumechange", () => writeState(player));
 
     setTimeout(syncTitleOverflow, 0);
-    setTimeout(tryAutoPlay, 120);
+    setTimeout(tryAutoPlayBurst, 120);
     window.addEventListener("resize", syncTitleOverflow, { passive: true });
   };
 
