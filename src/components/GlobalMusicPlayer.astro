@@ -198,6 +198,18 @@ const buildVersion = Date.now().toString();
     }
 
     let shouldAutoPlay = true;
+    let isReadyToPlay = false;
+    let retryTimer = null;
+    let retryCount = 0;
+    const maxRetries = 12;
+
+    const stopAutoPlayRetries = () => {
+      if (retryTimer) {
+        clearInterval(retryTimer);
+        retryTimer = null;
+      }
+    };
+
     const tryAutoPlay = () => {
       if (!shouldAutoPlay) return;
       try {
@@ -208,25 +220,47 @@ const buildVersion = Date.now().toString();
       } catch {}
     };
 
-    const tryAutoPlayBurst = () => {
+    const startAutoPlayRetries = () => {
+      if (!shouldAutoPlay || !isReadyToPlay || window[USER_INTERACTED_KEY] !== true) return;
+      if (retryTimer) return;
+
       tryAutoPlay();
-      setTimeout(tryAutoPlay, 150);
-      setTimeout(tryAutoPlay, 500);
-      setTimeout(tryAutoPlay, 1200);
+      retryCount = 0;
+      retryTimer = setInterval(() => {
+        if (!shouldAutoPlay) {
+          stopAutoPlayRetries();
+          return;
+        }
+        if (player.audio && !player.audio.paused) {
+          shouldAutoPlay = false;
+          stopAutoPlayRetries();
+          window.removeEventListener(USER_INTERACTION_EVENT, onUserInteracted);
+          return;
+        }
+        retryCount += 1;
+        tryAutoPlay();
+        if (retryCount >= maxRetries) {
+          stopAutoPlayRetries();
+        }
+      }, 350);
     };
 
     const onUserInteracted = () => {
-      tryAutoPlayBurst();
+      startAutoPlayRetries();
     };
 
-    player.on("canplay", tryAutoPlay);
+    player.on("canplay", () => {
+      isReadyToPlay = true;
+      startAutoPlayRetries();
+    });
     window.addEventListener(USER_INTERACTION_EVENT, onUserInteracted);
     if (window[USER_INTERACTED_KEY] === true) {
-      tryAutoPlayBurst();
+      startAutoPlayRetries();
     }
 
     player.on("play", () => {
       shouldAutoPlay = false;
+      stopAutoPlayRetries();
       writeState(player);
       window.removeEventListener(USER_INTERACTION_EVENT, onUserInteracted);
     });
@@ -239,7 +273,7 @@ const buildVersion = Date.now().toString();
     player.on("volumechange", () => writeState(player));
 
     setTimeout(syncTitleOverflow, 0);
-    setTimeout(tryAutoPlayBurst, 120);
+    setTimeout(startAutoPlayRetries, 120);
     window.addEventListener("resize", syncTitleOverflow, { passive: true });
   };
 
