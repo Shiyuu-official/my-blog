@@ -90,6 +90,32 @@ const buildVersion = Date.now().toString();
   const APLAYER_JS_URL = "https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js";
   const METING_API = "https://api.injahow.cn/meting/?server=netease&type=playlist&id=";
   const STATE_KEY = "global-aplayer-state-v1";
+  const USER_INTERACTED_KEY = "__GLOBAL_APLAYER_USER_INTERACTED__";
+  const USER_INTERACTION_BOUND_KEY = "__GLOBAL_APLAYER_USER_INTERACTION_BOUND__";
+  const USER_INTERACTION_EVENT = "global-aplayer-user-interacted";
+
+  const ensureUserInteractionCapture = () => {
+    if (window[USER_INTERACTION_BOUND_KEY]) return;
+    window[USER_INTERACTION_BOUND_KEY] = true;
+
+    const markInteracted = () => {
+      window[USER_INTERACTED_KEY] = true;
+      window.dispatchEvent(new Event(USER_INTERACTION_EVENT));
+      cleanup();
+    };
+
+    const cleanup = () => {
+      document.removeEventListener("pointerdown", markInteracted, true);
+      document.removeEventListener("touchstart", markInteracted, true);
+      document.removeEventListener("keydown", markInteracted, true);
+    };
+
+    document.addEventListener("pointerdown", markInteracted, { once: true, passive: true, capture: true });
+    document.addEventListener("touchstart", markInteracted, { once: true, passive: true, capture: true });
+    document.addEventListener("keydown", markInteracted, { once: true, capture: true });
+  };
+
+  ensureUserInteractionCapture();
 
   const loadScriptOnce = (id, src) =>
     new Promise((resolve, reject) => {
@@ -187,28 +213,11 @@ const buildVersion = Date.now().toString();
       } catch {}
     };
 
-    const installAutoplayUnlock = () => {
-      let unlocked = false;
-
-      const unlock = () => {
-        if (unlocked) return;
-        unlocked = true;
-        cleanup();
-        tryAutoPlay();
-      };
-
-      const cleanup = () => {
-        document.removeEventListener("pointerdown", unlock);
-        document.removeEventListener("touchstart", unlock);
-        document.removeEventListener("keydown", unlock);
-      };
-
-      document.addEventListener("pointerdown", unlock, { once: true, passive: true });
-      document.addEventListener("touchstart", unlock, { once: true, passive: true });
-      document.addEventListener("keydown", unlock, { once: true });
-    };
-
     player.on("canplay", tryAutoPlay);
+    window.addEventListener(USER_INTERACTION_EVENT, tryAutoPlay, { once: true });
+    if (window[USER_INTERACTED_KEY] === true) {
+      tryAutoPlay();
+    }
 
     player.on("play", () => writeState(player));
     player.on("pause", () => writeState(player));
@@ -221,7 +230,6 @@ const buildVersion = Date.now().toString();
 
     setTimeout(syncTitleOverflow, 0);
     setTimeout(tryAutoPlay, 120);
-    installAutoplayUnlock();
     window.addEventListener("resize", syncTitleOverflow, { passive: true });
   };
 
