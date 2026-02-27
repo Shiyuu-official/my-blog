@@ -1,0 +1,230 @@
+---
+// Replace this with your NetEase playlist ID.
+const neteasePlaylistId = "17675095071";
+// Build-scoped cache buster: changes on every build/deploy.
+const buildVersion = Date.now().toString();
+---
+
+<div
+  class="global-music-player"
+  transition:persist
+  data-global-music-player
+  data-playlist-id={neteasePlaylistId}
+  data-build-version={buildVersion}
+>
+  <div class="aplayer-host" data-aplayer-host></div>
+</div>
+
+<style>
+  .global-music-player {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 60;
+  }
+
+  :global(.global-music-player .aplayer) {
+    width: 250px;
+    max-width: calc(100vw - 32px);
+  }
+
+  :global(.global-music-player .aplayer .aplayer-info .aplayer-music) {
+    width: 118px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  :global(.global-music-player .aplayer .aplayer-info .aplayer-music .aplayer-title) {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    transform: translateX(0);
+  }
+
+  :global(
+      .global-music-player .aplayer .aplayer-info .aplayer-music.is-overflow .aplayer-title
+    ) {
+    animation: aplayer-title-marquee 10s linear infinite;
+  }
+
+  :global(.global-music-player .aplayer .aplayer-list ol li .aplayer-list-title) {
+    display: inline-block;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+  }
+
+  @keyframes aplayer-title-marquee {
+    0%,
+    15% {
+      transform: translateX(0);
+    }
+    85%,
+    100% {
+      transform: translateX(calc(-1 * var(--marquee-distance, 0px)));
+    }
+  }
+
+  @media (max-width: 720px) {
+    .global-music-player {
+      right: 8px;
+      bottom: 8px;
+      max-width: calc(100vw - 16px);
+    }
+
+    :global(.global-music-player .aplayer) {
+      width: 220px;
+      max-width: calc(100vw - 16px);
+    }
+
+    :global(.global-music-player .aplayer .aplayer-info .aplayer-music) {
+      width: 98px;
+    }
+  }
+</style>
+
+<script is:inline>
+  const APLAYER_JS_URL = "https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js";
+  const METING_API = "https://api.injahow.cn/meting/?server=netease&type=playlist&id=";
+  const STATE_KEY = "global-aplayer-state-v1";
+
+  const loadScriptOnce = (id, src) =>
+    new Promise((resolve, reject) => {
+      const existing = document.getElementById(id);
+      if (existing) {
+        if (window.APlayer) resolve();
+        else existing.addEventListener("load", () => resolve(), { once: true });
+        return;
+      }
+      const script = document.createElement("script");
+      script.id = id;
+      script.src = src;
+      script.defer = true;
+      script.onload = () => resolve();
+      script.onerror = () => reject(new Error("Failed to load APlayer script"));
+      document.head.appendChild(script);
+    });
+
+  const readState = () => {
+    try {
+      const raw = localStorage.getItem(STATE_KEY);
+      if (!raw) return null;
+      return JSON.parse(raw);
+    } catch {
+      return null;
+    }
+  };
+
+  const writeState = (aplayer) => {
+    try {
+      const volume = aplayer.audio?.volume ?? 0.7;
+      localStorage.setItem(STATE_KEY, JSON.stringify({ volume }));
+    } catch {}
+  };
+
+  const setupGlobalAPlayer = async () => {
+    const hostWrap = document.querySelector("[data-global-music-player]");
+    const host = document.querySelector("[data-aplayer-host]");
+    if (!(hostWrap instanceof HTMLElement) || !(host instanceof HTMLElement)) return;
+
+    const playlistId = hostWrap.dataset.playlistId;
+    const buildVersion = hostWrap.dataset.buildVersion ?? "0";
+    if (!playlistId) return;
+    if (window.__GLOBAL_APLAYER__) return;
+    await loadScriptOnce("global-aplayer-js", APLAYER_JS_URL);
+    if (!window.APlayer) return;
+
+    const response = await fetch(`${METING_API}${playlistId}&v=${buildVersion}`);
+    const audioList = await response.json();
+    if (!Array.isArray(audioList) || audioList.length === 0) return;
+
+    const saved = readState();
+
+    const player = new window.APlayer({
+      container: host,
+      fixed: false,
+      autoplay: true,
+      order: "random",
+      listFolded: true,
+      listMaxHeight: "260px",
+      audio: audioList,
+    });
+
+    window.__GLOBAL_APLAYER__ = player;
+
+    const syncTitleOverflow = () => {
+      const musicWrap = host.querySelector(".aplayer-music");
+      const title = host.querySelector(".aplayer-title");
+      if (!(musicWrap instanceof HTMLElement) || !(title instanceof HTMLElement)) return;
+      const overflowDistance = title.scrollWidth - musicWrap.clientWidth;
+      const isOverflow = overflowDistance > 2;
+      musicWrap.classList.toggle("is-overflow", isOverflow);
+      if (isOverflow) {
+        title.style.setProperty("--marquee-distance", `${overflowDistance}px`);
+      } else {
+        title.style.removeProperty("--marquee-distance");
+      }
+    };
+
+    if (saved && typeof saved.volume === "number") {
+      player.volume(Math.max(0, Math.min(1, saved.volume)), true);
+    }
+
+    const randomIndex = Math.floor(Math.random() * audioList.length);
+    if (randomIndex !== 0) {
+      player.list.switch(randomIndex);
+    }
+
+    const tryAutoPlay = () => {
+      try {
+        const maybePromise = player.play();
+        if (maybePromise && typeof maybePromise.catch === "function") {
+          maybePromise.catch(() => {});
+        }
+      } catch {}
+    };
+
+    const installAutoplayUnlock = () => {
+      let unlocked = false;
+
+      const unlock = () => {
+        if (unlocked) return;
+        unlocked = true;
+        cleanup();
+        tryAutoPlay();
+      };
+
+      const cleanup = () => {
+        document.removeEventListener("pointerdown", unlock);
+        document.removeEventListener("touchstart", unlock);
+        document.removeEventListener("keydown", unlock);
+      };
+
+      document.addEventListener("pointerdown", unlock, { once: true, passive: true });
+      document.addEventListener("touchstart", unlock, { once: true, passive: true });
+      document.addEventListener("keydown", unlock, { once: true });
+    };
+
+    player.on("canplay", tryAutoPlay);
+
+    player.on("play", () => writeState(player));
+    player.on("pause", () => writeState(player));
+    player.on("switch", () => {
+      writeState(player);
+      setTimeout(syncTitleOverflow, 0);
+    });
+    player.on("timeupdate", () => writeState(player));
+    player.on("volumechange", () => writeState(player));
+
+    setTimeout(syncTitleOverflow, 0);
+    setTimeout(tryAutoPlay, 120);
+    installAutoplayUnlock();
+    window.addEventListener("resize", syncTitleOverflow, { passive: true });
+  };
+
+  setupGlobalAPlayer();
+  document.addEventListener("astro:page-load", setupGlobalAPlayer);
+</script>

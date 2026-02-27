@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Sidebar from "../components/Sidebar.astro";
+import GlobalMusicPlayer from "../components/GlobalMusicPlayer.astro";
 import { ClientRouter } from "astro:transitions";
 const { title = "", description = "" } = Astro.props;
 ---
@@ -33,6 +34,7 @@ const { title = "", description = "" } = Astro.props;
         </div>
       </aside>
     </div>
+    <GlobalMusicPlayer />
   </body>
 </html>
 
