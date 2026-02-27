@@ -161,15 +161,20 @@ const buildVersion = Date.now().toString();
     if (!Array.isArray(audioList) || audioList.length === 0) return;
 
     const saved = readState();
+    const randomIndex = Math.floor(Math.random() * audioList.length);
+    const initialAudioList =
+      randomIndex === 0
+        ? audioList
+        : [...audioList.slice(randomIndex), ...audioList.slice(0, randomIndex)];
 
     const player = new window.APlayer({
       container: host,
       fixed: false,
-      autoplay: true,
+      autoplay: false,
       order: "random",
       listFolded: true,
       listMaxHeight: "260px",
-      audio: audioList,
+      audio: initialAudioList,
     });
 
     window.__GLOBAL_APLAYER__ = player;
@@ -192,12 +197,9 @@ const buildVersion = Date.now().toString();
       player.volume(Math.max(0, Math.min(1, saved.volume)), true);
     }
 
-    const randomIndex = Math.floor(Math.random() * audioList.length);
-    if (randomIndex !== 0) {
-      player.list.switch(randomIndex);
-    }
-
+    let shouldAutoPlay = true;
     const tryAutoPlay = () => {
+      if (!shouldAutoPlay) return;
       try {
         const maybePromise = player.play();
         if (maybePromise && typeof maybePromise.catch === "function") {
@@ -224,6 +226,7 @@ const buildVersion = Date.now().toString();
     }
 
     player.on("play", () => {
+      shouldAutoPlay = false;
       writeState(player);
       window.removeEventListener(USER_INTERACTION_EVENT, onUserInteracted);
     });
