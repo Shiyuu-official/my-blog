@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-28T06:56:17.610Z",
-  "source": "https://www.pixiv.net/ranking.php?mode=weekly&content=illust&format=json",
+  "generatedAt": "2026-02-28T07:27:27.688493Z",
+  "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
@@ -10,8 +10,11 @@
       "userName": "ねこころね",
       "userId": "111640933",
       "artworkUrl": "https://www.pixiv.net/artworks/141499108",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F22%2F20%2F38%2F42%2F141499108_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/22/20/38/42/141499108_p0_master1200.jpg",
+      "thumbnailUrl": "/pixiv-weekly/141499108.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/20/38/42/141499108_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/20/38/42/141499108_p0_master1200.jpg",
       "tags": [
         "にじさんじ",
         "フレン・E・ルスタリオ",
@@ -31,8 +34,11 @@
       "userName": "チャイ",
       "userId": "1096811",
       "artworkUrl": "https://www.pixiv.net/artworks/141489589",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F22%2F17%2F00%2F06%2F141489589_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/22/17/00/06/141489589_p0_master1200.jpg",
+      "thumbnailUrl": "/pixiv-weekly/141489589.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/17/00/06/141489589_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/17/00/06/141489589_p0_master1200.jpg",
       "tags": [
         "オリジナル",
         "いちご大福",
@@ -49,8 +55,11 @@
       "userName": "Rafa",
       "userId": "3970196",
       "artworkUrl": "https://www.pixiv.net/artworks/141440461",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F21%2F13%2F55%2F18%2F141440461_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/21/13/55/18/141440461_p0_master1200.jpg",
+      "thumbnailUrl": "/pixiv-weekly/141440461.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/21/13/55/18/141440461_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/21/13/55/18/141440461_p0_master1200.jpg",
       "tags": [
         "原神",
         "哥伦比娅",
@@ -65,8 +74,11 @@
       "userName": "BirdHatter",
       "userId": "44980831",
       "artworkUrl": "https://www.pixiv.net/artworks/141492447",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F22%2F18%2F10%2F12%2F141492447_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/22/18/10/12/141492447_p0_master1200.jpg",
+      "thumbnailUrl": "/pixiv-weekly/141492447.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/18/10/12/141492447_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/18/10/12/141492447_p0_master1200.jpg",
       "tags": [
         "無題",
         "深淵をのぞく時、深淵もまたこちらをのぞいているのだ",
@@ -82,8 +94,11 @@
       "userName": "torino",
       "userId": "1960050",
       "artworkUrl": "https://www.pixiv.net/artworks/141463233",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F22%2F00%2F00%2F12%2F141463233_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/22/00/00/12/141463233_p0_master1200.jpg",
+      "thumbnailUrl": "/pixiv-weekly/141463233.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/00/00/12/141463233_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/00/00/12/141463233_p0_master1200.jpg",
       "tags": [
         "ゼンレスゾーンゼロ",
         "zzzero",
@@ -95,13 +110,41 @@
     },
     {
       "rank": 6,
+      "id": "141435733",
+      "title": "じいさんばあさん若返る【221】",
+      "userName": "新挑限",
+      "userId": "14499092",
+      "artworkUrl": "https://www.pixiv.net/artworks/141435733",
+      "thumbnailUrl": "/pixiv-weekly/141435733.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/21/11/00/10/141435733_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/21/11/00/10/141435733_p0_master1200.jpg",
+      "tags": [
+        "漫画",
+        "じいさんばあさん若返る",
+        "その血の運命",
+        "血は争えない",
+        "幕が開いたような物語",
+        "逃げる爺様追う婆様",
+        "肉食動物の家系",
+        "オリジナル5000users入り",
+        "じいさんばあさん若返る外伝",
+        "ばあさまの孫"
+      ]
+    },
+    {
+      "rank": 7,
       "id": "141486491",
       "title": "Tifa",
       "userName": "Nine",
       "userId": "3875056",
       "artworkUrl": "https://www.pixiv.net/artworks/141486491",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F22%2F15%2F18%2F18%2F141486491_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/22/15/18/18/141486491_p0_master1200.jpg",
+      "thumbnailUrl": "/pixiv-weekly/141486491.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/15/18/18/141486491_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/15/18/18/141486491_p0_master1200.jpg",
       "tags": [
         "FF7",
         "ティファ・ロックハート",
@@ -111,65 +154,71 @@
       ]
     },
     {
-      "rank": 7,
+      "rank": 8,
+      "id": "141442875",
+      "title": "『カラスバ少年とサカキ様』",
+      "userName": "メイジ",
+      "userId": "5992080",
+      "artworkUrl": "https://www.pixiv.net/artworks/141442875",
+      "thumbnailUrl": "/pixiv-weekly/141442875.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/21/15/30/06/141442875_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/21/15/30/06/141442875_p0_master1200.jpg",
+      "tags": [
+        "ポケモン",
+        "ポケモンレジェンズZA",
+        "カラスバ(トレーナー)",
+        "サカキ",
+        "カントーの組",
+        "レッド(ポケモン)",
+        "LEGENDSZ-A",
+        "ポケモン1000users入り"
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "141501054",
+      "title": "たぬきケーキで年齢を詐称してるVtuber",
+      "userName": "なまず",
+      "userId": "6097232",
+      "artworkUrl": "https://www.pixiv.net/artworks/141501054",
+      "thumbnailUrl": "/pixiv-weekly/141501054.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/21/14/42/141501054_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/21/14/42/141501054_p0_master1200.jpg",
+      "tags": [
+        "漫画",
+        "バーチャルYouTuber",
+        "VTuber",
+        "星空バアド",
+        "あんたがたどこさ",
+        "たぬきケーキ",
+        "人の心とかないんか?",
+        "※尾に複数の縞模様はアライグマです",
+        "ストーリー性が鬼",
+        "ババタークリーム"
+      ]
+    },
+    {
+      "rank": 10,
       "id": "141466624",
       "title": "Spring",
       "userName": "ATDAN-",
       "userId": "6662895",
       "artworkUrl": "https://www.pixiv.net/artworks/141466624",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F22%2F01%2F04%2F53%2F141466624_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/22/01/04/53/141466624_p0_master1200.jpg",
+      "thumbnailUrl": "/pixiv-weekly/141466624.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/01/04/53/141466624_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/02/22/01/04/53/141466624_p0_master1200.jpg",
       "tags": [
         "女の子",
         "Lily(ATDAN)",
         "ハイヒール",
         "オリジナル5000users入り",
         "黑髮"
-      ]
-    },
-    {
-      "rank": 8,
-      "id": "141464030",
-      "title": "ユニコーン🦄ギャル",
-      "userName": "京田スズカ",
-      "userId": "3718340",
-      "artworkUrl": "https://www.pixiv.net/artworks/141464030",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F22%2F00%2F06%2F37%2F141464030_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/22/00/06/37/141464030_p0_master1200.jpg",
-      "tags": [
-        "オリジナル",
-        "女の子",
-        "ユニコーン",
-        "ギャル"
-      ]
-    },
-    {
-      "rank": 9,
-      "id": "141495206",
-      "title": "🩷乃依🩷",
-      "userName": "チエノワ",
-      "userId": "79240623",
-      "artworkUrl": "https://www.pixiv.net/artworks/141495206",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F22%2F19%2F16%2F25%2F141495206_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/22/19/16/25/141495206_p0_master1200.jpg",
-      "tags": [
-        "駒沢乃依",
-        "超かぐや姫!"
-      ]
-    },
-    {
-      "rank": 10,
-      "id": "141463760",
-      "title": "【新刊】愛していいのは、カラダだけ⑬",
-      "userName": "生肉＠創作百合",
-      "userId": "49283008",
-      "artworkUrl": "https://www.pixiv.net/artworks/141463760",
-      "thumbnailUrl": "https://wsrv.nl/?url=i.pximg.net%2Fc%2F480x960%2Fimg-master%2Fimg%2F2026%2F02%2F22%2F00%2F03%2F17%2F141463760_p0_master1200.jpg&w=720&output=webp",
-      "originalThumbnailUrl": "https://i.pximg.net/c/480x960/img-master/img/2026/02/22/00/03/17/141463760_p0_master1200.jpg",
-      "tags": [
-        "創作百合",
-        "社会人百合",
-        "オリジナル500users入り"
       ]
     }
   ]
