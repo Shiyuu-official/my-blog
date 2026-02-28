@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+  workflow_run:
+    workflows: [ "Update Pixiv Weekly Top10" ]
+    types: [ completed ]
   workflow_dispatch:
 
 permissions:
@@ -12,6 +15,7 @@ permissions:
 
 jobs:
   build:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
