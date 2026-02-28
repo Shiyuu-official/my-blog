@@ -12,6 +12,14 @@ ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = ROOT / "src" / "data" / "pixiv-weekly-top10.json"
 IMAGE_DIR = ROOT / "public" / "pixiv-weekly"
 SOURCE = "pixivpy3:illust_ranking(mode=week)"
+TARGET_COUNT = 10
+PAGE_SIZE = 30
+
+
+def is_illustration(illust) -> bool:
+    # Pixiv types are usually: "illustration", "manga", "ugoira"
+    illust_type = str(getattr(illust, "type", "") or "").lower()
+    return illust_type in {"illustration", "illust"}
 
 
 def ext_from_url(url: str) -> str:
@@ -34,8 +42,33 @@ def main() -> None:
     api.set_accept_language("zh-cn")
     api.auth(refresh_token=refresh_token)
 
-    ranking = api.illust_ranking(mode="week")
-    illusts = list(getattr(ranking, "illusts", []))[:10]
+    collected = []
+    seen_ids = set()
+    offset = 0
+    max_rounds = 8
+
+    for _ in range(max_rounds):
+        ranking = api.illust_ranking(mode="week", offset=offset)
+        round_items = list(getattr(ranking, "illusts", []))
+        if not round_items:
+            break
+
+        for illust in round_items:
+            illust_id = str(getattr(illust, "id", "") or "")
+            if not illust_id or illust_id in seen_ids:
+                continue
+            if not is_illustration(illust):
+                continue
+            seen_ids.add(illust_id)
+            collected.append(illust)
+            if len(collected) >= TARGET_COUNT:
+                break
+
+        if len(collected) >= TARGET_COUNT:
+            break
+        offset += PAGE_SIZE
+
+    illusts = collected[:TARGET_COUNT]
     if not illusts:
         raise RuntimeError("No weekly ranking items returned from Pixiv API.")
 
