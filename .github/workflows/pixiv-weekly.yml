@@ -15,15 +15,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          node-version: 20
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pixivpy3
 
       - name: Update weekly ranking data
         env:
-          PIXIV_COOKIE: ${{ secrets.PIXIV_COOKIE }}
-        run: node scripts/update-pixiv-weekly-top10.mjs
+          PIXIV_REFRESH_TOKEN: ${{ secrets.PIXIV_REFRESH_TOKEN }}
+        run: python scripts/update_pixiv_weekly_top10.py
 
       - name: Commit updated data
         run: |

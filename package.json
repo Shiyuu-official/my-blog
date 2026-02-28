@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "update:pixiv-weekly": "node scripts/update-pixiv-weekly-top10.mjs"
+    "update:pixiv-weekly": "python scripts/update_pixiv_weekly_top10.py"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
