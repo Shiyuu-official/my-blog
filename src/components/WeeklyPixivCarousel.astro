@@ -1,0 +1,217 @@
+---
+import weeklyData from "../data/pixiv-weekly-top10.json";
+
+const items = Array.isArray(weeklyData?.items) ? weeklyData.items : [];
+const generatedAtText = weeklyData?.generatedAt
+  ? new Date(weeklyData.generatedAt).toLocaleDateString("zh-CN")
+  : "未更新";
+---
+
+<section class="pixiv-weekly" aria-label="Pixiv 插画周榜">
+  <header class="pixiv-weekly-head">
+    <h2>Pixiv 插画周榜 Top 10</h2>
+    <p>每周自动更新，点击卡片跳转原作品页。最近更新：{generatedAtText}</p>
+  </header>
+
+  {items.length === 0 ? (
+    <p class="pixiv-empty">暂无周榜数据。先运行一次 `npm run update:pixiv-weekly`。</p>
+  ) : (
+    <div class="pixiv-carousel" data-pixiv-carousel>
+      <button class="pixiv-nav prev" type="button" aria-label="上一张" data-prev>&lt;</button>
+      <div class="pixiv-track-wrap">
+        <ul class="pixiv-track" data-track>
+          {items.map((item) => (
+            <li class="pixiv-slide">
+              <a href={item.artworkUrl} target="_blank" rel="noreferrer">
+                <img src={item.thumbnailUrl} alt={item.title} loading="lazy" />
+                <div class="pixiv-meta">
+                  <p class="pixiv-rank">#{item.rank}</p>
+                  <h3>{item.title}</h3>
+                  <p class="pixiv-author">@{item.userName}</p>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <button class="pixiv-nav next" type="button" aria-label="下一张" data-next>&gt;</button>
+    </div>
+  )}
+</section>
+
+<style>
+  .pixiv-weekly {
+    margin-top: 28px;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(8px);
+  }
+
+  .pixiv-weekly-head h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .pixiv-weekly-head p {
+    margin: 8px 0 14px;
+    color: #53607a;
+    font-size: 0.9rem;
+  }
+
+  .pixiv-empty {
+    margin: 0;
+    color: #5e6b84;
+  }
+
+  .pixiv-carousel {
+    display: grid;
+    grid-template-columns: 32px 1fr 32px;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pixiv-nav {
+    border: none;
+    border-radius: 10px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    background: rgba(18, 24, 37, 0.76);
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .pixiv-track-wrap {
+    overflow: hidden;
+  }
+
+  .pixiv-track {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(220px, 260px);
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+
+  .pixiv-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pixiv-slide {
+    scroll-snap-align: start;
+  }
+
+  .pixiv-slide a {
+    display: block;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+  }
+
+  .pixiv-slide a:hover,
+  .pixiv-slide a:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(19, 30, 52, 0.16);
+  }
+
+  .pixiv-slide img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.4 / 1;
+    object-fit: cover;
+    background: #eaeff7;
+  }
+
+  .pixiv-meta {
+    padding: 10px;
+  }
+
+  .pixiv-rank {
+    margin: 0 0 4px;
+    font-weight: 700;
+    color: #2d4779;
+  }
+
+  .pixiv-meta h3 {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .pixiv-author {
+    margin: 6px 0 0;
+    color: #61708b;
+    font-size: 0.82rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: 768px) {
+    .pixiv-weekly {
+      padding: 14px;
+      margin-top: 20px;
+    }
+
+    .pixiv-carousel {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .pixiv-nav {
+      display: none;
+    }
+
+    .pixiv-track {
+      grid-auto-columns: minmax(200px, 230px);
+    }
+  }
+</style>
+
+<script>
+  const setupPixivCarousel = () => {
+    const root = document.querySelector("[data-pixiv-carousel]");
+    if (!(root instanceof HTMLElement)) return;
+    if (root.dataset.ready === "true") return;
+    root.dataset.ready = "true";
+
+    const track = root.querySelector("[data-track]");
+    const prev = root.querySelector("[data-prev]");
+    const next = root.querySelector("[data-next]");
+
+    if (!(track instanceof HTMLElement)) return;
+
+    const step = () => {
+      const first = track.querySelector(".pixiv-slide");
+      if (!(first instanceof HTMLElement)) return 240;
+      return first.getBoundingClientRect().width + 12;
+    };
+
+    prev?.addEventListener("click", () => {
+      track.scrollBy({ left: -step(), behavior: "smooth" });
+    });
+    next?.addEventListener("click", () => {
+      track.scrollBy({ left: step(), behavior: "smooth" });
+    });
+  };
+
+  setupPixivCarousel();
+  document.addEventListener("astro:page-load", setupPixivCarousel);
+</script>
