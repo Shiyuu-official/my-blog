@@ -89,7 +89,6 @@ const image = post.data.heroImage ?? pickPlaceholder(post.id);
     backdrop-filter: blur(10px);
     overflow: hidden;
     opacity: 0;
-    transform: translateY(10px);
     animation: card-fade-up 420ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation-delay: var(--card-enter-delay);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -205,11 +204,11 @@ const image = post.data.heroImage ?? pickPlaceholder(post.id);
   @keyframes card-fade-up {
     from {
       opacity: 0;
-      transform: translateY(10px);
+      translate: 0 10px;
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+      translate: 0 0;
     }
   }
 
