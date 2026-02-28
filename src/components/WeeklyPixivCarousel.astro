@@ -2,6 +2,23 @@
 import weeklyData from "../data/pixiv-weekly-top10.json";
 
 const items = Array.isArray(weeklyData?.items) ? weeklyData.items : [];
+const itemsWithSources = items.map((item) => {
+  const original = String(item.originalThumbnailUrl ?? "");
+  const pximgMirror = original
+    ? original
+        .replace("https://i.pximg.net/", "https://i.pixiv.re/")
+        .replace(/\/c\/\d+x\d+\//, "/")
+    : "";
+  const pixivCat = item.id ? `https://pixiv.cat/${item.id}.jpg` : "";
+  const sources = [
+    String(item.thumbnailUrl ?? ""),
+    ...(Array.isArray(item.fallbackThumbnailUrls) ? item.fallbackThumbnailUrls.map(String) : []),
+    pximgMirror,
+    pixivCat,
+  ].filter(Boolean);
+
+  return { ...item, imageSources: Array.from(new Set(sources)) };
+});
 const generatedAtText = weeklyData?.generatedAt
   ? new Date(weeklyData.generatedAt).toLocaleDateString("zh-CN")
   : "未更新";
@@ -13,17 +30,23 @@ const generatedAtText = weeklyData?.generatedAt
     <p>每周自动更新，点击卡片跳转原作品页。最近更新：{generatedAtText}</p>
   </header>
 
-  {items.length === 0 ? (
+  {itemsWithSources.length === 0 ? (
     <p class="pixiv-empty">暂无周榜数据。先运行一次 `npm run update:pixiv-weekly`。</p>
   ) : (
     <div class="pixiv-carousel" data-pixiv-carousel>
       <button class="pixiv-nav prev" type="button" aria-label="上一张" data-prev>&lt;</button>
       <div class="pixiv-track-wrap">
         <ul class="pixiv-track" data-track>
-          {items.map((item) => (
+          {itemsWithSources.map((item) => (
             <li class="pixiv-slide">
               <a href={item.artworkUrl} target="_blank" rel="noreferrer">
-                <img src={item.thumbnailUrl} alt={item.title} loading="lazy" />
+                <img
+                  src={item.imageSources[0]}
+                  alt={item.title}
+                  loading="lazy"
+                  data-fallbacks={JSON.stringify(item.imageSources)}
+                  data-fallback-index="0"
+                />
                 <div class="pixiv-meta">
                   <p class="pixiv-rank">#{item.rank}</p>
                   <h3>{item.title}</h3>
@@ -209,6 +232,26 @@ const generatedAtText = weeklyData?.generatedAt
     });
     next?.addEventListener("click", () => {
       track.scrollBy({ left: step(), behavior: "smooth" });
+    });
+
+    const images = Array.from(root.querySelectorAll("img[data-fallbacks]"));
+    images.forEach((img) => {
+      const onError = () => {
+        const raw = img.getAttribute("data-fallbacks");
+        if (!raw) return;
+        let list = [];
+        try {
+          list = JSON.parse(raw);
+        } catch {
+          return;
+        }
+        const current = Number.parseInt(img.getAttribute("data-fallback-index") ?? "0", 10);
+        const nextIndex = Number.isNaN(current) ? 1 : current + 1;
+        if (!Array.isArray(list) || nextIndex >= list.length) return;
+        img.setAttribute("data-fallback-index", String(nextIndex));
+        img.src = list[nextIndex];
+      };
+      img.addEventListener("error", onError);
     });
   };
 

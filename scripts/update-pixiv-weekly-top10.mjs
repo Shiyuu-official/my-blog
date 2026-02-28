@@ -25,8 +25,20 @@ if (cookie) {
 
 const toProxyImageUrl = (url) => {
   if (!url || typeof url !== "string") return "";
-  const raw = url.replace(/^https?:\/\//, "");
-  return `https://wsrv.nl/?url=${encodeURIComponent(raw)}&w=720&output=webp`;
+  return `https://wsrv.nl/?url=${encodeURIComponent(url)}&w=720&output=webp`;
+};
+
+const toPixivReUrl = (url) => {
+  if (!url || typeof url !== "string") return "";
+  // i.pximg.net needs referer; i.pixiv.re is a public proxy mirror.
+  return url
+    .replace("https://i.pximg.net/", "https://i.pixiv.re/")
+    .replace(/\/c\/\d+x\d+\//, "/");
+};
+
+const toPixivCatUrl = (id) => {
+  if (!id) return "";
+  return `https://pixiv.cat/${id}.jpg`;
 };
 
 const normalizeItem = (item, index) => {
@@ -44,6 +56,7 @@ const normalizeItem = (item, index) => {
     userId: String(item.user_id ?? ""),
     artworkUrl: id ? `https://www.pixiv.net/artworks/${id}` : "",
     thumbnailUrl: toProxyImageUrl(originalThumb),
+    fallbackThumbnailUrls: [toPixivReUrl(originalThumb), toPixivCatUrl(id)].filter(Boolean),
     originalThumbnailUrl: originalThumb,
     tags,
   };
