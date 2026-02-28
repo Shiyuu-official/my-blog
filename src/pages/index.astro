@@ -4,6 +4,7 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
 ---
 
 <AppLayout title="首页" description="首页">
+  <section class="home-panels">
   <section class="home-todo">
     <div class="todo-backdrop" data-todo-backdrop></div>
     <article
@@ -32,15 +33,33 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
       </section>
     </article>
   </section>
-  <WeeklyPixivCarousel />
+  <section class="home-pixiv">
+    <WeeklyPixivCarousel />
+  </section>
+  </section>
 </AppLayout>
 
 <style>
+  .home-panels {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+    flex-wrap: nowrap;
+  }
+
   .home-todo {
     position: relative;
-    min-height: 400px;
-    padding: 24px 0;
+    min-height: 0;
+    padding: 0;
     perspective: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-pixiv {
+    display: flex;
+    justify-content: center;
   }
 
   .todo-backdrop {
@@ -64,8 +83,9 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
     --rotate-y: 0deg;
     position: relative;
     z-index: 15;
-    width: min(100%, 380px);
-    min-height: 260px;
+    width: 260px;
+    height: 440px;
+    box-sizing: border-box;
     padding: 28px 22px 22px;
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.42);
@@ -173,6 +193,12 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
   }
 
   @media (max-width: 768px) {
+    .home-panels {
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
     .home-todo {
       min-height: 320px;
     }
