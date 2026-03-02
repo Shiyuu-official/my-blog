@@ -139,7 +139,7 @@ const buildVersion = Date.now().toString();
 
   const writeState = (aplayer) => {
     try {
-      const volume = aplayer.audio?.volume ?? 0.3;
+      const volume = aplayer.audio?.volume ?? 0.1;
       localStorage.setItem(STATE_KEY, JSON.stringify({ volume }));
     } catch {}
   };

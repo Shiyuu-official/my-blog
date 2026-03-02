@@ -25,7 +25,8 @@ const { post, categoryLabel, wordCount, postId, tags } = Astro.props as {
   postId: string;
   tags: string[];
 };
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
+const tocHeadings = headings.filter((heading) => heading.depth === 2);
 ---
 
 <BlogPost
@@ -34,6 +35,7 @@ const { Content } = await render(post);
   wordCount={wordCount}
   postId={postId}
   tags={tags}
+  tocHeadings={tocHeadings}
 >
   <Content />
 </BlogPost>
