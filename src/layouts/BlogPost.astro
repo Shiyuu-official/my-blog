@@ -41,10 +41,7 @@ const coverImage = heroImage ?? pickPlaceholder(postId);
       <ol class="toc-list">
         {tocHeadings.map((heading) => (
           <li>
-            <a
-              href={`#${heading.slug}`}
-              data-toc-slug={heading.slug}
-            >
+            <a href={`#${heading.slug}`}>
               {heading.text}
             </a>
           </li>
@@ -105,67 +102,6 @@ const coverImage = heroImage ?? pickPlaceholder(postId);
 </div>
   </article>
 </AppLayout>
-
-<script>
-  const easeInOutCubic = (t) =>
-    t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-
-  const smoothScrollToY = (targetY, duration) => {
-    const startY = window.scrollY;
-    const distance = targetY - startY;
-    if (Math.abs(distance) < 2) return;
-
-    let startTime = 0;
-    const step = (timestamp) => {
-      if (!startTime) startTime = timestamp;
-      const progress = Math.min((timestamp - startTime) / duration, 1);
-      const eased = easeInOutCubic(progress);
-      window.scrollTo(0, startY + distance * eased);
-      if (progress < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  };
-
-  const tocJump = (slug) => {
-    if (!slug) return true;
-    const heading = document.getElementById(slug);
-    if (!heading) return true;
-
-    const topOffset = 12;
-    const targetY = window.scrollY + heading.getBoundingClientRect().top - topOffset;
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
-
-    if (prefersReducedMotion) {
-      window.scrollTo(0, targetY);
-    } else {
-      const distance = Math.abs(targetY - window.scrollY);
-      const duration = Math.min(900, Math.max(420, distance * 0.45));
-      smoothScrollToY(targetY, duration);
-    }
-
-    history.replaceState(null, "", `#${encodeURIComponent(slug)}`);
-    return false;
-  };
-
-  window.__tocJump = tocJump;
-
-  if (!window.__tocClickDelegated) {
-    window.__tocClickDelegated = true;
-    document.addEventListener("click", (event) => {
-      const target = event.target;
-      if (!(target instanceof Element)) return;
-      const link = target.closest(".toc-list a[data-toc-slug]");
-      if (!(link instanceof HTMLAnchorElement)) return;
-
-      const slug = link.dataset.tocSlug;
-      if (!slug) return;
-      const shouldContinue = tocJump(decodeURIComponent(slug));
-      if (!shouldContinue) event.preventDefault();
-    });
-  }
-</script>
 
 <style>
   .post {
