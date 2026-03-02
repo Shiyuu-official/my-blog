@@ -14,6 +14,7 @@ IMAGE_DIR = ROOT / "public" / "pixiv-weekly"
 SOURCE = "pixivpy3:illust_ranking(mode=week)"
 TARGET_COUNT = 10
 PAGE_SIZE = 30
+MANAGED_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 
 def is_illustration(illust) -> bool:
@@ -28,6 +29,20 @@ def ext_from_url(url: str) -> str:
     if suffix in {".jpg", ".jpeg", ".png", ".webp"}:
         return suffix
     return ".jpg"
+
+
+def cleanup_old_images(keep_filenames: set[str]) -> int:
+    removed = 0
+    for path in IMAGE_DIR.iterdir():
+        if not path.is_file():
+            continue
+        if path.suffix.lower() not in MANAGED_EXTS:
+            continue
+        if path.name in keep_filenames:
+            continue
+        path.unlink(missing_ok=True)
+        removed += 1
+    return removed
 
 
 def main() -> None:
@@ -73,6 +88,7 @@ def main() -> None:
         raise RuntimeError("No weekly ranking items returned from Pixiv API.")
 
     items = []
+    keep_filenames: set[str] = set()
     for index, illust in enumerate(illusts, start=1):
         illust_id = str(illust.id)
         title = str(illust.title or "")
@@ -97,6 +113,7 @@ def main() -> None:
             try:
                 api.download(thumb_url, path=str(IMAGE_DIR), name=filename)
                 local_thumb = f"/pixiv-weekly/{filename}"
+                keep_filenames.add(filename)
             except Exception:
                 local_thumb = ""
 
@@ -132,7 +149,11 @@ def main() -> None:
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(f"Updated {OUTPUT_PATH} with {len(items)} items.")
+    removed_count = cleanup_old_images(keep_filenames)
+    print(
+        f"Updated {OUTPUT_PATH} with {len(items)} items. "
+        f"Removed {removed_count} old local image(s)."
+    )
 
 
 if __name__ == "__main__":
