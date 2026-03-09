@@ -5,16 +5,22 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "npm run build && wrangler dev",
     "astro": "astro",
-    "update:pixiv-weekly": "python scripts/update_pixiv_weekly_top10.py"
+    "update:pixiv-weekly": "python scripts/update_pixiv_weekly_top10.py",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.1",
     "astro": "^5.16.8",
     "remark-gfm": "^4.0.1",
     "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.71.0"
   }
 }
