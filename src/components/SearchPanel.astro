@@ -10,33 +10,53 @@ const { placeholder = "搜索标题 / 副标题 / 标签" } = Astro.props;
       placeholder={placeholder}
       aria-label="搜索文章"
     />
-    <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+    <button type="button" class="search-icon" data-search-trigger aria-label="执行搜索">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
   </div>
 </div>
 
 <script type="module">
-  const scopes = document.querySelectorAll("[data-search-scope]");
-
   const normalize = (value) => value.toLowerCase().trim();
 
-  scopes.forEach((scope) => {
-    const input = scope.querySelector("[data-search-input]");
-    const host = scope.parentElement;
-    const cards = Array.from(host?.querySelectorAll(".post-card") ?? []);
+  const setupSearchPanels = () => {
+    const scopes = document.querySelectorAll("[data-search-scope]");
 
-    if (!input) return;
+    scopes.forEach((scope) => {
+      if (scope.dataset.searchBound === "true") return;
+      scope.dataset.searchBound = "true";
 
-    input.addEventListener("input", () => {
-      const query = normalize(input.value);
-      cards.forEach((card) => {
-        const title = card.dataset.title ?? "";
-        const desc = card.dataset.desc ?? "";
-        const tags = card.dataset.tags ?? "";
-        const haystack = normalize(`${title} ${desc} ${tags}`);
-        card.style.display = haystack.includes(query) ? "" : "none";
+      const input = scope.querySelector("[data-search-input]");
+      const trigger = scope.querySelector("[data-search-trigger]");
+      const cards = Array.from(document.querySelectorAll(".main .post-card"));
+
+      if (!(input instanceof HTMLInputElement)) return;
+
+      const runSearch = () => {
+        const query = normalize(input.value);
+        cards.forEach((card) => {
+          const title = card.dataset.title ?? "";
+          const desc = card.dataset.desc ?? "";
+          const tags = card.dataset.tags ?? "";
+          const haystack = normalize(`${title} ${desc} ${tags}`);
+          card.style.display = haystack.includes(query) ? "" : "none";
+        });
+      };
+
+      input.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter") return;
+        event.preventDefault();
+        runSearch();
       });
+
+      if (trigger instanceof HTMLButtonElement) {
+        trigger.addEventListener("click", runSearch);
+      }
     });
-  });
+  };
+
+  setupSearchPanels();
+  document.addEventListener("astro:page-load", setupSearchPanels);
 </script>
 
 <style>
@@ -65,6 +85,12 @@ const { placeholder = "搜索标题 / 副标题 / 标签" } = Astro.props;
   }
 
   .search-icon {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    cursor: pointer;
     opacity: 0.6;
   }
 </style>
