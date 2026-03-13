@@ -8,6 +8,7 @@ import {
   estimateWordCount,
   getCategoryLabel,
 } from "../../../utils/postMeta";
+import { filterVisibleBlogPosts } from "../../../utils/postVisibility";
 
 export async function getStaticPaths() {
   const categories = Object.keys(CATEGORY_LABELS);
@@ -16,8 +17,8 @@ export async function getStaticPaths() {
 
 const { category } = Astro.params;
 const title = CATEGORY_LABELS[category] ?? category;
-const posts = (await getCollection("blog"))
-  .filter((p) => !p.data.draft && p.id.startsWith(`${category}/`))
+const posts = filterVisibleBlogPosts(await getCollection("blog"))
+  .filter((p) => p.id.startsWith(`${category}/`))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 

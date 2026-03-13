@@ -3,3 +3,7 @@
 
 export const SITE_TITLE = 'Shiyuu\'s Blog';
 export const SITE_DESCRIPTION = 'Welcome to my world';
+
+// Visibility switches for record posts
+export const RECORD_AUTO_HIDE_ENABLED = true;
+export const RECORD_VISIBLE_DAYS = 3;

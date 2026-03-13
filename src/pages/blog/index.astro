@@ -4,10 +4,10 @@ import PostCard from "../../components/PostCard.astro";
 import SearchPanel from "../../components/SearchPanel.astro";
 import { getCollection } from "astro:content";
 import { estimateWordCount, getCategoryLabel } from "../../utils/postMeta";
+import { filterVisibleBlogPosts } from "../../utils/postVisibility";
 
 const title = "全部文章";
-const posts = (await getCollection("blog"))
-  .filter((p) => !p.data.draft)
+const posts = filterVisibleBlogPosts(await getCollection("blog"))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 

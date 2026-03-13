@@ -1,8 +1,6 @@
 ---
 // Replace this with your NetEase playlist ID.
 const neteasePlaylistId = "17799116654";
-// Build-scoped cache buster: changes on every build/deploy.
-const buildVersion = Date.now().toString();
 ---
 
 <div
@@ -10,7 +8,6 @@ const buildVersion = Date.now().toString();
   transition:persist
   data-global-music-player
   data-playlist-id={neteasePlaylistId}
-  data-build-version={buildVersion}
 >
   <div class="aplayer-host" data-aplayer-host></div>
 </div>
@@ -93,6 +90,18 @@ const buildVersion = Date.now().toString();
   const USER_INTERACTED_KEY = "__GLOBAL_APLAYER_USER_INTERACTED__";
   const USER_INTERACTION_BOUND_KEY = "__GLOBAL_APLAYER_USER_INTERACTION_BOUND__";
   const USER_INTERACTION_EVENT = "global-aplayer-user-interacted";
+  const PLAYLIST_CHECK_INTERVAL_MS = 60 * 1000;
+
+  const getPlaylistSignature = (audioList) =>
+    audioList
+      .map((item) => {
+        const id = item?.id ?? "";
+        const name = item?.name ?? "";
+        const artist = Array.isArray(item?.artist) ? item.artist.join(",") : item?.artist ?? "";
+        const url = item?.url ?? "";
+        return `${id}::${name}::${artist}::${url}`;
+      })
+      .join("||");
 
   const ensureUserInteractionCapture = () => {
     if (window[USER_INTERACTION_BOUND_KEY]) return;
@@ -150,29 +159,47 @@ const buildVersion = Date.now().toString();
     if (!(hostWrap instanceof HTMLElement) || !(host instanceof HTMLElement)) return;
 
     const playlistId = hostWrap.dataset.playlistId;
-    const buildVersion = hostWrap.dataset.buildVersion ?? "0";
     if (!playlistId) return;
 
     const existingPlayer = window.__GLOBAL_APLAYER__;
-    const existingVersion = window.__GLOBAL_APLAYER_BUILD_VERSION__;
-    if (existingPlayer && existingVersion === buildVersion) return;
-    if (existingPlayer && existingVersion !== buildVersion) {
-      try {
-        existingPlayer.destroy();
-      } catch {}
-      delete window.__GLOBAL_APLAYER__;
-      delete window.__GLOBAL_APLAYER_BUILD_VERSION__;
-      host.innerHTML = "";
-    }
+    const existingPlaylistId = window.__GLOBAL_APLAYER_PLAYLIST_ID__;
+    const lastCheckedAt = window.__GLOBAL_APLAYER_LAST_CHECK_AT__ ?? 0;
+    const shouldSkipCheck =
+      existingPlayer &&
+      existingPlaylistId === playlistId &&
+      Date.now() - lastCheckedAt < PLAYLIST_CHECK_INTERVAL_MS;
+    if (shouldSkipCheck) return;
 
     await loadScriptOnce("global-aplayer-js", APLAYER_JS_URL);
     if (!window.APlayer) return;
 
-    const response = await fetch(`${METING_API}${playlistId}&v=${buildVersion}`, {
+    const response = await fetch(`${METING_API}${playlistId}&t=${Date.now()}`, {
       cache: "no-store",
     });
     const audioList = await response.json();
+    window.__GLOBAL_APLAYER_LAST_CHECK_AT__ = Date.now();
     if (!Array.isArray(audioList) || audioList.length === 0) return;
+
+    const nextSignature = getPlaylistSignature(audioList);
+    const prevSignature = window.__GLOBAL_APLAYER_PLAYLIST_SIGNATURE__;
+
+    if (
+      existingPlayer &&
+      existingPlaylistId === playlistId &&
+      prevSignature === nextSignature
+    ) {
+      return;
+    }
+
+    if (existingPlayer) {
+      try {
+        existingPlayer.destroy();
+      } catch {}
+      delete window.__GLOBAL_APLAYER__;
+      delete window.__GLOBAL_APLAYER_PLAYLIST_SIGNATURE__;
+      delete window.__GLOBAL_APLAYER_PLAYLIST_ID__;
+      host.innerHTML = "";
+    }
 
     const saved = readState();
     const randomIndex = Math.floor(Math.random() * audioList.length);
@@ -192,7 +219,8 @@ const buildVersion = Date.now().toString();
     });
 
     window.__GLOBAL_APLAYER__ = player;
-    window.__GLOBAL_APLAYER_BUILD_VERSION__ = buildVersion;
+    window.__GLOBAL_APLAYER_PLAYLIST_SIGNATURE__ = nextSignature;
+    window.__GLOBAL_APLAYER_PLAYLIST_ID__ = playlistId;
 
     const syncTitleOverflow = () => {
       const musicWrap = host.querySelector(".aplayer-music");
