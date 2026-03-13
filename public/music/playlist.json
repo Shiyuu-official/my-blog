@@ -1,62 +1,158 @@
 {
   "playlistId": "17799116654",
-  "updatedAt": "2026-03-13T13:57:06.719Z",
+  "updatedAt": "2026-03-13T14:21:57.298Z",
   "audio": [
     {
-      "name": "风の憧憬",
-      "artist": "光田康典",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=468509",
-      "cover": "",
-      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=468509",
-      "id": ""
+      "name": "La Belle Vie",
+      "artist": "Fugee",
+      "url": "https://music.163.com/song/media/outer/url?id=2674538300.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674538300",
+      "id": "2674538300"
+    },
+    {
+      "name": "Votre Chanson",
+      "artist": "Takeo, zakoshonen",
+      "url": "https://music.163.com/song/media/outer/url?id=2674538301.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674538301",
+      "id": "2674538301"
+    },
+    {
+      "name": "Coffee in Paris",
+      "artist": "a bowl of rice, Moon-uh",
+      "url": "https://music.163.com/song/media/outer/url?id=2674537320.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674537320",
+      "id": "2674537320"
+    },
+    {
+      "name": "Love at first sight",
+      "artist": "xander., Rikard From",
+      "url": "https://music.163.com/song/media/outer/url?id=2674538296.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674538296",
+      "id": "2674538296"
+    },
+    {
+      "name": "L’Amour À Paris",
+      "artist": "Fugee, maeLstro",
+      "url": "https://music.163.com/song/media/outer/url?id=2674537319.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674537319",
+      "id": "2674537319"
+    },
+    {
+      "name": "Rendez-vous À La Tour",
+      "artist": "Lucid Keys",
+      "url": "https://music.163.com/song/media/outer/url?id=2674537318.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674537318",
+      "id": "2674537318"
+    },
+    {
+      "name": "Un Bisou Sous Le Ciel De Paris",
+      "artist": "Phlocalyst, Viktor Minsky",
+      "url": "https://music.163.com/song/media/outer/url?id=2674538294.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674538294",
+      "id": "2674538294"
+    },
+    {
+      "name": "Sunlight Waltz",
+      "artist": "a bowl of rice",
+      "url": "https://music.163.com/song/media/outer/url?id=2674538302.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674538302",
+      "id": "2674538302"
+    },
+    {
+      "name": "Chez Rémy",
+      "artist": "Paxkalito",
+      "url": "https://music.163.com/song/media/outer/url?id=2674538293.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674538293",
+      "id": "2674538293"
+    },
+    {
+      "name": "French Dishe",
+      "artist": "Swink",
+      "url": "https://music.163.com/song/media/outer/url?id=2674538305.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674538305",
+      "id": "2674538305"
+    },
+    {
+      "name": "Wet Hands",
+      "artist": "C418",
+      "url": "https://music.163.com/song/media/outer/url?id=4010213.mp3",
+      "cover": "https://p2.music.126.net/fL4ULWzldqG8tT2BB7Vucg==/109951172564006364.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=4010213",
+      "id": "4010213"
+    },
+    {
+      "name": "サンタは中央線でやってくる",
+      "artist": "しゃろう",
+      "url": "https://music.163.com/song/media/outer/url?id=1831401713.mp3",
+      "cover": "https://p2.music.126.net/4U-gzumM8dLOuonFdeIEsw==/109951165825154939.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1831401713",
+      "id": "1831401713"
+    },
+    {
+      "name": "2:23 AM",
+      "artist": "しゃろう",
+      "url": "https://music.163.com/song/media/outer/url?id=1831400576.mp3",
+      "cover": "https://p2.music.126.net/i5aIjREvA-gTEn35Izzgng==/109951165825162706.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1831400576",
+      "id": "1831400576"
+    },
+    {
+      "name": "Haggstrom",
+      "artist": "C418",
+      "url": "https://music.163.com/song/media/outer/url?id=4010198.mp3",
+      "cover": "https://p2.music.126.net/fL4ULWzldqG8tT2BB7Vucg==/109951172564006364.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=4010198",
+      "id": "4010198"
+    },
+    {
+      "name": "Oiseaux d'Amour",
+      "artist": "Fred Paci, The Fox",
+      "url": "https://music.163.com/song/media/outer/url?id=2674538304.mp3",
+      "cover": "https://p2.music.126.net/QTOPh2V88cUSmkIA39W6RA==/109951170496372136.jpg",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2674538304",
+      "id": "2674538304"
     },
     {
       "name": "イチカラ村",
       "artist": "岩田恭明",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=1309814679",
-      "cover": "",
+      "url": "https://music.163.com/song/media/outer/url?id=1309814679.mp3",
+      "cover": "https://p2.music.126.net/sHMTWM6Z0zXlqz98Wdbl3A==/109951163555243264.jpg",
       "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1309814679",
-      "id": ""
-    },
-    {
-      "name": "O What a Spacely Cystybeast",
-      "artist": "塞壬唱片-MSR/何美臻 (Min He)",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=3324858777",
-      "cover": "",
-      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=3324858777",
-      "id": ""
+      "id": "1309814679"
     },
     {
       "name": "ゼルダの子守唄",
       "artist": "Nintendo Sound Team",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=1365893209",
-      "cover": "",
+      "url": "https://music.163.com/song/media/outer/url?id=1365893209.mp3",
+      "cover": "https://p2.music.126.net/DQMYbtBLcGLf7ifBU2y5rg==/109951164079965885.jpg",
       "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1365893209",
-      "id": ""
-    },
-    {
-      "name": "相见欢",
-      "artist": "塞壬唱片-MSR/MeLo_绿萝组",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=2668949546",
-      "cover": "",
-      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2668949546",
-      "id": ""
+      "id": "1365893209"
     },
     {
       "name": "Resurrections",
       "artist": "Lena Raine",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=1341359827",
-      "cover": "",
+      "url": "https://music.163.com/song/media/outer/url?id=1341359827.mp3",
+      "cover": "https://p2.music.126.net/5QXYy6PNp2NcW5BKrSWkXA==/109951165543193420.jpg",
       "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1341359827",
-      "id": ""
+      "id": "1341359827"
     },
     {
       "name": "白鸟",
-      "artist": "Camille Saint-Saëns/小倉直人/大塚杏奈",
-      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=871703",
-      "cover": "",
+      "artist": "Camille Saint-Saëns, 小倉直人, 大塚杏奈",
+      "url": "https://music.163.com/song/media/outer/url?id=871703.mp3",
+      "cover": "https://p2.music.126.net/76jdjn7JpHTRpho7Wz6w4w==/800444465065107.jpg",
       "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=871703",
-      "id": ""
+      "id": "871703"
     }
   ]
 }
