@@ -1,6 +1,7 @@
 ---
 // Replace this with your NetEase playlist ID.
 const neteasePlaylistId = "17799116654";
+const localPlaylistPath = "/music/playlist.json";
 ---
 
 <div
@@ -8,6 +9,7 @@ const neteasePlaylistId = "17799116654";
   transition:persist
   data-global-music-player
   data-playlist-id={neteasePlaylistId}
+  data-playlist-path={localPlaylistPath}
 >
   <div class="aplayer-host" data-aplayer-host></div>
 </div>
@@ -85,7 +87,6 @@ const neteasePlaylistId = "17799116654";
 
 <script is:inline>
   const APLAYER_JS_URL = "https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js";
-  const METING_API = "https://api.injahow.cn/meting/?server=netease&type=playlist&id=";
   const STATE_KEY = "global-aplayer-state-v1";
   const USER_INTERACTED_KEY = "__GLOBAL_APLAYER_USER_INTERACTED__";
   const USER_INTERACTION_BOUND_KEY = "__GLOBAL_APLAYER_USER_INTERACTION_BOUND__";
@@ -102,6 +103,12 @@ const neteasePlaylistId = "17799116654";
         return `${id}::${name}::${artist}::${url}`;
       })
       .join("||");
+
+  const pickAudioList = (payload) => {
+    if (Array.isArray(payload)) return payload;
+    if (Array.isArray(payload?.audio)) return payload.audio;
+    return [];
+  };
 
   const ensureUserInteractionCapture = () => {
     if (window[USER_INTERACTION_BOUND_KEY]) return;
@@ -158,25 +165,27 @@ const neteasePlaylistId = "17799116654";
     const host = document.querySelector("[data-aplayer-host]");
     if (!(hostWrap instanceof HTMLElement) || !(host instanceof HTMLElement)) return;
 
-    const playlistId = hostWrap.dataset.playlistId;
-    if (!playlistId) return;
+    const playlistId = hostWrap.dataset.playlistId ?? "unknown";
+    const playlistPath = hostWrap.dataset.playlistPath ?? "/music/playlist.json";
 
     const existingPlayer = window.__GLOBAL_APLAYER__;
     const existingPlaylistId = window.__GLOBAL_APLAYER_PLAYLIST_ID__;
+    const existingPlaylistPath = window.__GLOBAL_APLAYER_PLAYLIST_PATH__;
     const lastCheckedAt = window.__GLOBAL_APLAYER_LAST_CHECK_AT__ ?? 0;
     const shouldSkipCheck =
       existingPlayer &&
       existingPlaylistId === playlistId &&
+      existingPlaylistPath === playlistPath &&
       Date.now() - lastCheckedAt < PLAYLIST_CHECK_INTERVAL_MS;
     if (shouldSkipCheck) return;
 
     await loadScriptOnce("global-aplayer-js", APLAYER_JS_URL);
     if (!window.APlayer) return;
 
-    const response = await fetch(`${METING_API}${playlistId}&t=${Date.now()}`, {
-      cache: "no-store",
-    });
-    const audioList = await response.json();
+    const response = await fetch(`${playlistPath}?t=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) return;
+    const payload = await response.json();
+    const audioList = pickAudioList(payload);
     window.__GLOBAL_APLAYER_LAST_CHECK_AT__ = Date.now();
     if (!Array.isArray(audioList) || audioList.length === 0) return;
 
@@ -186,6 +195,7 @@ const neteasePlaylistId = "17799116654";
     if (
       existingPlayer &&
       existingPlaylistId === playlistId &&
+      existingPlaylistPath === playlistPath &&
       prevSignature === nextSignature
     ) {
       return;
@@ -198,6 +208,7 @@ const neteasePlaylistId = "17799116654";
       delete window.__GLOBAL_APLAYER__;
       delete window.__GLOBAL_APLAYER_PLAYLIST_SIGNATURE__;
       delete window.__GLOBAL_APLAYER_PLAYLIST_ID__;
+      delete window.__GLOBAL_APLAYER_PLAYLIST_PATH__;
       host.innerHTML = "";
     }
 
@@ -221,6 +232,7 @@ const neteasePlaylistId = "17799116654";
     window.__GLOBAL_APLAYER__ = player;
     window.__GLOBAL_APLAYER_PLAYLIST_SIGNATURE__ = nextSignature;
     window.__GLOBAL_APLAYER_PLAYLIST_ID__ = playlistId;
+    window.__GLOBAL_APLAYER_PLAYLIST_PATH__ = playlistPath;
 
     const syncTitleOverflow = () => {
       const musicWrap = host.querySelector(".aplayer-music");

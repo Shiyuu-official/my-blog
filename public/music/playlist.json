@@ -1,0 +1,62 @@
+{
+  "playlistId": "17799116654",
+  "updatedAt": "2026-03-13T13:57:06.719Z",
+  "audio": [
+    {
+      "name": "风の憧憬",
+      "artist": "光田康典",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=468509",
+      "cover": "",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=468509",
+      "id": ""
+    },
+    {
+      "name": "イチカラ村",
+      "artist": "岩田恭明",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=1309814679",
+      "cover": "",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1309814679",
+      "id": ""
+    },
+    {
+      "name": "O What a Spacely Cystybeast",
+      "artist": "塞壬唱片-MSR/何美臻 (Min He)",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=3324858777",
+      "cover": "",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=3324858777",
+      "id": ""
+    },
+    {
+      "name": "ゼルダの子守唄",
+      "artist": "Nintendo Sound Team",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=1365893209",
+      "cover": "",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1365893209",
+      "id": ""
+    },
+    {
+      "name": "相见欢",
+      "artist": "塞壬唱片-MSR/MeLo_绿萝组",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=2668949546",
+      "cover": "",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=2668949546",
+      "id": ""
+    },
+    {
+      "name": "Resurrections",
+      "artist": "Lena Raine",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=1341359827",
+      "cover": "",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1341359827",
+      "id": ""
+    },
+    {
+      "name": "白鸟",
+      "artist": "Camille Saint-Saëns/小倉直人/大塚杏奈",
+      "url": "https://api.injahow.cn/meting/?server=netease&type=url&id=871703",
+      "cover": "",
+      "lrc": "https://api.injahow.cn/meting/?server=netease&type=lrc&id=871703",
+      "id": ""
+    }
+  ]
+}

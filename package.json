@@ -4,9 +4,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "npm run sync:playlist",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "sync:playlist": "node scripts/sync_netease_playlist.mjs",
     "update:pixiv-weekly": "python scripts/update_pixiv_weekly_top10.py"
   },
   "dependencies": {
