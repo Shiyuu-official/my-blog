@@ -1,63 +1,125 @@
 {
-  "generatedAt": "2026-03-09T04:45:02.607447Z",
+  "generatedAt": "2026-03-16T05:07:50.860408Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "141839708",
-      "title": "Sparxie",
-      "userName": "Sheya",
-      "userId": "11764388",
-      "artworkUrl": "https://www.pixiv.net/artworks/141839708",
-      "thumbnailUrl": "/pixiv-weekly/141839708.jpg",
+      "id": "142157059",
+      "title": "僕が壊れてしまうだけだ…",
+      "userName": "Ameもちᵕ̈*🍭",
+      "userId": "59688623",
+      "artworkUrl": "https://www.pixiv.net/artworks/142157059",
+      "thumbnailUrl": "/pixiv-weekly/142157059.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/01/07/30/141839708_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/11/03/44/14/142157059_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/01/07/30/141839708_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/11/03/44/14/142157059_p0_master1200.jpg",
       "tags": [
-        "白髪",
-        "赤眼",
-        "HonkaiStarRail",
-        "悪魔",
-        "崩壊スターレイル",
-        "崩坏星穹铁道",
-        "火花(スターレイル)",
-        "Sparxie",
-        "崩壊:スターレイル5000users入り"
+        "ミクの日",
+        "からくりピエロ",
+        "初音ミク",
+        "VOCALOID",
+        "VOCALOID5000users入り"
       ]
     },
     {
       "rank": 2,
-      "id": "141836611",
-      "title": "ねこぉひ～：ドリップ",
-      "userName": "ケースワベ【K-SUWABE】",
-      "userId": "24517",
-      "artworkUrl": "https://www.pixiv.net/artworks/141836611",
-      "thumbnailUrl": "/pixiv-weekly/141836611.jpg",
+      "id": "142100318",
+      "title": "Electronic Amber",
+      "userName": "Li Flag",
+      "userId": "14165905",
+      "artworkUrl": "https://www.pixiv.net/artworks/142100318",
+      "thumbnailUrl": "/pixiv-weekly/142100318.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/00/00/17/141836611_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/19/19/11/142100318_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/00/00/17/141836611_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/19/19/11/142100318_p0_master1200.jpg",
       "tags": [
-        "ねこぉひ〜",
-        "オリジナル",
-        "猫は液体",
-        "にゃにこれかわいい"
+        "初音ミク",
+        "ミクの日",
+        "39",
+        "VOCALOID5000users入り",
+        "透明感"
       ]
     },
     {
       "rank": 3,
-      "id": "141798173",
-      "title": "Iris",
+      "id": "142141392",
+      "title": "餃子",
+      "userName": "チャイ",
+      "userId": "1096811",
+      "artworkUrl": "https://www.pixiv.net/artworks/142141392",
+      "thumbnailUrl": "/pixiv-weekly/142141392.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/10/20/30/04/142141392_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/10/20/30/04/142141392_p0_master1200.jpg",
+      "tags": [
+        "オリジナル",
+        "餃にゃ",
+        "擬態",
+        "餃子",
+        "いきものごはん",
+        "素晴らしきほっこりの世界",
+        "シンデレラフィット",
+        "香箱座り"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "142074248",
+      "title": "MIKU  39 2026",
+      "userName": "千夜QYS3",
+      "userId": "7210261",
+      "artworkUrl": "https://www.pixiv.net/artworks/142074248",
+      "thumbnailUrl": "/pixiv-weekly/142074248.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/00/01/59/142074248_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/00/01/59/142074248_p0_master1200.jpg",
+      "tags": [
+        "女の子",
+        "VOCALOID",
+        "初音ミク",
+        "miku",
+        "39",
+        "ミクの日2026",
+        "VOCALOID5000users入り",
+        "ツインテ"
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "142113630",
+      "title": "AM 5:42",
+      "userName": "水視ずみ🐟",
+      "userId": "5588940",
+      "artworkUrl": "https://www.pixiv.net/artworks/142113630",
+      "thumbnailUrl": "/pixiv-weekly/142113630.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/10/00/00/06/142113630_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/10/00/00/06/142113630_p0_master1200.jpg",
+      "tags": [
+        "オリジナル",
+        "創作",
+        "オリキャラ",
+        "長髪男子"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "142074158",
+      "title": "朽ちる古塔",
       "userName": "あすてろid",
       "userId": "2033916",
-      "artworkUrl": "https://www.pixiv.net/artworks/141798173",
-      "thumbnailUrl": "/pixiv-weekly/141798173.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/142074158",
+      "thumbnailUrl": "/pixiv-weekly/142074158.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/02/00/01/33/141798173_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/00/01/15/142074158_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/02/00/01/33/141798173_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/00/01/15/142074158_p0_master1200.jpg",
       "tags": [
         "オリジナル",
         "風景",
@@ -65,153 +127,85 @@
       ]
     },
     {
-      "rank": 4,
-      "id": "141875369",
-      "title": "🐰💿",
-      "userName": "夢ノ内",
-      "userId": "229788",
-      "artworkUrl": "https://www.pixiv.net/artworks/141875369",
-      "thumbnailUrl": "/pixiv-weekly/141875369.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/04/00/01/23/141875369_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/04/00/01/23/141875369_p0_master1200.jpg",
-      "tags": [
-        "オリジナル",
-        "女の子"
-      ]
-    },
-    {
-      "rank": 5,
-      "id": "141866215",
-      "title": "原神/GenshinImpact - VarLumi",
-      "userName": "Kradebii",
-      "userId": "16694010",
-      "artworkUrl": "https://www.pixiv.net/artworks/141866215",
-      "thumbnailUrl": "/pixiv-weekly/141866215.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/20/58/04/141866215_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/20/58/04/141866215_p0_master1200.jpg",
-      "tags": [
-        "原神",
-        "蛍(原神)",
-        "GenshinImpact",
-        "ファルカ(原神)",
-        "ルカ蛍",
-        "お姫様だっこ",
-        "酔っ払い",
-        "原神1000users入り"
-      ]
-    },
-    {
-      "rank": 6,
-      "id": "141837357",
-      "title": "制服rkgkクラスで目立たない少女",
-      "userName": "CORE",
-      "userId": "11211325",
-      "artworkUrl": "https://www.pixiv.net/artworks/141837357",
-      "thumbnailUrl": "/pixiv-weekly/141837357.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/00/08/12/141837357_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/00/08/12/141837357_p0_master1200.jpg",
-      "tags": [
-        "オリジナル",
-        "OC",
-        "女の子",
-        "女子高生",
-        "制服",
-        "創作",
-        "落書き",
-        "少女",
-        "ブレザー",
-        "オリジナル1000users入り"
-      ]
-    },
-    {
       "rank": 7,
-      "id": "141797853",
-      "title": "チュウニペンギン",
-      "userName": "ケースワベ【K-SUWABE】",
-      "userId": "24517",
-      "artworkUrl": "https://www.pixiv.net/artworks/141797853",
-      "thumbnailUrl": "/pixiv-weekly/141797853.jpg",
+      "id": "142074692",
+      "title": "❄39❄",
+      "userName": "Saclia",
+      "userId": "19920821",
+      "artworkUrl": "https://www.pixiv.net/artworks/142074692",
+      "thumbnailUrl": "/pixiv-weekly/142074692.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/02/00/00/10/141797853_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/00/07/08/142074692_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/02/00/00/10/141797853_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/00/07/08/142074692_p0_master1200.jpg",
       "tags": [
-        "CHUNITHM",
-        "仕事絵",
-        "神々しい",
-        "チュウニペンギン",
-        "君たちなら、簡単でしょ?",
-        "勝てる気がしねぇ"
+        "初音ミク",
+        "女の子",
+        "VOCALOID",
+        "ミクさんと花",
+        "VOCALOID1000users入り"
       ]
     },
     {
       "rank": 8,
-      "id": "141868660",
-      "title": "肝胆",
-      "userName": "寺田てら",
-      "userId": "2764844",
-      "artworkUrl": "https://www.pixiv.net/artworks/141868660",
-      "thumbnailUrl": "/pixiv-weekly/141868660.jpg",
+      "id": "142150466",
+      "title": "おめでとう（大遅刻）",
+      "userName": "ユーリ",
+      "userId": "30816194",
+      "artworkUrl": "https://www.pixiv.net/artworks/142150466",
+      "thumbnailUrl": "/pixiv-weekly/142150466.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/22/24/07/141868660_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/10/23/49/14/142150466_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/22/24/07/141868660_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/10/23/49/14/142150466_p0_master1200.jpg",
       "tags": [
-        "肝",
-        "胆嚢",
-        "沈黙の臓器",
-        "肝臓"
+        "ウマ娘プリティーダービー",
+        "ゴールドシップ(ウマ娘)",
+        "ステイゴールド(ウマ娘)",
+        "ウマ娘プリティーダービー1000users入り"
       ]
     },
     {
       "rank": 9,
-      "id": "141903626",
-      "title": "たこやき",
-      "userName": "チャイ",
-      "userId": "1096811",
-      "artworkUrl": "https://www.pixiv.net/artworks/141903626",
-      "thumbnailUrl": "/pixiv-weekly/141903626.jpg",
+      "id": "142130822",
+      "title": "每个月的白丝/黑丝（2026.3）",
+      "userName": "鬼针草",
+      "userId": "6049901",
+      "artworkUrl": "https://www.pixiv.net/artworks/142130822",
+      "thumbnailUrl": "/pixiv-weekly/142130822.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/04/20/53/33/141903626_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/10/14/12/21/142130822_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/04/20/53/33/141903626_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/10/14/12/21/142130822_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "いきものごはん",
-        "たこ焼き",
-        "たこにゃき",
-        "素晴らしきほっこりの世界",
-        "素焼き",
-        "脱走常習犯",
-        "にゃこやき"
+        "名探偵プリキュア!",
+        "プリキュア",
+        "森亜るるか",
+        "黒スト",
+        "キュアアルカナ・シャドウ",
+        "ダークキュア",
+        "黒キュア"
       ]
     },
     {
       "rank": 10,
-      "id": "141841434",
-      "title": "ポムケンとしまつけん",
-      "userName": "辛口ムース",
-      "userId": "889193",
-      "artworkUrl": "https://www.pixiv.net/artworks/141841434",
-      "thumbnailUrl": "/pixiv-weekly/141841434.jpg",
+      "id": "142074844",
+      "title": "おじさんが初音ミクをレンタルする話",
+      "userName": "わいもにく",
+      "userId": "70100695",
+      "artworkUrl": "https://www.pixiv.net/artworks/142074844",
+      "thumbnailUrl": "/pixiv-weekly/142074844.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/02/07/27/141841434_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/00/09/42/142074844_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/03/02/07/27/141841434_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/03/09/00/09/42/142074844_p0_master1200.jpg",
       "tags": [
-        "Fate/GrandOrder",
-        "FGO",
-        "ポケモン風波",
-        "ポムケン",
-        "始末犬",
-        "ソウスケ｢……………うわき?｣",
-        "なんじゃああああああ"
+        "漫画",
+        "初音ミク",
+        "VOCALOID",
+        "おじさん構文",
+        "VOCALOID1000users入り",
+        "サイハテ"
       ]
     }
   ]
