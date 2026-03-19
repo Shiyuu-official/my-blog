@@ -1,0 +1,44 @@
+---
+title: "games101"
+pubDate: 2026-03-16
+updateDate: 2026-03-19
+description: "games101开坑"
+tags: ["图形学","学习","games101"]
+heroImage: "../../../assets/cover/games101.png"
+---
+
+## Lecture 1-2:引入  
+没啥实际内容。 Lect1简要介绍图形学运用，Lect2复习了线代 <span class="spoiler">难道所有课的前两节都是可以跳过的吗</span>   
+以及官网似乎挂了没法下作业，何意味
+
+## Lecture 3:向量，变换与齐次坐标
+依旧复习线性代数。讲了线性变化（旋转，拉伸，...）可以用 $$v=Av$$ 矩阵乘法表示。非线性变化需要利用齐次坐标来表示(增加一个维度)。
+<AssetGallery
+dir="blog素材/study/games101/Lect3/齐次坐标" width="100%"
+  showDots={false}
+/>
+P.S. 只有在仿射变化的时候齐次坐标对应矩阵最后一行才是  0 0 1   
+逆变换：使用逆矩阵以还原原来的坐标。  
+运用齐次坐标对应矩阵进行仿射变化时，先运用线性变换再运用平移变换   
+附加：**旋转矩阵的逆矩阵等于转置矩阵**(正交矩阵性质)
+$$
+R^{-1}_θ = R^T_{-θ}
+$$
+
+## Lecture 4:视图变换和投影变换，
+<AssetPhoto src="blog素材/study/games101/Lect4/[chrome]_2026-03-17_161055_049.png" caption="三维空间分别按X、Y、Z轴旋转" width="100%" />
+和二维的旋转可以类比。  
+注意到绕y轴旋转时， $$-sinθ$$的位置不一样。原因：循环对称时z叉乘x得到y（而不是x叉乘z），所以旋转矩阵带负号。
+<AssetPhoto src="blog素材/study/games101/Lect4/[chrome]_2026-03-18_183023_004.png" caption="参数指三个向量的xyz值" width="100%" />
+由于对相机的变换是先移动到原点再旋转，所以视图变换矩阵是**先平移再旋转**。
+$$
+M_{view} = R_{view}T_{view}
+$$
+$$R_{view}$$怎么求：利用旋转矩阵的逆矩阵等于转置矩阵的性质，先求逆矩阵(从世界坐标系旋转到当前相机角度)，再转置得到旋转矩阵。
+<AssetPhoto src="blog素材/study/games101/Lect4/[chrome]_2026-03-19_175147_067.png" caption="正交投影和透视投影的区别" width="100%" />
+<AssetPhoto src="blog素材/study/games101/Lect4/[chrome]_2026-03-19_175734_135.png" width="100%" />
+* 由于沿着-z方向看，这里远处数值小近处数值大（不同于x，y的的左小右大，下小上大）
+<AssetPhoto src="blog素材/study/games101/Lect4/[chrome]_2026-03-19_181819_357.png" width="100%" />
+正交投影矩阵：平移（右）乘以缩放（左）矩阵。注意到由于变换后范围为（-1，1），所以缩放矩阵的参数为2/(r-l)，2/(t-b)和2/(n-f)。    
+对于此变换造成的拉伸：后续会讲到视口变换。未完待续...
+

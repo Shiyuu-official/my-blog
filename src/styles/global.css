@@ -1,4 +1,6 @@
-﻿/*
+﻿@import "katex/dist/katex.min.css";
+
+/*
   The CSS in this style tag is based off of Bear B
   
  
@@ -370,3 +372,5 @@ figcaption {
 	background: transparent;
 	color: inherit;
 }
+
+

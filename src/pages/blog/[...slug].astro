@@ -3,6 +3,8 @@ import { type CollectionEntry, getCollection, render } from "astro:content";
 import BlogPost from "../../layouts/BlogPost.astro";
 import { estimateWordCount, getCategoryLabel } from "../../utils/postMeta";
 import { filterVisibleBlogPosts } from "../../utils/postVisibility";
+import AssetPhoto from "../../components/AssetPhoto.astro";
+import AssetGallery from "../../components/AssetGallery.astro";
 
 export async function getStaticPaths() {
   const posts = filterVisibleBlogPosts(await getCollection("blog"));
@@ -28,6 +30,7 @@ const { post, categoryLabel, wordCount, postId, tags } = Astro.props as {
 };
 const { Content, headings } = await render(post);
 const tocHeadings = headings.filter((heading) => heading.depth === 2);
+const mdxComponents = { AssetPhoto, AssetGallery };
 ---
 
 <BlogPost
@@ -38,5 +41,5 @@ const tocHeadings = headings.filter((heading) => heading.depth === 2);
   tags={tags}
   tocHeadings={tocHeadings}
 >
-  <Content />
+  <Content components={mdxComponents} />
 </BlogPost>
