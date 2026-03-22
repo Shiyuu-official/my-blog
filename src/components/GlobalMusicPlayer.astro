@@ -110,6 +110,11 @@ const localPlaylistPath = "/music/playlist.json";
     return [];
   };
 
+  const isLikelyValidAudioSource = (url) =>
+    typeof url === "string" &&
+    /^https?:\/\//i.test(url) &&
+    /\.(mp3|m4a|aac|ogg|wav|flac|webm)(\?|#|$)/i.test(url);
+
   const ensureUserInteractionCapture = () => {
     if (window[USER_INTERACTION_BOUND_KEY]) return;
     window[USER_INTERACTION_BOUND_KEY] = true;
@@ -161,6 +166,7 @@ const localPlaylistPath = "/music/playlist.json";
   };
 
   const setupGlobalAPlayer = async () => {
+    try {
     const hostWrap = document.querySelector("[data-global-music-player]");
     const host = document.querySelector("[data-aplayer-host]");
     if (!(hostWrap instanceof HTMLElement) || !(host instanceof HTMLElement)) return;
@@ -185,7 +191,7 @@ const localPlaylistPath = "/music/playlist.json";
     const response = await fetch(`${playlistPath}?t=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) return;
     const payload = await response.json();
-    const audioList = pickAudioList(payload);
+    const audioList = pickAudioList(payload).filter((item) => isLikelyValidAudioSource(item?.url));
     window.__GLOBAL_APLAYER_LAST_CHECK_AT__ = Date.now();
     if (!Array.isArray(audioList) || audioList.length === 0) return;
 
@@ -257,6 +263,7 @@ const localPlaylistPath = "/music/playlist.json";
     let retryTimer = null;
     let retryCount = 0;
     const maxRetries = 12;
+    let consecutiveLoadErrors = 0;
 
     const stopAutoPlayRetries = () => {
       if (retryTimer) {
@@ -304,7 +311,20 @@ const localPlaylistPath = "/music/playlist.json";
       startAutoPlayRetries();
     };
 
+    const skipBrokenTrack = () => {
+      consecutiveLoadErrors += 1;
+      if (consecutiveLoadErrors >= audioList.length) {
+        shouldAutoPlay = false;
+        stopAutoPlayRetries();
+        return;
+      }
+      try {
+        player.skipForward();
+      } catch {}
+    };
+
     player.on("canplay", () => {
+      consecutiveLoadErrors = 0;
       isReadyToPlay = true;
       startAutoPlayRetries();
     });
@@ -314,6 +334,7 @@ const localPlaylistPath = "/music/playlist.json";
     }
 
     player.on("play", () => {
+      consecutiveLoadErrors = 0;
       shouldAutoPlay = false;
       stopAutoPlayRetries();
       writeState(player);
@@ -326,10 +347,17 @@ const localPlaylistPath = "/music/playlist.json";
     });
     player.on("timeupdate", () => writeState(player));
     player.on("volumechange", () => writeState(player));
+    player.on("error", skipBrokenTrack);
+    if (player.audio instanceof HTMLAudioElement) {
+      player.audio.addEventListener("error", skipBrokenTrack);
+    }
 
     setTimeout(syncTitleOverflow, 0);
     setTimeout(startAutoPlayRetries, 120);
     window.addEventListener("resize", syncTitleOverflow, { passive: true });
+    } catch (error) {
+      console.warn("[global-aplayer] setup failed", error);
+    }
   };
 
   setupGlobalAPlayer();

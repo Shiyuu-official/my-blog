@@ -41,7 +41,7 @@ const coverImage = heroImage ?? pickPlaceholder(postId);
       <ol class="toc-list">
         {tocHeadings.map((heading) => (
           <li>
-            <a href={`#${heading.slug}`}>
+            <a href={`#${heading.slug}`} data-toc-link>
               {heading.text}
             </a>
           </li>
@@ -103,7 +103,62 @@ const coverImage = heroImage ?? pickPlaceholder(postId);
   </article>
 </AppLayout>
 
+<script>
+  const headingHighlightClass = "toc-heading-target";
+
+  const animateHeadingJump = (hash, pushHistory = false) => {
+    if (!hash) return;
+
+    const decodedHash = decodeURIComponent(hash);
+    const target = document.querySelector(decodedHash);
+    if (!(target instanceof HTMLElement)) return;
+
+    if (pushHistory) {
+      history.pushState(null, "", decodedHash);
+    }
+
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    target.classList.remove(headingHighlightClass);
+    void target.offsetWidth;
+    target.classList.add(headingHighlightClass);
+
+    const previousTimerId = target.dataset.tocHighlightTimer;
+    if (previousTimerId) {
+      window.clearTimeout(Number(previousTimerId));
+    }
+
+    const timerId = window.setTimeout(() => {
+      target.classList.remove(headingHighlightClass);
+      delete target.dataset.tocHighlightTimer;
+    }, 1400);
+
+    target.dataset.tocHighlightTimer = String(timerId);
+  };
+
+  document.querySelectorAll<HTMLAnchorElement>("[data-toc-link]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const href = link.getAttribute("href");
+      if (!href?.startsWith("#")) return;
+
+      event.preventDefault();
+      animateHeadingJump(href, true);
+    });
+  });
+
+  window.addEventListener("hashchange", () => {
+    animateHeadingJump(window.location.hash);
+  });
+</script>
+
 <style>
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
   .post {
     max-width: 72ch;
     margin: 0 auto;
@@ -218,5 +273,29 @@ const coverImage = heroImage ?? pickPlaceholder(postId);
   .toc-list a:hover {
     background: rgba(255, 255, 255, 0.55);
     color: #1e6fcb;
+  }
+
+  :global(.markdown-body h2[id]) {
+    scroll-margin-top: 1.5rem;
+    transition:
+      background-color 0.45s ease,
+      box-shadow 0.45s ease,
+      transform 0.45s ease;
+  }
+
+  :global(.markdown-body h2[id].toc-heading-target) {
+    background: linear-gradient(90deg, rgba(30, 111, 203, 0.14), rgba(30, 111, 203, 0));
+    box-shadow: 0 0 0 10px rgba(30, 111, 203, 0.08);
+    transform: translateX(4px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :global(html) {
+      scroll-behavior: auto;
+    }
+
+    :global(.markdown-body h2[id]) {
+      transition: none;
+    }
   }
 </style>
