@@ -35,6 +35,44 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
   <section class="home-pixiv">
     <WeeklyPixivCarousel />
   </section>
+  <section class="home-link">
+    <a
+      class="home-link-card"
+      data-link-card
+      href="https://www.nowcoder.com/exam/oj?questionJobId=10&subTabName=online_coding_page"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="打开牛客在线编程题库"
+    >
+      <div class="home-link-card__inner">
+        <div class="home-link-card__terminal" aria-hidden="true">
+          <div class="home-link-card__terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="home-link-card__terminal-screen">
+            <p class="home-link-card__prompt">$ oj session --job frontend</p>
+            <p class="home-link-card__line"><span>Question</span><strong>#010</strong></p>
+            <p class="home-link-card__line"><span>Status</span><strong>Ready</strong></p>
+            <p class="home-link-card__line"><span>Mode</span><strong>Practice</strong></p>
+            <div class="home-link-card__code">
+              <span style="--line-width: 78%"></span>
+              <span style="--line-width: 58%"></span>
+              <span style="--line-width: 86%"></span>
+              <span style="--line-width: 44%"></span>
+            </div>
+          </div>
+        </div>
+        <div class="home-link-card__content">
+          <p class="home-link-card__kicker">Practice</p>
+          <h2>牛客题库</h2>
+          <p class="home-link-card__desc">像打开终端一样进入在线编程题库，先刷题，样式后面再继续收。</p>
+          <span class="home-link-card__cta">Open Nowcoder</span>
+        </div>
+      </div>
+    </a>
+  </section>
   </section>
 </AppLayout>
 
@@ -61,6 +99,12 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
     justify-content: center;
   }
 
+  .home-link {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+
   .todo-backdrop {
     position: fixed;
     inset: 0;
@@ -75,6 +119,232 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
     opacity: 1;
     pointer-events: auto;
     background: transparent;
+  }
+
+  .home-link-card {
+    --rotate-x: 0deg;
+    --rotate-y: 0deg;
+    overflow: hidden;
+    width: 260px;
+    height: 440px;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+    color: inherit;
+    text-decoration: none;
+    transform: rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+    transform-style: preserve-3d;
+    transition:
+      transform 520ms cubic-bezier(0.22, 1.12, 0.36, 1),
+      box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .home-link-card::before,
+  .home-link-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .home-link-card::before {
+    background:
+      linear-gradient(rgba(116, 255, 214, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(116, 255, 214, 0.05) 1px, transparent 1px);
+    background-size: 100% 26px, 26px 100%;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.25));
+  }
+
+  .home-link-card::after {
+    inset: auto -25% 18%;
+    height: 120px;
+    background: radial-gradient(circle at center, rgba(76, 255, 198, 0.22), transparent 68%);
+    filter: blur(24px);
+    opacity: 0.72;
+    transform: translateX(-18%);
+    animation: terminal-glow 6.8s ease-in-out infinite;
+  }
+
+  .home-link-card:hover,
+  .home-link-card:focus-visible {
+    border-color: rgba(34, 58, 111, 0.34);
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.14),
+      0 14px 30px rgba(9, 12, 20, 0.08);
+  }
+
+  .home-link-card:focus-visible {
+    outline: 2px solid #223a6f;
+    outline-offset: 3px;
+  }
+
+  .home-link-card__inner {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 22px 22px;
+  }
+
+  .home-link-card__terminal {
+    position: relative;
+    border: 1px solid rgba(135, 255, 216, 0.2);
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(8, 18, 18, 0.78), rgba(9, 17, 23, 0.55));
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 12px 28px rgba(0, 0, 0, 0.14);
+    overflow: hidden;
+  }
+
+  .home-link-card__terminal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 0%, rgba(126, 255, 214, 0.08) 48%, transparent 100%);
+    transform: translateX(-120%);
+    animation: terminal-scan 5.6s linear infinite;
+  }
+
+  .home-link-card__terminal-bar {
+    display: flex;
+    gap: 0.35rem;
+    align-items: center;
+    padding: 0.8rem 0.9rem;
+    border-bottom: 1px solid rgba(135, 255, 216, 0.12);
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .home-link-card__terminal-bar span {
+    width: 0.56rem;
+    height: 0.56rem;
+    border-radius: 999px;
+    background: rgba(213, 255, 245, 0.4);
+  }
+
+  .home-link-card__terminal-bar span:nth-child(1) {
+    background: rgba(255, 115, 115, 0.7);
+  }
+
+  .home-link-card__terminal-bar span:nth-child(2) {
+    background: rgba(255, 204, 102, 0.72);
+  }
+
+  .home-link-card__terminal-bar span:nth-child(3) {
+    background: rgba(88, 214, 141, 0.72);
+  }
+
+  .home-link-card__terminal-screen {
+    padding: 0.95rem 1rem 1rem;
+    color: #b8ffe6;
+    font-family: "Consolas", "SFMono-Regular", "Menlo", monospace;
+  }
+
+  .home-link-card__prompt,
+  .home-link-card__line {
+    margin: 0;
+    font-size: 0.76rem;
+    line-height: 1.55;
+  }
+
+  .home-link-card__prompt {
+    color: rgba(184, 255, 230, 0.92);
+    margin-bottom: 0.65rem;
+  }
+
+  .home-link-card__line {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    color: rgba(184, 255, 230, 0.7);
+  }
+
+  .home-link-card__line strong {
+    color: #effff8;
+    font-weight: 600;
+  }
+
+  .home-link-card__code {
+    display: grid;
+    gap: 0.48rem;
+    margin-top: 0.95rem;
+  }
+
+  .home-link-card__code span {
+    display: block;
+    width: var(--line-width);
+    height: 0.38rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(130, 255, 219, 0.75), rgba(130, 255, 219, 0.14));
+  }
+
+  .home-link-card__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.15rem;
+  }
+
+  .home-link-card__kicker {
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(29, 45, 76, 0.72);
+  }
+
+  .home-link-card h2 {
+    margin: 0.25rem 0 0;
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    line-height: 1.05;
+  }
+
+  .home-link-card__desc {
+    margin: auto 0 0;
+    line-height: 1.7;
+    color: rgba(23, 29, 42, 0.72);
+  }
+
+  .home-link-card__cta {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1.25rem;
+    font-size: 0.92rem;
+    color: rgba(29, 45, 76, 0.9);
+  }
+
+  .home-link-card__cta::after {
+    content: "->";
+    margin-left: 0.45rem;
+  }
+
+  @keyframes terminal-scan {
+    0% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(120%);
+    }
+  }
+
+  @keyframes terminal-glow {
+    0%,
+    100% {
+      transform: translateX(-18%);
+      opacity: 0.52;
+    }
+    50% {
+      transform: translateX(10%);
+      opacity: 0.86;
+    }
   }
 
   .todo-card {
@@ -208,6 +478,24 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
       padding: 20px 16px 16px;
     }
 
+    .home-link-card {
+      width: min(260px, calc(100vw - 104px));
+      height: 380px;
+      border-radius: 20px;
+    }
+
+    .home-link-card__inner {
+      padding: 20px 16px 16px;
+    }
+
+    .home-link-card__terminal-screen {
+      padding: 0.9rem 0.9rem 0.95rem;
+    }
+
+    .home-link-card__content {
+      padding-top: 1rem;
+    }
+
     .todo-card.is-expanded {
       min-height: 300px;
       padding-bottom: 20px;
@@ -217,25 +505,26 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
   @media (prefers-reduced-motion: reduce) {
     .todo-backdrop,
     .todo-card,
+    .home-link-card,
+    .home-link-card__terminal::after,
+    .home-link-card::after,
     .todo-details,
     .todo-group summary::before {
       transition: none;
+      animation: none;
     }
   }
 </style>
 
 <script>
-  const setupTodoCard = () => {
-    const card = document.querySelector("[data-todo-card]");
-    const detail = document.querySelector("[data-todo-details]");
-    const backdrop = document.querySelector("[data-todo-backdrop]");
-    if (!(card instanceof HTMLElement) || !(detail instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
+  const setupTiltCard = (card, canTilt = () => true) => {
+    if (!(card instanceof HTMLElement)) {
       return;
     }
-    if (card.dataset.ready === "true") {
+    if (card.dataset.tiltReady === "true") {
       return;
     }
-    card.dataset.ready = "true";
+    card.dataset.tiltReady = "true";
 
     const maxTilt = 8;
     const followStrength = 0.14;
@@ -245,7 +534,6 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
     let currentX = 0;
     let currentY = 0;
     let rafId = 0;
-    let closeTimer = 0;
 
     const renderTilt = () => {
       card.style.setProperty("--rotate-x", `${currentX}deg`);
@@ -276,6 +564,40 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
       rafId = window.requestAnimationFrame(animateTilt);
     };
 
+    card.addEventListener("mousemove", (event) => {
+      if (!canTilt()) {
+        return;
+      }
+      const rect = card.getBoundingClientRect();
+      const px = (event.clientX - rect.left) / rect.width - 0.5;
+      const py = (event.clientY - rect.top) / rect.height - 0.5;
+      targetX = -py * maxTilt;
+      targetY = px * maxTilt;
+      ensureTiltAnimation();
+    });
+
+    card.addEventListener("mouseleave", () => {
+      targetX = 0;
+      targetY = 0;
+      ensureTiltAnimation();
+    });
+  };
+
+  const setupTodoCard = () => {
+    const card = document.querySelector("[data-todo-card]");
+    const detail = document.querySelector("[data-todo-details]");
+    const backdrop = document.querySelector("[data-todo-backdrop]");
+    if (!(card instanceof HTMLElement) || !(detail instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
+      return;
+    }
+    if (card.dataset.ready === "true") {
+      return;
+    }
+    card.dataset.ready = "true";
+
+    let closeTimer = 0;
+    setupTiltCard(card, () => !card.classList.contains("is-expanded"));
+
     const syncDetailHeight = () => {
       if (!card.classList.contains("is-expanded")) {
         return;
@@ -299,9 +621,8 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
       card.classList.remove("is-expanded");
       card.setAttribute("aria-expanded", "false");
       backdrop.classList.remove("is-active");
-      targetX = 0;
-      targetY = 0;
-      ensureTiltAnimation();
+      card.style.setProperty("--rotate-x", "0deg");
+      card.style.setProperty("--rotate-y", "0deg");
       closeTimer = window.setTimeout(() => {
         if (!card.classList.contains("is-expanded")) {
           detail.hidden = true;
@@ -324,11 +645,8 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
       card.classList.add("is-expanded");
       card.setAttribute("aria-expanded", "true");
       backdrop.classList.add("is-active");
-      targetX = 0;
-      targetY = 0;
-      currentX = 0;
-      currentY = 0;
-      renderTilt();
+      card.style.setProperty("--rotate-x", "0deg");
+      card.style.setProperty("--rotate-y", "0deg");
     };
 
     const toggleCard = () => {
@@ -339,24 +657,6 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
       }
     };
 
-    const onMove = (event) => {
-      if (card.classList.contains("is-expanded")) {
-        return;
-      }
-      const rect = card.getBoundingClientRect();
-      const px = (event.clientX - rect.left) / rect.width - 0.5;
-      const py = (event.clientY - rect.top) / rect.height - 0.5;
-      targetX = -py * maxTilt;
-      targetY = px * maxTilt;
-      ensureTiltAnimation();
-    };
-
-    card.addEventListener("mousemove", onMove);
-    card.addEventListener("mouseleave", () => {
-      targetX = 0;
-      targetY = 0;
-      ensureTiltAnimation();
-    });
     card.addEventListener("click", (event) => {
       const target = event.target;
       if (target instanceof Element && target.closest("[data-todo-details]")) {
@@ -389,6 +689,13 @@ import WeeklyPixivCarousel from "../components/WeeklyPixivCarousel.astro";
     });
   };
 
+  const setupHomeLinkCard = () => {
+    const card = document.querySelector("[data-link-card]");
+    setupTiltCard(card);
+  };
+
   setupTodoCard();
+  setupHomeLinkCard();
   document.addEventListener("astro:page-load", setupTodoCard);
+  document.addEventListener("astro:page-load", setupHomeLinkCard);
 </script>
