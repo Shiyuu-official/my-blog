@@ -1,220 +1,218 @@
 {
-  "generatedAt": "2026-04-13T05:31:44.315587Z",
+  "generatedAt": "2026-04-20T05:30:26.145861Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "143269197",
-      "title": "タコウィンナー",
-      "userName": "チャイ",
-      "userId": "1096811",
-      "artworkUrl": "https://www.pixiv.net/artworks/143269197",
-      "thumbnailUrl": "/pixiv-weekly/143269197.jpg",
+      "id": "143526476",
+      "title": "相打ち覚悟",
+      "userName": "sakifox",
+      "userId": "110061",
+      "artworkUrl": "https://www.pixiv.net/artworks/143526476",
+      "thumbnailUrl": "/pixiv-weekly/143526476.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/20/30/03/143269197_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/01/08/47/143526476_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/20/30/03/143269197_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/01/08/47/143526476_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "タコ",
-        "素晴らしきほっこりの世界",
-        "タコさんウインナー",
-        "運命の出会い"
+        "禪院直哉",
+        "呪術廻戦",
+        "存在しない記憶",
+        "解釈違い",
+        "きれいなドブカス",
+        "顔がエエわ",
+        "反転ドブカス",
+        "ドブカス反転",
+        "善院直哉",
+        "三歩前を歩いたる"
       ]
     },
     {
       "rank": 2,
-      "id": "143198386",
-      "title": "空色の小部屋",
+      "id": "143484250",
+      "title": "幽艶",
       "userName": "藤ちょこ（藤原）",
       "userId": "27517",
-      "artworkUrl": "https://www.pixiv.net/artworks/143198386",
-      "thumbnailUrl": "/pixiv-weekly/143198386.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/143484250",
+      "thumbnailUrl": "/pixiv-weekly/143484250.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/06/00/00/25/143198386_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/13/00/00/13/143484250_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/06/00/00/25/143198386_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/13/00/00/13/143484250_p0_master1200.jpg",
       "tags": [
-        "青空",
         "オリジナル",
-        "天使",
-        "オリジナル5000users入り",
-        "白タイツ",
-        "セーラーワンピ",
-        "白发"
+        "花",
+        "和装",
+        "花と女の子",
+        "オリジナル10000users入り",
+        "刀",
+        "赤目"
       ]
     },
     {
       "rank": 3,
-      "id": "143243206",
-      "title": "フリンズさんlog②",
-      "userName": "茂田家",
-      "userId": "1813251",
-      "artworkUrl": "https://www.pixiv.net/artworks/143243206",
-      "thumbnailUrl": "/pixiv-weekly/143243206.jpg",
+      "id": "143533536",
+      "title": "日々の絵",
+      "userName": "ポ～ン（出水ぽすか）",
+      "userId": "33333",
+      "artworkUrl": "https://www.pixiv.net/artworks/143533536",
+      "thumbnailUrl": "/pixiv-weekly/143533536.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/01/18/46/143243206_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/07/30/13/143533536_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/01/18/46/143243206_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/07/30/13/143533536_p0_master1200.jpg",
       "tags": [
-        "原神",
-        "フリンズ",
-        "原神1000users入り"
+        "創作",
+        "クロワッサン",
+        "カヌレ",
+        "食べ物",
+        "飲み物",
+        "コーヒー"
       ]
     },
     {
       "rank": 4,
-      "id": "143250880",
-      "title": "血ドレストガちゃん",
-      "userName": "こばじ",
-      "userId": "4328506",
-      "artworkUrl": "https://www.pixiv.net/artworks/143250880",
-      "thumbnailUrl": "/pixiv-weekly/143250880.jpg",
+      "id": "143484377",
+      "title": "うどみょん",
+      "userName": "羽々斬＠例大祭 ね-28ab",
+      "userId": "2179695",
+      "artworkUrl": "https://www.pixiv.net/artworks/143484377",
+      "thumbnailUrl": "/pixiv-weekly/143484377.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/08/03/44/143250880_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/13/00/00/33/143484377_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/08/03/44/143250880_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/13/00/00/33/143484377_p0_master1200.jpg",
       "tags": [
-        "僕のヒーローアカデミア",
-        "トガヒミコ",
-        "ぼくのヒーローアカデミア",
-        "笑顔"
+        "東方",
+        "魂魄妖夢",
+        "鈴仙・優曇華院・イナバ",
+        "うどみょん",
+        "東方Project"
       ]
     },
     {
       "rank": 5,
-      "id": "143248443",
-      "title": "個人メモ：アオリアングルの顔",
+      "id": "143561843",
+      "title": "リトルシネマ珈琲紳士",
+      "userName": "lack",
+      "userId": "83739",
+      "artworkUrl": "https://www.pixiv.net/artworks/143561843",
+      "thumbnailUrl": "/pixiv-weekly/143561843.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/15/00/00/20/143561843_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/15/00/00/20/143561843_p0_master1200.jpg",
+      "tags": [
+        "オリジナル",
+        "シネマ珈琲紳士",
+        "lack",
+        "おっぱい"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "143523256",
+      "title": "初心にかえって初期衣装を描いてみた⑮",
+      "userName": "Sa-fu",
+      "userId": "77915733",
+      "artworkUrl": "https://www.pixiv.net/artworks/143523256",
+      "thumbnailUrl": "/pixiv-weekly/143523256.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/00/00/18/143523256_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/00/00/18/143523256_p0_master1200.jpg",
+      "tags": [
+        "プロセカ",
+        "花里みのり",
+        "懐かしき想い出"
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "143513181",
+      "title": "ピザトースト",
+      "userName": "チャイ",
+      "userId": "1096811",
+      "artworkUrl": "https://www.pixiv.net/artworks/143513181",
+      "thumbnailUrl": "/pixiv-weekly/143513181.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/13/20/30/07/143513181_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/13/20/30/07/143513181_p0_master1200.jpg",
+      "tags": [
+        "オリジナル",
+        "ピザトースト",
+        "いきものごはん",
+        "ちーずねこ",
+        "素晴らしきほっこりの世界",
+        "最高の寝心地",
+        "にゃにこれかわいい",
+        "ピニャトースト"
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "143531774",
+      "title": "陽動",
+      "userName": "MILKTEA",
+      "userId": "6175553",
+      "artworkUrl": "https://www.pixiv.net/artworks/143531774",
+      "thumbnailUrl": "/pixiv-weekly/143531774.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/06/00/08/143531774_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/06/00/08/143531774_p0_master1200.jpg",
+      "tags": [
+        "超かぐや姫!",
+        "酒寄彩葉",
+        "月見ヤチヨ",
+        "ヤチいろ",
+        "百合",
+        "後ろからハグ"
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "143561810",
+      "title": "個展のお知らせ",
+      "userName": "藤ちょこ（藤原）",
+      "userId": "27517",
+      "artworkUrl": "https://www.pixiv.net/artworks/143561810",
+      "thumbnailUrl": "/pixiv-weekly/143561810.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/15/00/00/14/143561810_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/15/00/00/14/143561810_p0_master1200.jpg",
+      "tags": [
+        "個展",
+        "告知",
+        "オリジナル",
+        "オリジナル1000users入り"
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "143536364",
+      "title": "個人メモ：布質によるシワの違い",
       "userName": "漫画素材工房",
       "userId": "16776564",
-      "artworkUrl": "https://www.pixiv.net/artworks/143248443",
-      "thumbnailUrl": "/pixiv-weekly/143248443.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/143536364",
+      "thumbnailUrl": "/pixiv-weekly/143536364.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/06/00/13/143248443_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/10/04/36/143536364_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/06/00/13/143248443_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/14/10/04/36/143536364_p0_master1200.jpg",
       "tags": [
         "漫画素材工房",
         "描き方",
         "人体",
         "身体",
-        "人物",
-        "顔",
-        "アオリ"
-      ]
-    },
-    {
-      "rank": 6,
-      "id": "143239756",
-      "title": "エイプリルフール🍎",
-      "userName": "わか",
-      "userId": "11079351",
-      "artworkUrl": "https://www.pixiv.net/artworks/143239756",
-      "thumbnailUrl": "/pixiv-weekly/143239756.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/00/00/10/143239756_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/00/00/10/143239756_p0_master1200.jpg",
-      "tags": [
-        "プロセカ",
-        "プロジェクトセカイ",
-        "あなた様でしたか"
-      ]
-    },
-    {
-      "rank": 7,
-      "id": "143221828",
-      "title": "｢……………あ、おはよ！｣",
-      "userName": "千種みのり@お仕事募集中",
-      "userId": "41106591",
-      "artworkUrl": "https://www.pixiv.net/artworks/143221828",
-      "thumbnailUrl": "/pixiv-weekly/143221828.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/06/17/09/47/143221828_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/06/17/09/47/143221828_p0_master1200.jpg",
-      "tags": [
-        "オリジナル",
-        "女の子",
-        "着衣巨乳",
-        "制服",
-        "黒タイツ",
-        "志乃と恋",
-        "早乙女志乃",
-        "通学",
-        "銀髪"
-      ]
-    },
-    {
-      "rank": 8,
-      "id": "143239036",
-      "title": "no.2230 『 タルトタタン 』",
-      "userName": "8810⋱YouTube開始⋰",
-      "userId": "27384568",
-      "artworkUrl": "https://www.pixiv.net/artworks/143239036",
-      "thumbnailUrl": "/pixiv-weekly/143239036.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/06/23/46/00/143239036_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/06/23/46/00/143239036_p0_master1200.jpg",
-      "tags": [
-        "タタタータ・タータタン",
-        "タタンタンタタン",
-        "タルトシカカタン",
-        "タルトタツ",
-        "タルトタタン",
-        "落書き",
-        "創作",
-        "オリキャラ",
-        "オリジナル",
-        "タルトシカタタン"
-      ]
-    },
-    {
-      "rank": 9,
-      "id": "143242170",
-      "title": "✨🌜",
-      "userName": "Sheya",
-      "userId": "11764388",
-      "artworkUrl": "https://www.pixiv.net/artworks/143242170",
-      "thumbnailUrl": "/pixiv-weekly/143242170.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/00/47/44/143242170_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/07/00/47/44/143242170_p0_master1200.jpg",
-      "tags": [
-        "女の子",
-        "白髪",
-        "HonkaiStarRail",
-        "崩壊スターレイル",
-        "崩坏星穹铁道",
-        "黑天鹅",
-        "Sheya",
-        "ブラックスワン(スターレイル)",
-        "崩壊:スターレイル1000users入り"
-      ]
-    },
-    {
-      "rank": 10,
-      "id": "143207568",
-      "title": "一夜限りのユキズリマン　その95",
-      "userName": "ハミタ",
-      "userId": "6667588",
-      "artworkUrl": "https://www.pixiv.net/artworks/143207568",
-      "thumbnailUrl": "/pixiv-weekly/143207568.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/06/05/52/40/143207568_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/04/06/05/52/40/143207568_p0_master1200.jpg",
-      "tags": [
-        "漫画",
-        "一夜限りのユキズリマン",
-        "ド畜生",
-        "残当",
-        "知ってた",
-        "ゴミクズマン",
-        "人間失格"
+        "服",
+        "シワ",
+        "服のシワ",
+        "パーカー",
+        "ML(Pixiv_id:101175277):破壊者"
       ]
     }
   ]
