@@ -6,7 +6,7 @@ description: "作业记录"
 tags: ["图形学","学习","games101","作业"]
 heroImage: "../../../assets/cover/games101.png"
 ---
-## homework01
+## Assignment01
 把三维空间里的一个三角形，通过一套变换流程，正确显示到 2D 屏幕上。(AI)    
 * **实现模型矩阵，让三角形绕z轴旋转**    
 输入角度，返回变换矩阵。代码如下
@@ -61,3 +61,74 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
 
 附加题：实现绕任意过原点的轴旋转   
 暂时懒得写。过     
+## Assignment02
+三角形填充光栅化、三角形内外判断、深度插值和 z-buffer 遮挡测试。(AI)
+
+* **实现三角形内外判断**    
+对每个像素采样点，使用叉积判断它是否位于三角形内部。代码如下
+```c++
+static bool insideTriangle(int x, int y, const Vector3f* _v)
+{   
+    Vector3f p(x + 0.5f, y + 0.5f, 0);
+    Vector3f AB = _v[1] - _v[0];
+    Vector3f BC = _v[2] - _v[1];
+    Vector3f CA = _v[0] - _v[2];
+    Vector3f AP = p - _v[0];
+    Vector3f BP = p - _v[1];
+    Vector3f CP = p - _v[2];
+
+    float z1 = AB.cross(AP).z();
+    float z2 = BC.cross(BP).z();
+    float z3 = CA.cross(CP).z();
+
+    return (z1 >= 0 && z2 >= 0 && z3 >= 0) ||
+           (z1 <= 0 && z2 <= 0 && z3 <= 0);
+}
+```
+
+* **实现三角形光栅化和深度测试**   
+先计算三角形的包围盒，只遍历包围盒内的像素；如果像素在三角形内部，就用重心坐标插值得到当前像素的深度值，再和 depth_buf 中记录的深度比较，只有更靠近相机时才更新颜色。代码如下
+```c++
+void rst::rasterizer::rasterize_triangle(const Triangle& t) {
+    auto v = t.toVector4();
+
+    float min_x = std::min(std::min(v[0].x(), v[1].x()), v[2].x());
+    float max_x = std::max(std::max(v[0].x(), v[1].x()), v[2].x());
+    float min_y = std::min(std::min(v[0].y(), v[1].y()), v[2].y());
+    float max_y = std::max(std::max(v[0].y(), v[1].y()), v[2].y());
+
+    int x_start = std::max(0, static_cast<int>(std::floor(min_x)));
+    int x_end   = std::min(width - 1, static_cast<int>(std::ceil(max_x)));
+    int y_start = std::max(0, static_cast<int>(std::floor(min_y)));
+    int y_end   = std::min(height - 1, static_cast<int>(std::ceil(max_y)));
+
+    for (int x = x_start; x <= x_end; ++x) {
+        for (int y = y_start; y <= y_end; ++y) {
+            if (insideTriangle(x, y, t.v)) {
+                auto[alpha, beta, gamma] =
+                    computeBarycentric2D(x + 0.5f, y + 0.5f, t.v);
+
+                float w_reciprocal =
+                    1.0 / (alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w());
+
+                float z_interpolated =
+                    alpha * v[0].z() / v[0].w()
+                  + beta  * v[1].z() / v[1].w()
+                  + gamma * v[2].z() / v[2].w();
+
+                z_interpolated *= w_reciprocal;
+
+                int index = get_index(x, y);
+                if (z_interpolated < depth_buf[index]) {
+                    depth_buf[index] = z_interpolated;
+                    set_pixel({x, y, z_interpolated}, t.getColor());
+                }
+            }
+        }
+    }
+}
+```
+最终实现效果如图
+<AssetPhoto src="blog素材/study/games101-作业/homework02/[Code]_2026-05-04_132057_717.png" width="100%" />
+附加题：实现 2x2 super-sampling 抗锯齿
+暂时没写，边缘还有锯齿。过
