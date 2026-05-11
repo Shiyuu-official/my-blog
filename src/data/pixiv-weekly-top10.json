@@ -1,208 +1,214 @@
 {
-  "generatedAt": "2026-05-04T05:52:59.881293Z",
+  "generatedAt": "2026-05-11T06:25:42.586246Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "144074547",
-      "title": "iFace",
-      "userName": "Mika Pikazo",
-      "userId": "1039353",
-      "artworkUrl": "https://www.pixiv.net/artworks/144074547",
-      "thumbnailUrl": "/pixiv-weekly/144074547.jpg",
+      "id": "144326783",
+      "title": "Nocturne&Aubade",
+      "userName": "Rella",
+      "userId": "163536",
+      "artworkUrl": "https://www.pixiv.net/artworks/144326783",
+      "thumbnailUrl": "/pixiv-weekly/144326783.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/00/00/42/144074547_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/00/30/11/144326783_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/00/00/42/144074547_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/00/30/11/144326783_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "オリジナル5000users入り",
-        "カラフル"
+        "VOCALOID",
+        "初音ミク",
+        "KAITO",
+        "MEIKO",
+        "VOCALOID5000users入り",
+        "蓄音機MEIKO"
       ]
     },
     {
       "rank": 2,
-      "id": "144036042",
-      "title": "【解説付イラストメイキング】十六夜咲夜【期間限定】",
-      "userName": "羽々斬＠例大祭 ね-28ab",
-      "userId": "2179695",
-      "artworkUrl": "https://www.pixiv.net/artworks/144036042",
-      "thumbnailUrl": "/pixiv-weekly/144036042.jpg",
+      "id": "144370077",
+      "title": "34日目 いますぐ輪廻",
+      "userName": "にんげんまめ￤2日目東ア-31",
+      "userId": "38297201",
+      "artworkUrl": "https://www.pixiv.net/artworks/144370077",
+      "thumbnailUrl": "/pixiv-weekly/144370077.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/27/00/03/51/144036042_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/26/144370077_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/27/00/03/51/144036042_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/26/144370077_p0_master1200.jpg",
       "tags": [
-        "東方",
-        "十六夜咲夜",
-        "メイキング",
-        "東方Project",
-        "東方Project5000users入り"
+        "初音ミク",
+        "VOCALOID",
+        "いますぐ輪廻",
+        "VOCALOID5000users入り"
       ]
     },
     {
       "rank": 3,
-      "id": "144035574",
-      "title": "服部武雄",
-      "userName": "ケースワベ【K-SUWABE】",
-      "userId": "24517",
-      "artworkUrl": "https://www.pixiv.net/artworks/144035574",
-      "thumbnailUrl": "/pixiv-weekly/144035574.jpg",
+      "id": "144325054",
+      "title": "PHONE GIRL",
+      "userName": "Mika Pikazo",
+      "userId": "1039353",
+      "artworkUrl": "https://www.pixiv.net/artworks/144325054",
+      "thumbnailUrl": "/pixiv-weekly/144325054.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/27/00/00/26/144035574_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/00/00/55/144325054_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/27/00/00/26/144035574_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/00/00/55/144325054_p0_master1200.jpg",
       "tags": [
-        "服部武雄(Fate)",
-        "FGO",
-        "Fate/GrandOrder",
-        "Fate/GO1000users入り"
+        "オリジナル",
+        "オリジナル5000users入り",
+        "赤髪",
+        "公衆電話"
       ]
     },
     {
       "rank": 4,
-      "id": "144075389",
-      "title": "27日目 私服燐羽",
-      "userName": "にんげんまめ￤2日目東ア-31",
-      "userId": "38297201",
-      "artworkUrl": "https://www.pixiv.net/artworks/144075389",
-      "thumbnailUrl": "/pixiv-weekly/144075389.jpg",
+      "id": "144370136",
+      "title": "ラブパラ",
+      "userName": "八三",
+      "userId": "637197",
+      "artworkUrl": "https://www.pixiv.net/artworks/144370136",
+      "thumbnailUrl": "/pixiv-weekly/144370136.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/00/14/06/144075389_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/36/144370136_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/00/14/06/144075389_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/36/144370136_p0_master1200.jpg",
       "tags": [
-        "100日チャレンジ",
-        "学園アイドルマスター",
-        "学マス",
-        "賀陽燐羽",
-        "オフショルダー"
+        "VOCALOID",
+        "初音ミク",
+        "DECO*27",
+        "ラブパラ",
+        "ラブパラミク(へーセー)",
+        "ラブパラミク(レーワ)",
+        "VOCALOID1000users入り",
+        "にーにゃ"
       ]
     },
     {
       "rank": 5,
-      "id": "144074572",
-      "title": "和服化まとめ",
-      "userName": "hakusai",
-      "userId": "1589657",
-      "artworkUrl": "https://www.pixiv.net/artworks/144074572",
-      "thumbnailUrl": "/pixiv-weekly/144074572.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/00/00/54/144074572_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/00/00/54/144074572_p0_master1200.jpg",
-      "tags": [
-        "気ままに和服化",
-        "着物",
-        "素晴らしすぎる",
-        "gura",
-        "バーチャルYouTuber",
-        "がうる・ぐら"
-      ]
-    },
-    {
-      "rank": 6,
-      "id": "144035493",
-      "title": "純美の舞台裏✨",
-      "userName": "雨壱絵穹",
-      "userId": "2459678",
-      "artworkUrl": "https://www.pixiv.net/artworks/144035493",
-      "thumbnailUrl": "/pixiv-weekly/144035493.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/27/00/00/15/144035493_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/27/00/00/15/144035493_p0_master1200.jpg",
-      "tags": [
-        "崩壊スターレイル",
-        "HonkaiStarRail",
-        "UniverseEchoes",
-        "スターレイル3周年おめでとう",
-        "スターレイル",
-        "仕事絵",
-        "崩壊:スターレイル1000users入り",
-        "マダム・ヘルタ",
-        "ロビン(スターレイル)"
-      ]
-    },
-    {
-      "rank": 7,
-      "id": "144082470",
-      "title": "個人メモ：腕組みポーズ",
+      "id": "144379656",
+      "title": "個人メモ：Tシャツのシワ/首回りのポイント",
       "userName": "漫画素材工房",
       "userId": "16776564",
-      "artworkUrl": "https://www.pixiv.net/artworks/144082470",
-      "thumbnailUrl": "/pixiv-weekly/144082470.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/144379656",
+      "thumbnailUrl": "/pixiv-weekly/144379656.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/06/00/12/144082470_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/06/00/13/144379656_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/06/00/12/144082470_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/06/00/13/144379656_p0_master1200.jpg",
       "tags": [
         "漫画素材工房",
         "描き方",
         "人体",
         "身体",
-        "胴体",
-        "腕",
-        "腕組み"
+        "服",
+        "シワ",
+        "服のシワ"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "144370197",
+      "title": "The ONE",
+      "userName": "村カルキ",
+      "userId": "811927",
+      "artworkUrl": "https://www.pixiv.net/artworks/144370197",
+      "thumbnailUrl": "/pixiv-weekly/144370197.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/50/144370197_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/50/144370197_p0_master1200.jpg",
+      "tags": [
+        "JYuno",
+        "仕事絵"
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "144336139",
+      "title": "虹色のキッチン",
+      "userName": "ポ～ン（出水ぽすか）",
+      "userId": "33333",
+      "artworkUrl": "https://www.pixiv.net/artworks/144336139",
+      "thumbnailUrl": "/pixiv-weekly/144336139.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/07/30/02/144336139_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/07/30/02/144336139_p0_master1200.jpg",
+      "tags": [
+        "創作",
+        "魚料理",
+        "こいのぼり",
+        "こどもの日",
+        "虹色"
       ]
     },
     {
       "rank": 8,
-      "id": "144088656",
-      "title": "无题",
-      "userName": "黄瓜",
-      "userId": "6681779",
-      "artworkUrl": "https://www.pixiv.net/artworks/144088656",
-      "thumbnailUrl": "/pixiv-weekly/144088656.jpg",
+      "id": "144385824",
+      "title": "オスガキメイド",
+      "userName": "CoCoLo",
+      "userId": "9580492",
+      "artworkUrl": "https://www.pixiv.net/artworks/144385824",
+      "thumbnailUrl": "/pixiv-weekly/144385824.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/12/01/15/144088656_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/10/38/25/144385824_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/12/01/15/144088656_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/10/38/25/144385824_p0_master1200.jpg",
       "tags": [
-        "東方",
-        "東方Project",
-        "射命丸文",
-        "烏",
-        "東方Project1000users入り"
+        "男の子",
+        "少年",
+        "スパッツ",
+        "ジャージメイド",
+        "メイド"
       ]
     },
     {
       "rank": 9,
-      "id": "144074709",
-      "title": "ティーネ・チェルク",
-      "userName": "九十九",
-      "userId": "28005",
-      "artworkUrl": "https://www.pixiv.net/artworks/144074709",
-      "thumbnailUrl": "/pixiv-weekly/144074709.jpg",
+      "id": "144351461",
+      "title": "電車が揺れますのでご注意ください",
+      "userName": "千種みのり@お仕事募集中",
+      "userId": "41106591",
+      "artworkUrl": "https://www.pixiv.net/artworks/144351461",
+      "thumbnailUrl": "/pixiv-weekly/144351461.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/00/01/57/144074709_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/17/13/17/144351461_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/00/01/57/144074709_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/17/13/17/144351461_p0_master1200.jpg",
       "tags": [
-        "Fate/strangefake",
-        "ティーネ・チェルク",
-        "Fate/strangeFake",
-        "褐色"
+        "オリジナル",
+        "百合",
+        "女の子",
+        "早乙女志乃",
+        "白雪恋",
+        "志乃と恋",
+        "オリジナル1000users入り",
+        "赤面",
+        "制服"
       ]
     },
     {
       "rank": 10,
-      "id": "144088858",
-      "title": "「小さくて可愛い文芸部の知的な先輩」2話後編更新されました",
-      "userName": "あめこ/甘露アメ",
-      "userId": "42039",
-      "artworkUrl": "https://www.pixiv.net/artworks/144088858",
-      "thumbnailUrl": "/pixiv-weekly/144088858.jpg",
+      "id": "144370007",
+      "title": "あさひちゃんお誕生日会場2026",
+      "userName": "ねことうふ",
+      "userId": "159912",
+      "artworkUrl": "https://www.pixiv.net/artworks/144370007",
+      "thumbnailUrl": "/pixiv-weekly/144370007.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/12/08/02/144088858_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/16/144370007_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/04/28/12/08/02/144088858_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/16/144370007_p0_master1200.jpg",
       "tags": [
-        "コミックNewtype",
-        "ラブコメ",
-        "事前",
-        "スクールリボン"
+        "お兄ちゃんはおしまい",
+        "原作",
+        "桜花あさひ",
+        "誕生日",
+        "おにまい",
+        "happybirthday",
+        "猫耳",
+        "オリジナル1000users入り"
       ]
     }
   ]
