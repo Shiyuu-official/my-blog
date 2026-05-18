@@ -1,214 +1,210 @@
 {
-  "generatedAt": "2026-05-11T06:25:42.586246Z",
+  "generatedAt": "2026-05-18T06:41:26.356442Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "144326783",
-      "title": "Nocturne&Aubade",
-      "userName": "Rella",
-      "userId": "163536",
-      "artworkUrl": "https://www.pixiv.net/artworks/144326783",
-      "thumbnailUrl": "/pixiv-weekly/144326783.jpg",
+      "id": "144629865",
+      "title": "ツバキ",
+      "userName": "モ誰",
+      "userId": "1878082",
+      "artworkUrl": "https://www.pixiv.net/artworks/144629865",
+      "thumbnailUrl": "/pixiv-weekly/144629865.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/00/30/11/144326783_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/11/00/07/30/144629865_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/00/30/11/144326783_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/11/00/07/30/144629865_p0_master1200.jpg",
       "tags": [
-        "VOCALOID",
-        "初音ミク",
-        "KAITO",
-        "MEIKO",
-        "VOCALOID5000users入り",
-        "蓄音機MEIKO"
+        "ツバキ",
+        "WutheringWaves",
+        "鸣潮",
+        "鳴潮",
+        "ツバキ(鳴潮)",
+        "鳴潮10000users入り",
+        "流し目"
       ]
     },
     {
       "rank": 2,
-      "id": "144370077",
-      "title": "34日目 いますぐ輪廻",
-      "userName": "にんげんまめ￤2日目東ア-31",
-      "userId": "38297201",
-      "artworkUrl": "https://www.pixiv.net/artworks/144370077",
-      "thumbnailUrl": "/pixiv-weekly/144370077.jpg",
+      "id": "144670121",
+      "title": "カルロッタ",
+      "userName": "モ誰",
+      "userId": "1878082",
+      "artworkUrl": "https://www.pixiv.net/artworks/144670121",
+      "thumbnailUrl": "/pixiv-weekly/144670121.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/26/144370077_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/53/34/144670121_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/26/144370077_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/53/34/144670121_p0_master1200.jpg",
       "tags": [
-        "初音ミク",
-        "VOCALOID",
-        "いますぐ輪廻",
-        "VOCALOID5000users入り"
+        "カルロッタ",
+        "鳴潮",
+        "カルロッタ(鳴潮)",
+        "鳴潮5000users入り",
+        "鳴潮10000users入り"
       ]
     },
     {
       "rank": 3,
-      "id": "144325054",
-      "title": "PHONE GIRL",
-      "userName": "Mika Pikazo",
-      "userId": "1039353",
-      "artworkUrl": "https://www.pixiv.net/artworks/144325054",
-      "thumbnailUrl": "/pixiv-weekly/144325054.jpg",
+      "id": "144629159",
+      "title": "ネロ・クラウディウス",
+      "userName": "ほうき星",
+      "userId": "70050825",
+      "artworkUrl": "https://www.pixiv.net/artworks/144629159",
+      "thumbnailUrl": "/pixiv-weekly/144629159.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/00/00/55/144325054_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/11/00/00/25/144629159_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/00/00/55/144325054_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/11/00/00/25/144629159_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "オリジナル5000users入り",
-        "赤髪",
-        "公衆電話"
+        "ネロ・クラウディウス",
+        "Fate/GrandOrder",
+        "女の子",
+        "マニキュア",
+        "ネロ・クラウディウス(Fate)",
+        "Fate/GO5000users入り",
+        "金髪"
       ]
     },
     {
       "rank": 4,
-      "id": "144370136",
-      "title": "ラブパラ",
-      "userName": "八三",
-      "userId": "637197",
-      "artworkUrl": "https://www.pixiv.net/artworks/144370136",
-      "thumbnailUrl": "/pixiv-weekly/144370136.jpg",
+      "id": "144695225",
+      "title": "ジョンくんまとめ【ｷﾞｬｸﾞ多め】",
+      "userName": "ほんちゅ",
+      "userId": "58519",
+      "artworkUrl": "https://www.pixiv.net/artworks/144695225",
+      "thumbnailUrl": "/pixiv-weekly/144695225.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/36/144370136_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/20/35/51/144695225_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/36/144370136_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/20/35/51/144695225_p0_master1200.jpg",
       "tags": [
-        "VOCALOID",
-        "初音ミク",
-        "DECO*27",
-        "ラブパラ",
-        "ラブパラミク(へーセー)",
-        "ラブパラミク(レーワ)",
-        "VOCALOID1000users入り",
-        "にーにゃ"
+        "Fate/GrandOrder",
+        "ジョン・ラックランド(Fate)",
+        "ガレス(Fate)",
+        "茨木童子(Fate)",
+        "ジョンガレ",
+        "代弁者:くろひー",
+        "君のような勘のいいガキは嫌いだよ"
       ]
     },
     {
       "rank": 5,
-      "id": "144379656",
-      "title": "個人メモ：Tシャツのシワ/首回りのポイント",
+      "id": "144675682",
+      "title": "個人メモ：握り拳を描くコツ",
       "userName": "漫画素材工房",
       "userId": "16776564",
-      "artworkUrl": "https://www.pixiv.net/artworks/144379656",
-      "thumbnailUrl": "/pixiv-weekly/144379656.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/144675682",
+      "thumbnailUrl": "/pixiv-weekly/144675682.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/06/00/13/144379656_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/06/00/07/144675682_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/06/00/13/144379656_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/06/00/07/144675682_p0_master1200.jpg",
       "tags": [
         "漫画素材工房",
         "描き方",
         "人体",
         "身体",
-        "服",
-        "シワ",
-        "服のシワ"
+        "美術解剖学",
+        "手",
+        "拳",
+        "握りこぶし"
       ]
     },
     {
       "rank": 6,
-      "id": "144370197",
-      "title": "The ONE",
-      "userName": "村カルキ",
-      "userId": "811927",
-      "artworkUrl": "https://www.pixiv.net/artworks/144370197",
-      "thumbnailUrl": "/pixiv-weekly/144370197.jpg",
+      "id": "144669163",
+      "title": "ミリア",
+      "userName": "イマッゾ",
+      "userId": "20522049",
+      "artworkUrl": "https://www.pixiv.net/artworks/144669163",
+      "thumbnailUrl": "/pixiv-weekly/144669163.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/50/144370197_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/28/20/144669163_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/50/144370197_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/28/20/144669163_p0_master1200.jpg",
       "tags": [
-        "JYuno",
-        "仕事絵"
+        "ミリア(イマッゾ)",
+        "メタグロス",
+        "美しきもの",
+        "ジムリーダー(イマッゾ)"
       ]
     },
     {
       "rank": 7,
-      "id": "144336139",
-      "title": "虹色のキッチン",
-      "userName": "ポ～ン（出水ぽすか）",
-      "userId": "33333",
-      "artworkUrl": "https://www.pixiv.net/artworks/144336139",
-      "thumbnailUrl": "/pixiv-weekly/144336139.jpg",
+      "id": "144707441",
+      "title": "フィービー",
+      "userName": "モ誰",
+      "userId": "1878082",
+      "artworkUrl": "https://www.pixiv.net/artworks/144707441",
+      "thumbnailUrl": "/pixiv-weekly/144707441.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/07/30/02/144336139_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/13/01/09/50/144707441_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/07/30/02/144336139_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/13/01/09/50/144707441_p0_master1200.jpg",
       "tags": [
-        "創作",
-        "魚料理",
-        "こいのぼり",
-        "こどもの日",
-        "虹色"
+        "フィービー",
+        "鳴潮",
+        "フィービー(鳴潮)",
+        "鳴潮10000users入り"
       ]
     },
     {
       "rank": 8,
-      "id": "144385824",
-      "title": "オスガキメイド",
-      "userName": "CoCoLo",
-      "userId": "9580492",
-      "artworkUrl": "https://www.pixiv.net/artworks/144385824",
-      "thumbnailUrl": "/pixiv-weekly/144385824.jpg",
+      "id": "144669880",
+      "title": "41日目 デビルじゃないもん 白悪魔",
+      "userName": "にんげんまめ￤2日目東ア-31",
+      "userId": "38297201",
+      "artworkUrl": "https://www.pixiv.net/artworks/144669880",
+      "thumbnailUrl": "/pixiv-weekly/144669880.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/10/38/25/144385824_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/46/06/144669880_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/10/38/25/144385824_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/46/06/144669880_p0_master1200.jpg",
       "tags": [
-        "男の子",
-        "少年",
-        "スパッツ",
-        "ジャージメイド",
-        "メイド"
+        "デビルじゃないもん",
+        "100日チャレンジ",
+        "初音ミク",
+        "VOCALOID1000users入り"
       ]
     },
     {
       "rank": 9,
-      "id": "144351461",
-      "title": "電車が揺れますのでご注意ください",
-      "userName": "千種みのり@お仕事募集中",
-      "userId": "41106591",
-      "artworkUrl": "https://www.pixiv.net/artworks/144351461",
-      "thumbnailUrl": "/pixiv-weekly/144351461.jpg",
+      "id": "144667563",
+      "title": "･ﾟ❄️❄️。ﾟ。❄️❄️・",
+      "userName": "hakusai",
+      "userId": "1589657",
+      "artworkUrl": "https://www.pixiv.net/artworks/144667563",
+      "thumbnailUrl": "/pixiv-weekly/144667563.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/17/13/17/144351461_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/00/03/144667563_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/04/17/13/17/144351461_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/00/03/144667563_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "百合",
-        "女の子",
-        "早乙女志乃",
-        "白雪恋",
-        "志乃と恋",
-        "オリジナル1000users入り",
-        "赤面",
-        "制服"
+        "初音ミク",
+        "VOCALOID"
       ]
     },
     {
       "rank": 10,
-      "id": "144370007",
-      "title": "あさひちゃんお誕生日会場2026",
-      "userName": "ねことうふ",
-      "userId": "159912",
-      "artworkUrl": "https://www.pixiv.net/artworks/144370007",
-      "thumbnailUrl": "/pixiv-weekly/144370007.jpg",
+      "id": "144668095",
+      "title": "猫猫ちゃん",
+      "userName": "CORE",
+      "userId": "11211325",
+      "artworkUrl": "https://www.pixiv.net/artworks/144668095",
+      "thumbnailUrl": "/pixiv-weekly/144668095.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/16/144370007_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/04/02/144668095_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/05/00/00/16/144370007_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/04/02/144668095_p0_master1200.jpg",
       "tags": [
-        "お兄ちゃんはおしまい",
-        "原作",
-        "桜花あさひ",
-        "誕生日",
-        "おにまい",
-        "happybirthday",
-        "猫耳",
-        "オリジナル1000users入り"
+        "薬屋のひとりごと",
+        "猫猫",
+        "少女",
+        "女の子",
+        "黒髪",
+        "薬屋500users入り"
       ]
     }
   ]
