@@ -1,210 +1,208 @@
 {
-  "generatedAt": "2026-05-18T06:41:26.356442Z",
+  "generatedAt": "2026-05-25T06:58:39.451852Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "144629865",
-      "title": "ツバキ",
-      "userName": "モ誰",
-      "userId": "1878082",
-      "artworkUrl": "https://www.pixiv.net/artworks/144629865",
-      "thumbnailUrl": "/pixiv-weekly/144629865.jpg",
+      "id": "144942196",
+      "title": "DECOMIKUs*2021-2022",
+      "userName": "おむたつ/omutatsu",
+      "userId": "1499614",
+      "artworkUrl": "https://www.pixiv.net/artworks/144942196",
+      "thumbnailUrl": "/pixiv-weekly/144942196.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/11/00/07/30/144629865_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/00/02/43/144942196_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/11/00/07/30/144629865_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/00/02/43/144942196_p0_master1200.jpg",
       "tags": [
-        "ツバキ",
-        "WutheringWaves",
-        "鸣潮",
-        "鳴潮",
-        "ツバキ(鳴潮)",
-        "鳴潮10000users入り",
-        "流し目"
+        "初音ミク",
+        "DECO*27",
+        "VOCALOID"
       ]
     },
     {
       "rank": 2,
-      "id": "144670121",
-      "title": "カルロッタ",
+      "id": "144941868",
+      "title": "千咲",
       "userName": "モ誰",
       "userId": "1878082",
-      "artworkUrl": "https://www.pixiv.net/artworks/144670121",
-      "thumbnailUrl": "/pixiv-weekly/144670121.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/144941868",
+      "thumbnailUrl": "/pixiv-weekly/144941868.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/53/34/144670121_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/00/00/26/144941868_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/53/34/144670121_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/00/00/26/144941868_p0_master1200.jpg",
       "tags": [
-        "カルロッタ",
+        "千咲",
         "鳴潮",
-        "カルロッタ(鳴潮)",
+        "朽葉千咲",
         "鳴潮5000users入り",
-        "鳴潮10000users入り"
+        "黑髮"
       ]
     },
     {
       "rank": 3,
-      "id": "144629159",
-      "title": "ネロ・クラウディウス",
-      "userName": "ほうき星",
-      "userId": "70050825",
-      "artworkUrl": "https://www.pixiv.net/artworks/144629159",
-      "thumbnailUrl": "/pixiv-weekly/144629159.jpg",
+      "id": "144979043",
+      "title": "DECOMIKUs*2023",
+      "userName": "おむたつ/omutatsu",
+      "userId": "1499614",
+      "artworkUrl": "https://www.pixiv.net/artworks/144979043",
+      "thumbnailUrl": "/pixiv-weekly/144979043.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/11/00/00/25/144629159_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/20/00/03/33/144979043_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/11/00/00/25/144629159_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/20/00/03/33/144979043_p0_master1200.jpg",
       "tags": [
-        "ネロ・クラウディウス",
-        "Fate/GrandOrder",
-        "女の子",
-        "マニキュア",
-        "ネロ・クラウディウス(Fate)",
-        "Fate/GO5000users入り",
-        "金髪"
+        "初音ミク",
+        "VOCALOID",
+        "ラビットホール",
+        "DECO*27",
+        "GUMI"
       ]
     },
     {
       "rank": 4,
-      "id": "144695225",
-      "title": "ジョンくんまとめ【ｷﾞｬｸﾞ多め】",
-      "userName": "ほんちゅ",
-      "userId": "58519",
-      "artworkUrl": "https://www.pixiv.net/artworks/144695225",
-      "thumbnailUrl": "/pixiv-weekly/144695225.jpg",
+      "id": "144928169",
+      "title": "歌姫失格",
+      "userName": "ピノキオピー",
+      "userId": "1746464",
+      "artworkUrl": "https://www.pixiv.net/artworks/144928169",
+      "thumbnailUrl": "/pixiv-weekly/144928169.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/20/35/51/144695225_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/18/18/39/58/144928169_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/20/35/51/144695225_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/18/18/39/58/144928169_p0_master1200.jpg",
       "tags": [
-        "Fate/GrandOrder",
-        "ジョン・ラックランド(Fate)",
-        "ガレス(Fate)",
-        "茨木童子(Fate)",
-        "ジョンガレ",
-        "代弁者:くろひー",
-        "君のような勘のいいガキは嫌いだよ"
+        "VOCALOID",
+        "初音ミク",
+        "ピノキオピー",
+        "アイマイナ",
+        "歌姫失格",
+        "電子の歌姫",
+        "ボカロ"
       ]
     },
     {
       "rank": 5,
-      "id": "144675682",
-      "title": "個人メモ：握り拳を描くコツ",
+      "id": "144907994",
+      "title": "ユーノ",
+      "userName": "モ誰",
+      "userId": "1878082",
+      "artworkUrl": "https://www.pixiv.net/artworks/144907994",
+      "thumbnailUrl": "/pixiv-weekly/144907994.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/18/01/27/26/144907994_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/18/01/27/26/144907994_p0_master1200.jpg",
+      "tags": [
+        "ユーノ",
+        "鳴潮",
+        "ユーノ(鳴潮)",
+        "鳴潮5000users入り",
+        "裸足"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "144904241",
+      "title": "ソードマスター銀狼LV.999",
+      "userName": "torino",
+      "userId": "1960050",
+      "artworkUrl": "https://www.pixiv.net/artworks/144904241",
+      "thumbnailUrl": "/pixiv-weekly/144904241.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/18/00/00/19/144904241_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/18/00/00/19/144904241_p0_master1200.jpg",
+      "tags": [
+        "銀狼(スターレイル)",
+        "崩壊スターレイル",
+        "崩壊:スターレイル",
+        "銀狼LV.999",
+        "おへそ",
+        "崩壊:スターレイル10000users入り",
+        "ポニーテール"
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "144973293",
+      "title": "【UTAUカバー】2代目閻魔【罪告ナエ】",
+      "userName": "アボガド6",
+      "userId": "883091",
+      "artworkUrl": "https://www.pixiv.net/artworks/144973293",
+      "thumbnailUrl": "/pixiv-weekly/144973293.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/22/10/26/144973293_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/22/10/26/144973293_p0_master1200.jpg",
+      "tags": [
+        "UTAU",
+        "罪告ナエ"
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "144942059",
+      "title": "和服化まとめ",
+      "userName": "hakusai",
+      "userId": "1589657",
+      "artworkUrl": "https://www.pixiv.net/artworks/144942059",
+      "thumbnailUrl": "/pixiv-weekly/144942059.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/00/01/27/144942059_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/00/01/27/144942059_p0_master1200.jpg",
+      "tags": [
+        "着物",
+        "気ままに和服化",
+        "セーラームーン",
+        "月野うさぎ",
+        "ちびうさ",
+        "ハイヒール"
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "144949979",
+      "title": "個人メモ：肘の位置と曲がり方",
       "userName": "漫画素材工房",
       "userId": "16776564",
-      "artworkUrl": "https://www.pixiv.net/artworks/144675682",
-      "thumbnailUrl": "/pixiv-weekly/144675682.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/144949979",
+      "thumbnailUrl": "/pixiv-weekly/144949979.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/06/00/07/144675682_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/06/00/08/144949979_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/06/00/07/144675682_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/19/06/00/08/144949979_p0_master1200.jpg",
       "tags": [
         "漫画素材工房",
         "描き方",
         "人体",
         "身体",
         "美術解剖学",
-        "手",
-        "拳",
-        "握りこぶし"
-      ]
-    },
-    {
-      "rank": 6,
-      "id": "144669163",
-      "title": "ミリア",
-      "userName": "イマッゾ",
-      "userId": "20522049",
-      "artworkUrl": "https://www.pixiv.net/artworks/144669163",
-      "thumbnailUrl": "/pixiv-weekly/144669163.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/28/20/144669163_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/28/20/144669163_p0_master1200.jpg",
-      "tags": [
-        "ミリア(イマッゾ)",
-        "メタグロス",
-        "美しきもの",
-        "ジムリーダー(イマッゾ)"
-      ]
-    },
-    {
-      "rank": 7,
-      "id": "144707441",
-      "title": "フィービー",
-      "userName": "モ誰",
-      "userId": "1878082",
-      "artworkUrl": "https://www.pixiv.net/artworks/144707441",
-      "thumbnailUrl": "/pixiv-weekly/144707441.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/13/01/09/50/144707441_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/13/01/09/50/144707441_p0_master1200.jpg",
-      "tags": [
-        "フィービー",
-        "鳴潮",
-        "フィービー(鳴潮)",
-        "鳴潮10000users入り"
-      ]
-    },
-    {
-      "rank": 8,
-      "id": "144669880",
-      "title": "41日目 デビルじゃないもん 白悪魔",
-      "userName": "にんげんまめ￤2日目東ア-31",
-      "userId": "38297201",
-      "artworkUrl": "https://www.pixiv.net/artworks/144669880",
-      "thumbnailUrl": "/pixiv-weekly/144669880.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/46/06/144669880_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/46/06/144669880_p0_master1200.jpg",
-      "tags": [
-        "デビルじゃないもん",
-        "100日チャレンジ",
-        "初音ミク",
-        "VOCALOID1000users入り"
-      ]
-    },
-    {
-      "rank": 9,
-      "id": "144667563",
-      "title": "･ﾟ❄️❄️。ﾟ。❄️❄️・",
-      "userName": "hakusai",
-      "userId": "1589657",
-      "artworkUrl": "https://www.pixiv.net/artworks/144667563",
-      "thumbnailUrl": "/pixiv-weekly/144667563.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/00/03/144667563_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/00/03/144667563_p0_master1200.jpg",
-      "tags": [
-        "初音ミク",
-        "VOCALOID"
+        "腕",
+        "肘"
       ]
     },
     {
       "rank": 10,
-      "id": "144668095",
-      "title": "猫猫ちゃん",
-      "userName": "CORE",
-      "userId": "11211325",
-      "artworkUrl": "https://www.pixiv.net/artworks/144668095",
-      "thumbnailUrl": "/pixiv-weekly/144668095.jpg",
+      "id": "144904232",
+      "title": "デコミク3th",
+      "userName": "おむたつ/omutatsu",
+      "userId": "1499614",
+      "artworkUrl": "https://www.pixiv.net/artworks/144904232",
+      "thumbnailUrl": "/pixiv-weekly/144904232.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/04/02/144668095_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/18/00/00/17/144904232_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/05/12/00/04/02/144668095_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/18/00/00/17/144904232_p0_master1200.jpg",
       "tags": [
-        "薬屋のひとりごと",
-        "猫猫",
-        "少女",
-        "女の子",
-        "黒髪",
-        "薬屋500users入り"
+        "初音ミク",
+        "VOCALOID",
+        "デコミク",
+        "VOCALOID1000users入り",
+        "守護りたい、この笑顔"
       ]
     }
   ]
