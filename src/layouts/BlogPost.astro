@@ -275,7 +275,7 @@ const coverImage = heroImage ?? pickPlaceholder(postId);
     color: #1e6fcb;
   }
 
-  :global(.markdown-body h2[id]) {
+  :global(.markdown-body :is(h2, h3)[id]) {
     scroll-margin-top: 1.5rem;
     transition:
       background-color 0.45s ease,
@@ -283,7 +283,7 @@ const coverImage = heroImage ?? pickPlaceholder(postId);
       transform 0.45s ease;
   }
 
-  :global(.markdown-body h2[id].toc-heading-target) {
+  :global(.markdown-body :is(h2, h3)[id].toc-heading-target) {
     background: linear-gradient(90deg, rgba(30, 111, 203, 0.14), rgba(30, 111, 203, 0));
     box-shadow: 0 0 0 10px rgba(30, 111, 203, 0.08);
     transform: translateX(4px);
@@ -294,7 +294,7 @@ const coverImage = heroImage ?? pickPlaceholder(postId);
       scroll-behavior: auto;
     }
 
-    :global(.markdown-body h2[id]) {
+    :global(.markdown-body :is(h2, h3)[id]) {
       transition: none;
     }
   }
