@@ -1,226 +1,210 @@
 {
-  "generatedAt": "2026-06-01T08:18:25.794197Z",
+  "generatedAt": "2026-06-08T07:19:20.990895Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "145215368",
-      "title": "ハローセカイ",
-      "userName": "おむたつ/omutatsu",
-      "userId": "1499614",
-      "artworkUrl": "https://www.pixiv.net/artworks/145215368",
-      "thumbnailUrl": "/pixiv-weekly/145215368.jpg",
+      "id": "145495424",
+      "title": "儿童节",
+      "userName": "kieed",
+      "userId": "11525066",
+      "artworkUrl": "https://www.pixiv.net/artworks/145495424",
+      "thumbnailUrl": "/pixiv-weekly/145495424.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/00/00/05/145215368_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/06/01/38/145495424_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/00/00/05/145215368_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/06/01/38/145495424_p0_master1200.jpg",
       "tags": [
-        "VOCALOID",
         "初音ミク",
-        "ハローセカイ",
-        "プロセカ",
-        "本家",
-        "あなた様でしたか",
-        "MVスタイル",
+        "重音テト",
+        "亞北ネル",
+        "VOCALOID",
+        "とりぷるばか",
         "VOCALOID5000users入り"
       ]
     },
     {
       "rank": 2,
-      "id": "145216028",
-      "title": "伏黒甚爾",
-      "userName": "モ誰",
-      "userId": "1878082",
-      "artworkUrl": "https://www.pixiv.net/artworks/145216028",
-      "thumbnailUrl": "/pixiv-weekly/145216028.jpg",
+      "id": "145454290",
+      "title": "アフタヌーン・ライティング",
+      "userName": "torino",
+      "userId": "1960050",
+      "artworkUrl": "https://www.pixiv.net/artworks/145454290",
+      "thumbnailUrl": "/pixiv-weekly/145454290.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/00/06/12/145216028_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/01/00/00/21/145454290_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/00/06/12/145216028_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/01/00/00/21/145454290_p0_master1200.jpg",
       "tags": [
-        "伏黒甚爾",
-        "呪術廻戦",
-        "呪術廻戦1000users入り"
+        "原神",
+        "ニコ・リヤン",
+        "GenshinImpact",
+        "白タイツ",
+        "原神10000users入り",
+        "金髪"
       ]
     },
     {
       "rank": 3,
-      "id": "145177348",
-      "title": "Journey",
-      "userName": "おむたつ/omutatsu",
-      "userId": "1499614",
-      "artworkUrl": "https://www.pixiv.net/artworks/145177348",
-      "thumbnailUrl": "/pixiv-weekly/145177348.jpg",
+      "id": "145508830",
+      "title": "ターニング",
+      "userName": "紺屋",
+      "userId": "10109777",
+      "artworkUrl": "https://www.pixiv.net/artworks/145508830",
+      "thumbnailUrl": "/pixiv-weekly/145508830.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/25/00/00/19/145177348_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/11/06/06/145508830_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/25/00/00/19/145177348_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/11/06/06/145508830_p0_master1200.jpg",
       "tags": [
-        "初音ミク",
         "VOCALOID",
-        "Journey",
-        "プロセカ",
-        "本家",
-        "レオニミク",
-        "モモジャンミク",
-        "ワンダショミク",
-        "ビビバスミク"
+        "初音ミク",
+        "女の子",
+        "VOCALOID1000users入り"
       ]
     },
     {
       "rank": 4,
-      "id": "145188313",
-      "title": "エイメス",
-      "userName": "モ誰",
-      "userId": "1878082",
-      "artworkUrl": "https://www.pixiv.net/artworks/145188313",
-      "thumbnailUrl": "/pixiv-weekly/145188313.jpg",
+      "id": "145495505",
+      "title": "LINE着せかえ＆スタンプ",
+      "userName": "ケースワベ【K-SUWABE】",
+      "userId": "24517",
+      "artworkUrl": "https://www.pixiv.net/artworks/145495505",
+      "thumbnailUrl": "/pixiv-weekly/145495505.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/25/08/22/24/145188313_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/00/00/57/145495505_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/25/08/22/24/145188313_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/00/00/57/145495505_p0_master1200.jpg",
       "tags": [
-        "エイメス",
-        "鳴潮",
-        "鳴潮5000users入り"
+        "オリジナル",
+        "LINEスタンプ"
       ]
     },
     {
       "rank": 5,
-      "id": "145218843",
-      "title": "无题",
-      "userName": "Sheya",
-      "userId": "11764388",
-      "artworkUrl": "https://www.pixiv.net/artworks/145218843",
-      "thumbnailUrl": "/pixiv-weekly/145218843.jpg",
+      "id": "145495265",
+      "title": "･ﾟ✿。ﾟ。❀ﾟ・",
+      "userName": "hakusai",
+      "userId": "1589657",
+      "artworkUrl": "https://www.pixiv.net/artworks/145495265",
+      "thumbnailUrl": "/pixiv-weekly/145495265.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/01/19/44/145218843_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/00/00/06/145495265_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/01/19/44/145218843_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/00/00/06/145495265_p0_master1200.jpg",
       "tags": [
-        "崩壊スターレイル",
-        "崩坏星穹铁道",
-        "HonkaiStarRail",
-        "阮梅",
-        "女の子",
-        "ルアン・メェイ",
-        "紙上に咲く雪梅",
-        "美脚",
-        "崩壊:スターレイル5000users入り",
-        "ハイヒール"
+        "魔法少女まどか☆マギカ",
+        "鹿目まどか生誕祭2019",
+        "アルティメットまどか",
+        "ソウルジェム",
+        "まどか☆マギカ1000users入り"
       ]
     },
     {
       "rank": 6,
-      "id": "145252337",
-      "title": "乙骨憂太",
-      "userName": "モ誰",
-      "userId": "1878082",
-      "artworkUrl": "https://www.pixiv.net/artworks/145252337",
-      "thumbnailUrl": "/pixiv-weekly/145252337.jpg",
+      "id": "145564986",
+      "title": "ホットドッグ",
+      "userName": "チャイ",
+      "userId": "1096811",
+      "artworkUrl": "https://www.pixiv.net/artworks/145564986",
+      "thumbnailUrl": "/pixiv-weekly/145564986.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/27/00/00/24/145252337_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/03/21/05/02/145564986_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/27/00/00/24/145252337_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/03/21/05/02/145564986_p0_master1200.jpg",
       "tags": [
-        "乙骨憂太",
-        "呪術廻戦",
-        "呪術廻戦1000users入り",
-        "祈本里香",
-        "呪術廻戦5000users入り"
+        "オリジナル",
+        "ホットドッグ",
+        "ホットキャット",
+        "素晴らしきほっこりの世界",
+        "いきものごはん",
+        "お手々ないない",
+        "この発想はなかった",
+        "香箱座り"
       ]
     },
     {
       "rank": 7,
-      "id": "145215689",
-      "title": "和服化まとめ",
-      "userName": "hakusai",
-      "userId": "1589657",
-      "artworkUrl": "https://www.pixiv.net/artworks/145215689",
-      "thumbnailUrl": "/pixiv-weekly/145215689.jpg",
+      "id": "145502879",
+      "title": "メードシロコ",
+      "userName": "モ誰",
+      "userId": "1878082",
+      "artworkUrl": "https://www.pixiv.net/artworks/145502879",
+      "thumbnailUrl": "/pixiv-weekly/145502879.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/00/01/49/145215689_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/05/07/27/145502879_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/00/01/49/145215689_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/05/07/27/145502879_p0_master1200.jpg",
       "tags": [
-        "着物",
-        "気ままに和服化",
-        "おジャ魔女どれみ"
+        "シロコ",
+        "ブルーアーカイブ",
+        "砂狼シロコ",
+        "ブルーアーカイブ5000users入り"
       ]
     },
     {
       "rank": 8,
-      "id": "145229307",
-      "title": "Sandrone",
-      "userName": "Nvl",
-      "userId": "28172249",
-      "artworkUrl": "https://www.pixiv.net/artworks/145229307",
-      "thumbnailUrl": "/pixiv-weekly/145229307.jpg",
+      "id": "145484614",
+      "title": "バニラアイス",
+      "userName": "チャイ",
+      "userId": "1096811",
+      "artworkUrl": "https://www.pixiv.net/artworks/145484614",
+      "thumbnailUrl": "/pixiv-weekly/145484614.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/11/40/55/145229307_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/01/20/30/01/145484614_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/11/40/55/145229307_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/01/20/30/01/145484614_p0_master1200.jpg",
       "tags": [
-        "原神",
-        "水着",
-        "GenshinImpact",
-        "サンドローネ(原神)",
-        "シースルー",
-        "フリルビキニ",
-        "原神5000users入り",
-        "茶髪",
-        "照れ顔"
+        "オリジナル",
+        "アイスクリーム",
+        "素晴らしきほっこりの世界",
+        "ニャイスクリーム",
+        "バにゃラ",
+        "すいーつねこ"
       ]
     },
     {
       "rank": 9,
-      "id": "145228076",
-      "title": "倉本さんは可愛いですわ90",
-      "userName": "おやすみまくら",
-      "userId": "705122",
-      "artworkUrl": "https://www.pixiv.net/artworks/145228076",
-      "thumbnailUrl": "/pixiv-weekly/145228076.jpg",
+      "id": "145495854",
+      "title": "おかえり サンドローネ",
+      "userName": "🌽",
+      "userId": "9996383",
+      "artworkUrl": "https://www.pixiv.net/artworks/145495854",
+      "thumbnailUrl": "/pixiv-weekly/145495854.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/10/27/26/145228076_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/00/04/39/145495854_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/10/27/26/145228076_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/02/00/04/39/145495854_p0_master1200.jpg",
       "tags": [
-        "学園アイドルマスター",
-        "倉本千奈",
-        "葛城リーリヤ",
-        "篠澤広",
-        "紫雲清夏",
-        "月村手毬",
-        "姫崎莉波",
-        "十王星南",
-        "素足履き",
-        "ちなひろ"
+        "サンドローネ(原神)",
+        "原神",
+        "原神1000users入り"
       ]
     },
     {
       "rank": 10,
-      "id": "145246017",
-      "title": "わくわく動物園",
-      "userName": "合鴨ミケランジェロ@skeb募",
-      "userId": "116617407",
-      "artworkUrl": "https://www.pixiv.net/artworks/145246017",
-      "thumbnailUrl": "/pixiv-weekly/145246017.jpg",
+      "id": "145536544",
+      "title": "the fool",
+      "userName": "Sheya",
+      "userId": "11764388",
+      "artworkUrl": "https://www.pixiv.net/artworks/145536544",
+      "thumbnailUrl": "/pixiv-weekly/145536544.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/21/40/37/145246017_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/03/01/01/03/145536544_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/05/26/21/40/37/145246017_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/03/01/01/03/145536544_p0_master1200.jpg",
       "tags": [
-        "一次創作",
-        "人外",
-        "ケモノ",
-        "オリジナル",
-        "動物",
-        "オリケモ",
-        "漫画",
-        "創作漫画",
-        "ホラー",
-        "異形"
+        "崩壊スターレイル",
+        "崩坏星穹铁道",
+        "HonkaiStarRail",
+        "开拓者",
+        "女の子",
+        "開拓者・調和",
+        "星(スターレイル)",
+        "穹(スターレイル)",
+        "開拓者(スターレイル)",
+        "崩壊:スターレイル5000users入り"
       ]
     }
   ]
