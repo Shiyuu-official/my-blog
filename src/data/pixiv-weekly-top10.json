@@ -1,215 +1,210 @@
 {
-  "generatedAt": "2026-06-29T07:18:48.584554Z",
+  "generatedAt": "2026-07-06T06:58:14.323602Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "146302031",
-      "title": "ペリカ",
-      "userName": "モ誰",
-      "userId": "1878082",
-      "artworkUrl": "https://www.pixiv.net/artworks/146302031",
-      "thumbnailUrl": "/pixiv-weekly/146302031.jpg",
+      "id": "146697034",
+      "title": "赤ちゃんルチャブルまとめ⑥",
+      "userName": "はーヴェすと",
+      "userId": "2697380",
+      "artworkUrl": "https://www.pixiv.net/artworks/146697034",
+      "thumbnailUrl": "/pixiv-weekly/146697034.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/01/06/28/146302031_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/01/22/00/28/146697034_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/01/06/28/146302031_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/01/22/00/28/146697034_p0_master1200.jpg",
       "tags": [
-        "ペリカ",
-        "アークナイツ:エンドフィールド",
-        "ペリカ(エンドフィールド)",
-        "エンドフィールド10000users入り",
-        "黒スト",
-        "ケモミミ"
+        "ポケモン",
+        "ルチャブル",
+        "ポケモンと生活",
+        "あかチャブル",
+        "マイク"
       ]
     },
     {
       "rank": 2,
-      "id": "146320513",
-      "title": "｢クラゲって心臓ないんだって！(ﾄﾞﾔ)｣",
-      "userName": "千種みのり@お仕事募集中",
-      "userId": "41106591",
-      "artworkUrl": "https://www.pixiv.net/artworks/146320513",
-      "thumbnailUrl": "/pixiv-weekly/146320513.jpg",
+      "id": "146619696",
+      "title": "CINDERELLA",
+      "userName": "モ誰",
+      "userId": "1878082",
+      "artworkUrl": "https://www.pixiv.net/artworks/146619696",
+      "thumbnailUrl": "/pixiv-weekly/146619696.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/17/13/04/146320513_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/29/22/24/35/146619696_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/17/13/04/146320513_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/29/22/24/35/146619696_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "女の子",
-        "白雪恋",
-        "志乃と恋",
-        "へそ出し",
-        "インナーカラー",
-        "オリジナル3000users入り"
+        "白銀の城",
+        "SilverPalace",
+        "실버팰리스",
+        "CINDERELLA",
+        "シンデレラ(白銀の城)",
+        "白銀の城5000users入り",
+        "金髪"
       ]
     },
     {
       "rank": 3,
-      "id": "146346254",
-      "title": "個人メモ：曲げた腕の折れ目の線",
+      "id": "146640132",
+      "title": "「うわぁ～…///」",
+      "userName": "しろまんた",
+      "userId": "10509347",
+      "artworkUrl": "https://www.pixiv.net/artworks/146640132",
+      "thumbnailUrl": "/pixiv-weekly/146640132.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/30/12/52/16/146640132_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/30/12/52/16/146640132_p0_master1200.jpg",
+      "tags": [
+        "先輩がうざい後輩の話",
+        "半額",
+        "目がハート",
+        "半額シール",
+        "五十嵐双葉"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "146686478",
+      "title": "【崖スパ】社長･･･酔ってます？",
+      "userName": "露々々木もげら",
+      "userId": "25825853",
+      "artworkUrl": "https://www.pixiv.net/artworks/146686478",
+      "thumbnailUrl": "/pixiv-weekly/146686478.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/01/17/50/06/146686478-016e32a1081c0deca00c6d574e0417ea_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/01/17/50/06/146686478-016e32a1081c0deca00c6d574e0417ea_p0_master1200.jpg",
+      "tags": [
+        "オリジナル",
+        "創作男女"
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "146646223",
+      "title": "무제",
+      "userName": "Xipa",
+      "userId": "75450767",
+      "artworkUrl": "https://www.pixiv.net/artworks/146646223",
+      "thumbnailUrl": "/pixiv-weekly/146646223.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/30/17/43/31/146646223_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/30/17/43/31/146646223_p0_master1200.jpg",
+      "tags": [
+        "ブルーアーカイブ",
+        "女先生(ブルーアーカイブ)",
+        "おっぱい",
+        "丹花イブキ",
+        "Dongtan"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "146614310",
+      "title": "かき氷",
+      "userName": "チャイ",
+      "userId": "1096811",
+      "artworkUrl": "https://www.pixiv.net/artworks/146614310",
+      "thumbnailUrl": "/pixiv-weekly/146614310.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/29/20/30/02/146614310_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/29/20/30/02/146614310_p0_master1200.jpg",
+      "tags": [
+        "オリジナル",
+        "素晴らしきほっこりの世界",
+        "かき氷",
+        "ねこシロップ",
+        "にゃにこれかわいい",
+        "何かいる",
+        "すいーつねこ",
+        "猫は液体"
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "146626806",
+      "title": "90日目 かぐや",
+      "userName": "にんげんまめ￤1日目東ア-31",
+      "userId": "38297201",
+      "artworkUrl": "https://www.pixiv.net/artworks/146626806",
+      "thumbnailUrl": "/pixiv-weekly/146626806.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/30/00/49/42/146626806_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/30/00/49/42/146626806_p0_master1200.jpg",
+      "tags": [
+        "超かぐや姫!",
+        "かぐや",
+        "かぐや(超かぐや姫!)",
+        "100日チャレンジ",
+        "あぐら",
+        "裸足"
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "146606921",
+      "title": "｢綺麗……だね………｣",
+      "userName": "千種みのり@お仕事募集中",
+      "userId": "41106591",
+      "artworkUrl": "https://www.pixiv.net/artworks/146606921",
+      "thumbnailUrl": "/pixiv-weekly/146606921.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/29/17/09/59/146606921_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/29/17/09/59/146606921_p0_master1200.jpg",
+      "tags": [
+        "オリジナル",
+        "女の子",
+        "着衣巨乳",
+        "早乙女志乃",
+        "志乃と恋",
+        "ポニーテール"
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "146632727",
+      "title": "個人メモ：指と手の平は連動する",
       "userName": "漫画素材工房",
       "userId": "16776564",
-      "artworkUrl": "https://www.pixiv.net/artworks/146346254",
-      "thumbnailUrl": "/pixiv-weekly/146346254.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/146632727",
+      "thumbnailUrl": "/pixiv-weekly/146632727.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/23/06/00/14/146346254_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/30/06/00/13/146632727_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/23/06/00/14/146346254_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/30/06/00/13/146632727_p0_master1200.jpg",
       "tags": [
         "漫画素材工房",
         "描き方",
         "人体",
         "身体",
         "美術解剖学",
-        "腕"
-      ]
-    },
-    {
-      "rank": 4,
-      "id": "146337869",
-      "title": "揺れた",
-      "userName": "碧風羽",
-      "userId": "635526",
-      "artworkUrl": "https://www.pixiv.net/artworks/146337869",
-      "thumbnailUrl": "/pixiv-weekly/146337869.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/23/00/00/03/146337869_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/23/00/00/03/146337869_p0_master1200.jpg",
-      "tags": [
-        "オリジナル",
-        "女の子",
-        "男の子",
-        "青春",
-        "制服",
-        "オリジナル1000users入り",
-        "ブランコ"
-      ]
-    },
-    {
-      "rank": 5,
-      "id": "146342041",
-      "title": "シトラリ",
-      "userName": "ウラ",
-      "userId": "71432148",
-      "artworkUrl": "https://www.pixiv.net/artworks/146342041",
-      "thumbnailUrl": "/pixiv-weekly/146342041.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/23/01/37/56/146342041_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/23/01/37/56/146342041_p0_master1200.jpg",
-      "tags": [
-        "原神",
-        "GenshinImpact",
-        "Genshin",
-        "シトラリ",
-        "鉄壁の左足",
-        "原神1000users入り",
-        "ふともも",
-        "体育座り",
-        "ピンク髪"
-      ]
-    },
-    {
-      "rank": 6,
-      "id": "146298747",
-      "title": "機動物：アサルトシャークシリーズ",
-      "userName": "ケースワベ【K-SUWABE】",
-      "userId": "24517",
-      "artworkUrl": "https://www.pixiv.net/artworks/146298747",
-      "thumbnailUrl": "/pixiv-weekly/146298747.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/00/00/22/146298747_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/00/00/22/146298747_p0_master1200.jpg",
-      "tags": [
-        "機動物",
-        "オリジナル",
-        "サメ",
-        "タンクシャーク",
-        "メタルマックス"
-      ]
-    },
-    {
-      "rank": 7,
-      "id": "146350926",
-      "title": "倉本さんは可愛いですわ93",
-      "userName": "おやすみまくら",
-      "userId": "705122",
-      "artworkUrl": "https://www.pixiv.net/artworks/146350926",
-      "thumbnailUrl": "/pixiv-weekly/146350926.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/23/10/51/13/146350926_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/23/10/51/13/146350926_p0_master1200.jpg",
-      "tags": [
-        "学園アイドルマスター",
-        "倉本千奈",
-        "篠澤広",
-        "秦谷美鈴"
-      ]
-    },
-    {
-      "rank": 8,
-      "id": "146376000",
-      "title": "初心にかえって初期衣装を描いてみた⑳",
-      "userName": "Sa-fu",
-      "userId": "77915733",
-      "artworkUrl": "https://www.pixiv.net/artworks/146376000",
-      "thumbnailUrl": "/pixiv-weekly/146376000.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/24/00/00/12/146376000_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/24/00/00/12/146376000_p0_master1200.jpg",
-      "tags": [
-        "プロセカ",
-        "神代類",
-        "懐かしき想い出",
-        "プロセカ1000users入り"
-      ]
-    },
-    {
-      "rank": 9,
-      "id": "146298642",
-      "title": "ホタル",
-      "userName": "iren",
-      "userId": "34209175",
-      "artworkUrl": "https://www.pixiv.net/artworks/146298642",
-      "thumbnailUrl": "/pixiv-weekly/146298642.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/00/00/07/146298642_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/00/00/07/146298642_p0_master1200.jpg",
-      "tags": [
-        "崩壊:スターレイル",
-        "ホタル(スターレイル)",
-        "崩壊:スターレイル1000users入り",
-        "衣装チェンジ",
-        "髪型チェンジ"
+        "手"
       ]
     },
     {
       "rank": 10,
-      "id": "146317762",
-      "title": "推しの絡みに興奮するジャックス",
-      "userName": "酒盛弓兎",
-      "userId": "19980360",
-      "artworkUrl": "https://www.pixiv.net/artworks/146317762",
-      "thumbnailUrl": "/pixiv-weekly/146317762.jpg",
+      "id": "146668072",
+      "title": "星見雅",
+      "userName": "モ誰",
+      "userId": "1878082",
+      "artworkUrl": "https://www.pixiv.net/artworks/146668072",
+      "thumbnailUrl": "/pixiv-weekly/146668072.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/15/05/14/146317762_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/01/01/52/41/146668072_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/06/22/15/05/14/146317762_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/01/01/52/41/146668072_p0_master1200.jpg",
       "tags": [
-        "The_Amazing_Digital_Circus",
-        "Pomni",
-        "Jax",
-        "Ribbit(TADC)",
-        "TADC500users入り",
-        "トランスジェンダー"
+        "星見雅",
+        "ゼンレスゾーンゼロ",
+        "獣耳",
+        "ゼンゼロ10000users入り"
       ]
     }
   ]
