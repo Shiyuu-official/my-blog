@@ -1,200 +1,211 @@
 {
-  "generatedAt": "2026-07-20T05:57:03.027336Z",
+  "generatedAt": "2026-07-27T06:14:37.113941Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "147172769",
-      "title": "復活ありがとう",
-      "userName": "pottsness",
-      "userId": "59336265",
-      "artworkUrl": "https://www.pixiv.net/artworks/147172769",
-      "thumbnailUrl": "/pixiv-weekly/147172769.jpg",
+      "id": "147443309",
+      "title": "CREATIVE ARIA",
+      "userName": "しぐれうい",
+      "userId": "431873",
+      "artworkUrl": "https://www.pixiv.net/artworks/147443309",
+      "thumbnailUrl": "/pixiv-weekly/147443309.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/00/21/147172769_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/21/00/00/01/147443309_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/00/21/147172769_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/21/00/00/01/147443309_p0_master1200.jpg",
       "tags": [
-        "GenshinImpact",
-        "原神",
-        "サンドローネ(原神)",
-        "コロンビーナ(原神)",
-        "原神1000users入り",
-        "胸"
+        "しぐれうい",
+        "バーチャルYouTuber5000users入り",
+        "指フレーム"
       ]
     },
     {
       "rank": 2,
-      "id": "147135953",
-      "title": "ふゆスタイル⛄",
+      "id": "147400591",
+      "title": "STREAMING AREA",
       "userName": "しぐれうい",
       "userId": "431873",
-      "artworkUrl": "https://www.pixiv.net/artworks/147135953",
-      "thumbnailUrl": "/pixiv-weekly/147135953.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/147400591",
+      "thumbnailUrl": "/pixiv-weekly/147400591.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/13/00/00/04/147135953_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/00/00/02/147400591_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/13/00/00/04/147135953_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/00/00/02/147400591_p0_master1200.jpg",
       "tags": [
-        "アイドルマスターシャイニーカラーズ",
-        "黛冬優子"
-      ]
-    },
-    {
-      "rank": 3,
-      "id": "147172669",
-      "title": "千燈ゆうひchan KV",
-      "userName": "しぐれうい",
-      "userId": "431873",
-      "artworkUrl": "https://www.pixiv.net/artworks/147172669",
-      "thumbnailUrl": "/pixiv-weekly/147172669.jpg",
-      "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/00/06/147172669_p0_master1200.jpg"
-      ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/00/06/147172669_p0_master1200.jpg",
-      "tags": [
-        "ぶいすぽっ!",
-        "千燈ゆうひ",
-        "本家",
-        "バーチャルYoutuber",
+        "しぐれうい",
         "バーチャルYouTuber5000users入り"
       ]
     },
     {
-      "rank": 4,
-      "id": "147208254",
-      "title": "この夏の一瞬を永遠に",
-      "userName": "藤ちょこ（藤原）",
-      "userId": "27517",
-      "artworkUrl": "https://www.pixiv.net/artworks/147208254",
-      "thumbnailUrl": "/pixiv-weekly/147208254.jpg",
+      "rank": 3,
+      "id": "147400639",
+      "title": "♡♡♡",
+      "userName": "おむたつ/omutatsu",
+      "userId": "1499614",
+      "artworkUrl": "https://www.pixiv.net/artworks/147400639",
+      "thumbnailUrl": "/pixiv-weekly/147400639.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/15/00/00/14/147208254_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/00/00/09/147400639_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/15/00/00/14/147208254_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/00/00/09/147400639_p0_master1200.jpg",
       "tags": [
-        "着物",
-        "夏",
-        "花火",
-        "風鈴"
+        "初音ミク",
+        "DECO*27",
+        "ラビットホール",
+        "テレパシ",
+        "アニマル",
+        "電子の歌姫",
+        "VOCALOID1000users入り"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "147472872",
+      "title": "まだその手は握り返せない",
+      "userName": "高梨りんご＠fanbox",
+      "userId": "329258",
+      "artworkUrl": "https://www.pixiv.net/artworks/147472872",
+      "thumbnailUrl": "/pixiv-weekly/147472872.jpg",
+      "fallbackThumbnailUrls": [
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/21/21/15/01/147472872_p0_master1200.jpg"
+      ],
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/21/21/15/01/147472872_p0_master1200.jpg",
+      "tags": [
+        "名探偵プリキュア!",
+        "森亜るるか",
+        "帆羽くれあ",
+        "トップオブリリー",
+        "るるくれ",
+        "たんプリ1000users入り",
+        "くれるる"
       ]
     },
     {
       "rank": 5,
-      "id": "147172781",
-      "title": "【裏干支】",
-      "userName": "美和野らぐ",
-      "userId": "7324626",
-      "artworkUrl": "https://www.pixiv.net/artworks/147172781",
-      "thumbnailUrl": "/pixiv-weekly/147172781.jpg",
+      "id": "147416959",
+      "title": "くれあ、るるか",
+      "userName": "GUY",
+      "userId": "512727",
+      "artworkUrl": "https://www.pixiv.net/artworks/147416959",
+      "thumbnailUrl": "/pixiv-weekly/147416959.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/00/23/147172781_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/12/00/08/147416959_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/00/23/147172781_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/12/00/08/147416959_p0_master1200.jpg",
       "tags": [
-        "オリジナル"
+        "名探偵プリキュア!",
+        "くれるる",
+        "森亜るるか",
+        "帆羽くれあ",
+        "るるくれ",
+        "トップオブリリー",
+        "たんプリ1000users入り",
+        "百合1000users入り"
       ]
     },
     {
       "rank": 6,
-      "id": "147172776",
-      "title": "真昼の月",
-      "userName": "Re°",
-      "userId": "1243903",
-      "artworkUrl": "https://www.pixiv.net/artworks/147172776",
-      "thumbnailUrl": "/pixiv-weekly/147172776.jpg",
+      "id": "147480179",
+      "title": "MUSIC AREA",
+      "userName": "しぐれうい",
+      "userId": "431873",
+      "artworkUrl": "https://www.pixiv.net/artworks/147480179",
+      "thumbnailUrl": "/pixiv-weekly/147480179.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/00/22/147172776_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/22/00/00/01/147480179_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/00/22/147172776_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/22/00/00/01/147480179_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "オリジナル1000users入り"
+        "しぐれうい",
+        "バーチャルYouTuber5000users入り"
       ]
     },
     {
       "rank": 7,
-      "id": "147204689",
-      "title": "no.2238 『 モサモサモサモサモサモサ 』",
-      "userName": "8810⋱YouTube開始⋰",
-      "userId": "27384568",
-      "artworkUrl": "https://www.pixiv.net/artworks/147204689",
-      "thumbnailUrl": "/pixiv-weekly/147204689.jpg",
+      "id": "147400702",
+      "title": "ダーニャ",
+      "userName": "void_0",
+      "userId": "14801956",
+      "artworkUrl": "https://www.pixiv.net/artworks/147400702",
+      "thumbnailUrl": "/pixiv-weekly/147400702.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/22/39/14/147204689_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/00/00/17/147400702_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/22/39/14/147204689_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/00/00/17/147400702_p0_master1200.jpg",
       "tags": [
-        "モサモサモサモサモサモサ",
-        "モササウルス",
-        "落書き",
-        "オリキャラ",
-        "オリジナル",
-        "創作",
-        "モサモササウルス",
-        "弱者に厳しいサウルス",
-        "ゲシュタルト崩壊",
-        "毛玉"
+        "Denia",
+        "女の子",
+        "达妮娅",
+        "鸣潮",
+        "WutheringWaves",
+        "睡眠"
       ]
     },
     {
       "rank": 8,
-      "id": "147186684",
-      "title": "TLで見かけた爆速ウサギ",
-      "userName": "遊ハち",
-      "userId": "72177771",
-      "artworkUrl": "https://www.pixiv.net/artworks/147186684",
-      "thumbnailUrl": "/pixiv-weekly/147186684.jpg",
+      "id": "147457699",
+      "title": "個人メモ：線の生き死に",
+      "userName": "漫画素材工房",
+      "userId": "16776564",
+      "artworkUrl": "https://www.pixiv.net/artworks/147457699",
+      "thumbnailUrl": "/pixiv-weekly/147457699.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/12/13/53/147186684_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/21/12/00/26/147457699_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/12/13/53/147186684_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/21/12/00/26/147457699_p0_master1200.jpg",
       "tags": [
-        "イラスト",
-        "時速70km",
-        "爆速ドリフト"
+        "漫画素材工房",
+        "描き方",
+        "人物",
+        "線画",
+        "ペン入れ",
+        "生き死に"
       ]
     },
     {
       "rank": 9,
-      "id": "147173061",
-      "title": "山田リョウちゃん",
-      "userName": "CORE",
-      "userId": "11211325",
-      "artworkUrl": "https://www.pixiv.net/artworks/147173061",
-      "thumbnailUrl": "/pixiv-weekly/147173061.jpg",
+      "id": "147443881",
+      "title": "夏",
+      "userName": "Fre",
+      "userId": "3728269",
+      "artworkUrl": "https://www.pixiv.net/artworks/147443881",
+      "thumbnailUrl": "/pixiv-weekly/147443881.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/02/04/147173061_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/21/00/04/26/147443881_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/00/02/04/147173061_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/21/00/04/26/147443881_p0_master1200.jpg",
       "tags": [
-        "ぼっち・ざ・ろっく!",
-        "山田リョウ(ぼっち・ざ・ろっく!)",
-        "山田リョウ",
         "女の子",
-        "ぼざろ",
-        "少女",
-        "ぼっち・ざ・ろっく!1000users入り"
+        "GenshinImpact",
+        "原神",
+        "稲妻(原神)",
+        "珊瑚宮心海",
+        "原神1000users入り"
       ]
     },
     {
       "rank": 10,
-      "id": "147208074",
-      "title": "ポケモンお絵描きまとめ",
-      "userName": "ほたてぃーの【スタンプ販売中】",
-      "userId": "2895852",
-      "artworkUrl": "https://www.pixiv.net/artworks/147208074",
-      "thumbnailUrl": "/pixiv-weekly/147208074.jpg",
+      "id": "147425596",
+      "title": "｢この子可愛い～！｣",
+      "userName": "千種みのり@お仕事募集中",
+      "userId": "41106591",
+      "artworkUrl": "https://www.pixiv.net/artworks/147425596",
+      "thumbnailUrl": "/pixiv-weekly/147425596.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/23/58/42/147208074_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/17/13/14/147425596_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/14/23/58/42/147208074_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/07/20/17/13/14/147425596_p0_master1200.jpg",
       "tags": [
-        "ポケモン",
-        "マグマラシ",
-        "イダイトウ",
-        "ラストの衝撃"
+        "オリジナル",
+        "女の子",
+        "着衣巨乳",
+        "早乙女志乃",
+        "志乃と恋",
+        "おまかわ",
+        "ぬいぐるみ",
+        "オリジナル1000users入り"
       ]
     }
   ]
