@@ -1,219 +1,220 @@
 {
-  "generatedAt": "2026-08-03T06:00:42.198426Z",
+  "generatedAt": "2026-08-10T04:20:11.135875Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "147711670",
-      "title": "血月",
-      "userName": "kieed",
-      "userId": "11525066",
-      "artworkUrl": "https://www.pixiv.net/artworks/147711670",
-      "thumbnailUrl": "/pixiv-weekly/147711670.jpg",
+      "id": "148025997",
+      "title": "アズライール",
+      "userName": "lack",
+      "userId": "83739",
+      "artworkUrl": "https://www.pixiv.net/artworks/148025997",
+      "thumbnailUrl": "/pixiv-weekly/148025997.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/00/00/23/147711670_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/05/00/00/15/148025997_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/00/00/23/147711670_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/05/00/00/15/148025997_p0_master1200.jpg",
       "tags": [
-        "重音テト",
-        "重音テトSV",
-        "VOCALOID10000users入り",
-        "UTAU10000users入り"
+        "FGO",
+        "Fate/GrandOrder",
+        "アズライール",
+        "アズライール(Fate)",
+        "蒼きアズライール",
+        "山の翁",
+        "Fate/GO5000users入り"
       ]
     },
     {
       "rank": 2,
-      "id": "147675219",
-      "title": "the Year of the Snake",
+      "id": "147988907",
+      "title": "the Year of the Rooster",
       "userName": "美和野らぐ",
       "userId": "7324626",
-      "artworkUrl": "https://www.pixiv.net/artworks/147675219",
-      "thumbnailUrl": "/pixiv-weekly/147675219.jpg",
+      "artworkUrl": "https://www.pixiv.net/artworks/147988907",
+      "thumbnailUrl": "/pixiv-weekly/147988907.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/27/00/12/25/147675219_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/00/00/19/147988907_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/27/00/12/25/147675219_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/00/00/19/147988907_p0_master1200.jpg",
       "tags": [
+        "オリジナル",
         "女の子",
-        "花眼帯",
-        "オリジナル5000users入り",
-        "花"
+        "オリジナル1000users入り",
+        "花と女の子",
+        "魅惑の谷間"
       ]
     },
     {
       "rank": 3,
-      "id": "147711828",
-      "title": "ぽっぷん・パーラー",
-      "userName": "上倉エク",
-      "userId": "299299",
-      "artworkUrl": "https://www.pixiv.net/artworks/147711828",
-      "thumbnailUrl": "/pixiv-weekly/147711828.jpg",
+      "id": "148016913",
+      "title": "無題",
+      "userName": "AU",
+      "userId": "5376622",
+      "artworkUrl": "https://www.pixiv.net/artworks/148016913",
+      "thumbnailUrl": "/pixiv-weekly/148016913.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/00/01/09/147711828_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/20/34/55/148016913_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/00/01/09/147711828_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/20/34/55/148016913_p0_master1200.jpg",
       "tags": [
-        "にじさんじ",
-        "ぽっぷん・パーラー",
-        "ぷりん・らら・もーど",
-        "ぽめろ・ぱんち",
-        "バーチャルYouTuber1000users入り"
+        "Fate/GrandOrder",
+        "FGO",
+        "アズライール(Fate)",
+        "蒼きアズライール",
+        "Fate/GO1000users入り"
       ]
     },
     {
       "rank": 4,
-      "id": "147720406",
-      "title": "乗る",
-      "userName": "カフェ",
-      "userId": "3414789",
-      "artworkUrl": "https://www.pixiv.net/artworks/147720406",
-      "thumbnailUrl": "/pixiv-weekly/147720406.jpg",
+      "id": "148026659",
+      "title": "ンナ！？",
+      "userName": "なのだぢゅん",
+      "userId": "62777926",
+      "artworkUrl": "https://www.pixiv.net/artworks/148026659",
+      "thumbnailUrl": "/pixiv-weekly/148026659.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/07/00/06/147720406_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/05/00/07/10/148026659_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/07/00/06/147720406_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/05/00/07/10/148026659_p0_master1200.jpg",
       "tags": [
-        "ポケモン",
-        "カフェライチュウ",
-        "ほぇぇーーーーい!!",
-        "ライチュウも楽しそうですね",
-        "なにこの仔かわいい",
-        "やはり偏るアンケート",
-        "調子に乗る",
-        "どういうことなの",
-        "弾力性に定評のあるライチュウ",
-        "ポケモン1000users入り"
+        "原神",
+        "コロンビーナ(原神)",
+        "サンドローネ(原神)",
+        "原神1000users入り",
+        "ボンプローネ"
       ]
     },
     {
       "rank": 5,
-      "id": "147695562",
-      "title": "(いやお前が1番可愛いだろ……)",
-      "userName": "千種みのり@お仕事募集中",
-      "userId": "41106591",
-      "artworkUrl": "https://www.pixiv.net/artworks/147695562",
-      "thumbnailUrl": "/pixiv-weekly/147695562.jpg",
+      "id": "147950659",
+      "title": "ありがとうございます・・・！！",
+      "userName": "pottsness",
+      "userId": "59336265",
+      "artworkUrl": "https://www.pixiv.net/artworks/147950659",
+      "thumbnailUrl": "/pixiv-weekly/147950659.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/27/17/10/37/147695562_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/03/00/00/13/147950659_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/27/17/10/37/147695562_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/03/00/00/13/147950659_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "百合",
-        "女の子",
-        "白雪恋",
-        "早乙女志乃",
-        "オリジナル1000users入り",
-        "志乃と恋",
-        "赤面"
+        "GenshinImpact",
+        "原神",
+        "蛍(原神)",
+        "Lumine",
+        "我々の業界ではご褒美です",
+        "ぱんつ",
+        "見下し",
+        "原神5000users入り",
+        "魅惑のふともも",
+        "原神10000users入り"
       ]
     },
     {
       "rank": 6,
-      "id": "147711739",
-      "title": ".*\"✿\"*.",
-      "userName": "hakusai",
-      "userId": "1589657",
-      "artworkUrl": "https://www.pixiv.net/artworks/147711739",
-      "thumbnailUrl": "/pixiv-weekly/147711739.jpg",
+      "id": "147979436",
+      "title": "スイカ",
+      "userName": "チャイ",
+      "userId": "1096811",
+      "artworkUrl": "https://www.pixiv.net/artworks/147979436",
+      "thumbnailUrl": "/pixiv-weekly/147979436.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/00/00/38/147711739_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/03/20/30/03/147979436_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/00/00/38/147711739_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/03/20/30/03/147979436_p0_master1200.jpg",
       "tags": [
-        "初音ミク",
-        "VOCALOID",
-        "ハイヒール",
-        "VOCALOID1000users入り",
-        "巡音ルカ"
+        "オリジナル",
+        "スイカ",
+        "猫は液体",
+        "猫は涼しいところが好き",
+        "素晴らしきほっこりの世界",
+        "音だけで涼しい",
+        "「ここは僕の場所だぞー」",
+        "食べ物1000users入り",
+        "オリジナル3000users入り"
       ]
     },
     {
       "rank": 7,
-      "id": "147726085",
-      "title": "宵",
-      "userName": "freng",
-      "userId": "3975343",
-      "artworkUrl": "https://www.pixiv.net/artworks/147726085",
-      "thumbnailUrl": "/pixiv-weekly/147726085.jpg",
+      "id": "148003575",
+      "title": "水着ウタゲ",
+      "userName": "ゆかたろ／新作配信中！",
+      "userId": "125057",
+      "artworkUrl": "https://www.pixiv.net/artworks/148003575",
+      "thumbnailUrl": "/pixiv-weekly/148003575.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/12/25/00/147726085_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/12/14/17/148003575-63f9dc57dd650eaab3bec77efb759a9b_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/12/25/00/147726085_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/12/14/17/148003575-63f9dc57dd650eaab3bec77efb759a9b_p0_master1200.jpg",
       "tags": [
-        "おへそ",
-        "ボディストッキング",
-        "ボディスーツ",
-        "ポニーテール",
-        "おっぱい",
-        "エロ衣装"
+        "アークナイツ",
+        "明日方舟",
+        "ウタゲ(アークナイツ)",
+        "水着",
+        "巨乳",
+        "魅惑の谷間",
+        "アークナイツ1000users入り",
+        "前かがみ",
+        "麦わら帽子"
       ]
     },
     {
       "rank": 8,
-      "id": "147737718",
-      "title": "【発売中】セフレ沼百合えっちアンソロジー",
-      "userName": "生肉＠創作百合",
-      "userId": "49283008",
-      "artworkUrl": "https://www.pixiv.net/artworks/147737718",
-      "thumbnailUrl": "/pixiv-weekly/147737718.jpg",
+      "id": "147993357",
+      "title": "🪽",
+      "userName": "Noah",
+      "userId": "87145717",
+      "artworkUrl": "https://www.pixiv.net/artworks/147993357",
+      "thumbnailUrl": "/pixiv-weekly/147993357.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/20/00/34/147737718_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/02/08/54/147993357_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/20/00/34/147737718_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/02/08/54/147993357_p0_master1200.jpg",
       "tags": [
-        "創作百合",
-        "社会人百合",
-        "百合1000users入り",
-        "オリジナル1000users入り"
+        "VTuber",
+        "イラスト",
+        "神楽めあ"
       ]
     },
     {
       "rank": 9,
-      "id": "147695650",
-      "title": "アベ星ログ⑭＋α",
-      "userName": "甘栗🌰新刊・再録本通販中",
-      "userId": "1570614",
-      "artworkUrl": "https://www.pixiv.net/artworks/147695650",
-      "thumbnailUrl": "/pixiv-weekly/147695650.jpg",
+      "id": "148054622",
+      "title": "わたモテ詰12",
+      "userName": "ぬか",
+      "userId": "1509829",
+      "artworkUrl": "https://www.pixiv.net/artworks/148054622",
+      "thumbnailUrl": "/pixiv-weekly/148054622.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/27/17/14/51/147695650_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/05/20/40/30/148054622_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/27/17/14/51/147695650_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/05/20/40/30/148054622_p0_master1200.jpg",
       "tags": [
-        "アベ星",
-        "丹星",
-        "ファイ星",
-        "ロエ蛍",
-        "タル蛍",
-        "星(スターレイル)",
-        "アベンチュリン(スターレイル)",
-        "ローエン",
-        "崩壊スターレイル",
-        "笑撃のラスト"
+        "私がモテないのはどう考えてもお前らが悪い!",
+        "黒木姉弟",
+        "黒木智子",
+        "黒木智貴"
       ]
     },
     {
       "rank": 10,
-      "id": "147725633",
-      "title": "個人メモ：目だけで語る表情変化",
-      "userName": "漫画素材工房",
-      "userId": "16776564",
-      "artworkUrl": "https://www.pixiv.net/artworks/147725633",
-      "thumbnailUrl": "/pixiv-weekly/147725633.jpg",
+      "id": "147989291",
+      "title": "制服rkgk少女",
+      "userName": "CORE",
+      "userId": "11211325",
+      "artworkUrl": "https://www.pixiv.net/artworks/147989291",
+      "thumbnailUrl": "/pixiv-weekly/147989291.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/12/02/06/147725633_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/00/03/18/147989291_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/07/28/12/02/06/147725633_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/04/00/03/18/147989291_p0_master1200.jpg",
       "tags": [
-        "漫画素材工房",
-        "描き方",
-        "人体",
-        "人物",
-        "顔",
-        "目",
-        "表情"
+        "オリジナル",
+        "OC",
+        "少女",
+        "セーラー服",
+        "女の子",
+        "創作",
+        "オリジナル1000users入り"
       ]
     }
   ]
