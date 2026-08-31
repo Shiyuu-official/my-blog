@@ -1,225 +1,219 @@
 {
-  "generatedAt": "2026-08-24T03:41:52.189994Z",
+  "generatedAt": "2026-08-31T08:58:25.154186Z",
   "source": "pixivpy3:illust_ranking(mode=week)",
   "total": 10,
   "items": [
     {
       "rank": 1,
-      "id": "148597304",
-      "title": "巨獣の痕跡",
-      "userName": "あすてろid",
-      "userId": "2033916",
-      "artworkUrl": "https://www.pixiv.net/artworks/148597304",
-      "thumbnailUrl": "/pixiv-weekly/148597304.jpg",
+      "id": "148804399",
+      "title": "セイレーン",
+      "userName": "ケースワベ【K-SUWABE】",
+      "userId": "24517",
+      "artworkUrl": "https://www.pixiv.net/artworks/148804399",
+      "thumbnailUrl": "/pixiv-weekly/148804399.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/19/00/01/23/148597304_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/24/00/00/26/148804399_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/19/00/01/23/148597304_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/24/00/00/26/148804399_p0_master1200.jpg",
       "tags": [
-        "風景",
-        "オリジナル",
-        "オリジナル3000users入り"
+        "ちいかわ",
+        "セイレーン(ちいかわ)",
+        "人魚の島のひみつ",
+        "チラ見",
+        "意味がわかると怖い話",
+        "マーこれかわいい",
+        "マーこれコワイイ",
+        "ちいかわ5000users入り"
       ]
     },
     {
       "rank": 2,
-      "id": "148560823",
-      "title": "河童の川涼み",
-      "userName": "白玉",
-      "userId": "3117808",
-      "artworkUrl": "https://www.pixiv.net/artworks/148560823",
-      "thumbnailUrl": "/pixiv-weekly/148560823.jpg",
+      "id": "148882180",
+      "title": "びしょ濡れアンドロメダ",
+      "userName": "lack",
+      "userId": "83739",
+      "artworkUrl": "https://www.pixiv.net/artworks/148882180",
+      "thumbnailUrl": "/pixiv-weekly/148882180.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/00/43/42/148560823_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/26/00/00/29/148882180_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/00/43/42/148560823_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/26/00/00/29/148882180_p0_master1200.jpg",
       "tags": [
-        "東方",
-        "アナログ",
-        "コピック",
-        "河城にとり",
-        "水中",
-        "清流",
-        "なにこれすごい",
-        "東方風景画",
-        "東方Project1000users入り",
-        "透明感"
+        "FGO",
+        "Fate/GrandOrder",
+        "アンドロメダ(Fate)",
+        "濡れ女",
+        "本家",
+        "カルデア南海大決戦!",
+        "腹筋",
+        "FGOご本人"
       ]
     },
     {
       "rank": 3,
-      "id": "148597100",
-      "title": "そのピッチリインナーは非常に素晴らしかった",
-      "userName": "pottsness",
-      "userId": "59336265",
-      "artworkUrl": "https://www.pixiv.net/artworks/148597100",
-      "thumbnailUrl": "/pixiv-weekly/148597100.jpg",
+      "id": "148804251",
+      "title": "臨在神・リリム",
+      "userName": "void_0",
+      "userId": "14801956",
+      "artworkUrl": "https://www.pixiv.net/artworks/148804251",
+      "thumbnailUrl": "/pixiv-weekly/148804251.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/19/00/00/21/148597100_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/24/20/11/13/148804251_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/19/00/00/21/148597100_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/24/20/11/13/148804251_p0_master1200.jpg",
       "tags": [
-        "GenshinImpact",
-        "原神",
-        "蛍(原神)",
-        "Lumine",
-        "ぶっともも",
-        "ももぷく",
-        "冬の夜を狩る者",
-        "金髪"
+        "オリジナル",
+        "女の子",
+        "創作",
+        "イラスト",
+        "逆光",
+        "美しい",
+        "背景",
+        "なにこれすごい",
+        "転生紀元",
+        "自分タグ"
       ]
     },
     {
       "rank": 4,
-      "id": "148541794",
-      "title": "(やっぱり、似てる……)",
-      "userName": "千種みのり@お仕事募集中",
-      "userId": "41106591",
-      "artworkUrl": "https://www.pixiv.net/artworks/148541794",
-      "thumbnailUrl": "/pixiv-weekly/148541794.jpg",
+      "id": "148845010",
+      "title": "「私を連れて行って」",
+      "userName": "Saclia",
+      "userId": "19920821",
+      "artworkUrl": "https://www.pixiv.net/artworks/148845010",
+      "thumbnailUrl": "/pixiv-weekly/148845010.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/17/17/12/23/148541794_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/00/25/28/148845010_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/17/17/12/23/148541794_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/00/25/28/148845010_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "百合",
-        "女の子",
-        "早乙女志乃",
-        "白雪恋",
-        "志乃と恋",
-        "オリジナル5000users入り"
+        "VOCALOID",
+        "鏡音リン",
+        "VOCALOID1000users入り"
       ]
     },
     {
       "rank": 5,
-      "id": "148590032",
-      "title": "トイレのはなこはねﾁｬﾝ",
-      "userName": "Sa-fu",
-      "userId": "77915733",
-      "artworkUrl": "https://www.pixiv.net/artworks/148590032",
-      "thumbnailUrl": "/pixiv-weekly/148590032.jpg",
+      "id": "148875383",
+      "title": "LINEスタンプ案募集",
+      "userName": "遊ハち",
+      "userId": "72177771",
+      "artworkUrl": "https://www.pixiv.net/artworks/148875383",
+      "thumbnailUrl": "/pixiv-weekly/148875383.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/21/28/34/148590032_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/21/33/22/148875383_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/21/28/34/148590032_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/21/33/22/148875383_p0_master1200.jpg",
       "tags": [
-        "プロセカ",
-        "小豆沢こはね",
-        "あやかし横丁",
-        "あやかし横丁の夏休み"
+        "イラスト",
+        "はぴにゃーん",
+        "うぉぉぉぉぉぉ!",
+        "ぶちゃいく",
+        "店番のスピス",
+        "☆おおおおーー!!",
+        "ガしっ"
       ]
     },
     {
       "rank": 6,
-      "id": "148584323",
-      "title": "「ファング！」「ジョーカー！」",
-      "userName": "上山道郎",
-      "userId": "53823",
-      "artworkUrl": "https://www.pixiv.net/artworks/148584323",
-      "thumbnailUrl": "/pixiv-weekly/148584323.jpg",
+      "id": "148851868",
+      "title": "個人メモ：男女の肩の違い",
+      "userName": "漫画素材工房",
+      "userId": "16776564",
+      "artworkUrl": "https://www.pixiv.net/artworks/148851868",
+      "thumbnailUrl": "/pixiv-weekly/148851868.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/19/18/54/148584323_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/06/00/13/148851868_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/19/18/54/148584323_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/06/00/13/148851868_p0_master1200.jpg",
       "tags": [
-        "名探偵プリキュア!",
-        "仮面ライダーW",
-        "さぁ、お前の罪を数えろ!",
-        "風都探偵プリキュア!",
-        "キュアアルカナ・シャドウ",
-        "キュアアルカナ",
-        "違和感、仕事しろ",
-        "キュアライダー",
-        "光と闇が両方そなわり最強に見える"
+        "漫画素材工房",
+        "描き方",
+        "人体",
+        "身体",
+        "美術解剖学",
+        "上半身",
+        "肩"
       ]
     },
     {
       "rank": 7,
-      "id": "148576011",
-      "title": "🕶️",
-      "userName": "Goldcan",
-      "userId": "3822133",
-      "artworkUrl": "https://www.pixiv.net/artworks/148576011",
-      "thumbnailUrl": "/pixiv-weekly/148576011.jpg",
+      "id": "148847286",
+      "title": "君と夏",
+      "userName": "きのこ姫",
+      "userId": "14264762",
+      "artworkUrl": "https://www.pixiv.net/artworks/148847286",
+      "thumbnailUrl": "/pixiv-weekly/148847286.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/14/01/26/148576011_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/01/30/01/148847286_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/14/01/26/148576011_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/01/30/01/148847286_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "女の子",
-        "うちの子",
-        "ショートパンツ",
-        "サングラス",
-        "オリジナル1000users入り",
-        "黑髮",
-        "ジャケット"
+        "約ネバ",
+        "約束のネバーランド",
+        "エマ",
+        "エマ(約ネバ)",
+        "翠眼"
       ]
     },
     {
       "rank": 8,
-      "id": "148521465",
-      "title": "2233 16th",
-      "userName": "千夜QYS3",
-      "userId": "7210261",
-      "artworkUrl": "https://www.pixiv.net/artworks/148521465",
-      "thumbnailUrl": "/pixiv-weekly/148521465.jpg",
+      "id": "148833501",
+      "title": "お弁当",
+      "userName": "チャイ",
+      "userId": "1096811",
+      "artworkUrl": "https://www.pixiv.net/artworks/148833501",
+      "thumbnailUrl": "/pixiv-weekly/148833501.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/17/00/20/32/148521465_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/24/20/30/01/148833501_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/17/00/20/32/148521465_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/24/20/30/01/148833501_p0_master1200.jpg",
       "tags": [
-        "女の子",
-        "2233",
-        "bilibili",
-        "ビリビリ動画",
-        "風船",
-        "22娘"
+        "オリジナル",
+        "弁当",
+        "寄っ",
+        "できたスペースはどうしましょう",
+        "素晴らしきほっこりの世界",
+        "いきものごはん",
+        "魅惑のスペースが我を誘う",
+        "あるある"
       ]
     },
     {
       "rank": 9,
-      "id": "148597399",
-      "title": "制服rkgk少女",
-      "userName": "CORE",
-      "userId": "11211325",
-      "artworkUrl": "https://www.pixiv.net/artworks/148597399",
-      "thumbnailUrl": "/pixiv-weekly/148597399.jpg",
+      "id": "148846229",
+      "title": "セイレーンちゃん LOG　(夢アリ)",
+      "userName": "えんや",
+      "userId": "22116256",
+      "artworkUrl": "https://www.pixiv.net/artworks/148846229",
+      "thumbnailUrl": "/pixiv-weekly/148846229.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/19/00/02/13/148597399_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/00/58/38/148846229_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/19/00/02/13/148597399_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/25/00/58/38/148846229_p0_master1200.jpg",
       "tags": [
-        "オリジナル",
-        "OC",
-        "女の子",
-        "セーラー服",
-        "女子高生",
-        "少女",
-        "黒髪",
-        "創作",
-        "四つん這い",
-        "オリジナル1000users入り"
+        "ちいかわ",
+        "セイレーン(ちいかわ)",
+        "ちいかわ1000users入り"
       ]
     },
     {
       "rank": 10,
-      "id": "148595369",
-      "title": "奥黛塔",
-      "userName": "Hle",
-      "userId": "5948143",
-      "artworkUrl": "https://www.pixiv.net/artworks/148595369",
-      "thumbnailUrl": "/pixiv-weekly/148595369.jpg",
+      "id": "148828943",
+      "title": "あやかし横丁の夏休み",
+      "userName": "Sa-fu",
+      "userId": "77915733",
+      "artworkUrl": "https://www.pixiv.net/artworks/148828943",
+      "thumbnailUrl": "/pixiv-weekly/148828943.jpg",
       "fallbackThumbnailUrls": [
-        "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/23/26/09/148595369_p0_master1200.jpg"
+        "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/24/18/30/10/148828943_p0_master1200.jpg"
       ],
-      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90_webp/img-master/img/2026/08/18/23/26/09/148595369_p0_master1200.jpg",
+      "originalThumbnailUrl": "https://i.pximg.net/c/600x1200_90/img-master/img/2026/08/24/18/30/10/148828943_p0_master1200.jpg",
       "tags": [
-        "原神",
-        "奥黛塔",
-        "白丝",
-        "オデット(原神)"
+        "プロセカ",
+        "プロジェクトセカイ",
+        "あやかし横丁の夏休み",
+        "プロセカ1000users入り"
       ]
     }
   ]
